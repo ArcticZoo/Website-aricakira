@@ -23,14 +23,14 @@
 	  <div id="wrap">
       <img src="./img/logo.png"/>
       <p class='label'></p>
-      <ul onScrollCapture={this._onScrollEvent}>
-           <li class='indexNav active' ><Link to="/" onClick={()=>this.shiftActive('1')}>INDEX</Link><div class="hover"><div class="hoverPoint"></div></div></li>
-           <li class='designNav'><Link to="/design" onClick={()=>this.shiftActive('2')}>DESIGN</Link><div class="hover"></div></li>
-           <li  class='lifeNav'><Link to="/life" onClick={()=>this.shiftActive('3')}>LIFE</Link><div class="hover"></div></li>
+      <ul>
+           <li class='indexNav active' ><a hraf="/" >INDEX</a><div class="hover"><div class="hoverPoint"></div></div></li>
+           <li class='designNav'><a hraf="/design" >DESIGN</a><div class="hover"></div></li>
+           <li  class='lifeNav'><a hraf="/life">LIFE</a><div class="hover"></div></li>
        </ul>
       </div>
 
-      <div id='bottomnav' onScrollCapture={this._onScrollEvent}>
+      <div id='bottomnav' >
         <ul>
           <li><a href="javascript:;" class='bottomnav'>INDEX -</a></li>
           <li><a href="javascript:;" class='bottomnav'>ABOUT ME -</a></li>
@@ -48,7 +48,7 @@
 
       <div class="scroll"  > 
 
-	      <img id="down" src="./img/backtothetop1.png" style={down} />
+	      <img id="down" src="./img/backtothetop1.png" />
 	      <img id="up" src="./img/backtothetop2.png" />
       </div>
 
@@ -62,8 +62,9 @@
       </section>
 
       <section class="part1">
-      <div><img src='./img/titleimg-shadow.png' class='titleImgs'/><img src='./img/titleimg.png' class='titleImg'/></div>
+      
       <div>
+      	<div class="titleImgWrap"><img src='./img/titleimg-shadow.png' class='titleImgs'/><img src='./img/titleimg.png' class='titleImg'/></div>
       <h1 id='hraf2'>To Create & Express</h1>
       <h4 >Hi,I’m AricAkira,A UI Designer & Motion-graphic Designer.<br />
           The following is my technology stack.</h4>
