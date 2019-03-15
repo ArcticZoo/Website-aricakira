@@ -483,8 +483,8 @@ html::-webkit-scrollbar-thumb{
   margin-top: -1px;
 }
 .part4{
-  width: 1120px;
-  height: 500px;
+  width: 1236px;
+  height: 780px;
   margin: 0px auto;
   padding: 300px 0;
 }
@@ -494,18 +494,16 @@ html::-webkit-scrollbar-thumb{
 }
 .part4 ul li{
 	float: left;
-	width: 140px;
-	height: 140px;
+	width: 600px;
+	height: 220px;
 	background-color: #ddd;
 	display: inline-block;
-	margin:9px 10px;
-	margin-top: 6px;
+	margin:9px 8px;
 	transition:box-shadow .2s ease,margin-top .2s ease,opacity .2s ease;
 	opacity: .5;
 }
 .part4 ul li:hover{
   box-shadow: 0px 20px 24px #eef1f6;
-  margin-top: 0px;
   opacity: 1;
 }
 
