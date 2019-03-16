@@ -1,27 +1,33 @@
 
 	    (function ($){
 
-	      
 
 	      imagesLoaded(container, function () {
 	          wookmark = new Wookmark(container, {
 	          autoResize: true, // This will auto-update the layout when the browser window is resized.
-	          offset: 2, // Optional, the distance between grid items
+	          offset: 0, // Optional, the distance between grid items
 	          outerOffset: 0, // Optional, the distance to the containers border
-	          itemWidth: 385 // Optional, the width of a grid item
+	          itemWidth: 395 // Optional, the width of a grid item
 	        });
 	      });
 
-          // 捕捉点击事件
-	      $('#container').on('click', 'li', function () {
-	        // Update the layout.
-	        wookmark.layout(true);
-	      });
 
-	      
+
+	      //灯箱相册
+		  
+			// Image popups
+			$('#container').magnificPopup({
+			  delegate: 'a',
+			  type: 'image',
+			  removalDelay: 0, //delay removal by X to allow out-animation
+			  closeOnContentClick: true,
+			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+			});
+
+
 	      function onScroll() {
 	        // Check if we're within 100 pixels of the bottom edge of the broser window.
-	        var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
+	        var winHeight = window.innerHeight ? window.innerHeight : $('window').height(), // iphone fix
 	            closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
 
 	        if (closeToBottom) {
@@ -41,7 +47,7 @@
 	      };
 
 	      // Capture scroll event.
-	      $window.bind('scroll.wookmark', onScroll);
+	      $('window').bind('scroll.wookmark', onScroll);
 
 
 
@@ -77,7 +83,48 @@
 
 
 	    })(jQuery);
-	  
+//首页下滑一整屏
+var i=0;//翻屏变量，初始第一屏
+var s = 0; //该变量作用是鼠标滑轮一直向下或者向上滑动时出现抖动现象
+if($(document).scrollTop()<10){
+  				$('body').css({'overflow':'hidden'});
+  			}
+if($(document).scrollTop()>400){
+  				i=1;
+  				s=1;
+  				$('body').css({'overflow':'auto'});
+  			}
+$(function(){
+ 
+    var starttime = 0,
+        endtime = 0;
+    $("body").mousewheel(function(event, delta) {
+
+ 		
+
+        starttime = new Date().getTime(); //记录翻屏的初始时间
+        if (delta < 0&& i==0 ) { 
+ 
+            if (s>=0&&(starttime == 0 || (endtime - starttime) <= -300)) { //在500ms内执行一次翻屏 向下翻
+                s=1;
+                i++;
+                $('body, html').animate({scrollTop:1100 }, 'slow');
+                $('body').css({'overflow':'auto'});
+                endtime = new Date().getTime(); //记录翻屏的结束时间
+            }
+        } else if (delta > 0&& i>=1&&s==1&& (starttime == 0 || (endtime - starttime) <= -300) && $(document).scrollTop()<1100) {    
+            i--;
+            //console.log(i);
+            $('body, html').animate({scrollTop:0 }, 'slow');
+            $('body').css({'overflow':'hidden'});
+            endtime = new Date().getTime();                     
+        } 
+    });
+ 
+ 
+})
+
+
 
 /*
 (function ($) {

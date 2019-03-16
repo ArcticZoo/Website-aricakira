@@ -25,7 +25,7 @@ body,html{
 	height: 100%;
 }
 html::-webkit-scrollbar{
-	width: 6px;
+	width: 0px;
 }
 html::-webkit-scrollbar-thumb{
 	border-radius: 10px;
@@ -195,6 +195,9 @@ html::-webkit-scrollbar-thumb{
 	top: 0;
 	background-color: #fffefd;
 }
+body{
+	overflow: hidden;
+}
 
 .canvas{
 	height: 600px;
@@ -204,28 +207,39 @@ html::-webkit-scrollbar-thumb{
 	background: url(../img/background.jpg);
 	background-size: cover;
 	background-position: center;
+
 }
 .canvas video{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.part1{
-	width: 1165px;
+.title{
+	position: relative;
 	margin: 0 auto;
-	text-align: center;
-	margin-top: calc(100vh + 200px);
+	margin-top: calc(100vh + 400px);
+    width: 1187px;
+}
+.titleText{
+	width: 900px;
+}
+.part1{
+	width: 1187px;
+	margin: 0 auto;
+	text-align: right;
+	margin-top: 150px;
 	position: relative;
 }
 .part1 ol{
 	list-style: none;
 	position: relative;
-	top: -60px;
+	top: -40px;
 	padding: 0;
 	margin: 0;
 }
 .part1 ol li{
 	display: inline-block;
+	cursor: pointer;
 }
 .part1 ul{
 	display: block;
@@ -233,10 +247,23 @@ html::-webkit-scrollbar-thumb{
 	list-style-type: none;
 }
 .part1 ul li{
-	width: 381px;
+	width: 391px;
 	padding: 0;
 	margin: 0;
 }
 .part1 ul li img{
 	width: 100%;
+}
+.part1 ul .wookmark-inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+.part1 li {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.part1 li:hover{
+	opacity: .35;
 }
