@@ -254,6 +254,9 @@ body{
 .part1 ul li img{
 	width: 100%;
 }
+.part1 ul li video{
+	width: 100%;
+}
 .part1 ul .wookmark-inactive {
   visibility: hidden;
   opacity: 0;

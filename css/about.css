@@ -1,4 +1,4 @@
-@font-face {  
+﻿@font-face {  
   font-family: 'AvenirNextLTPro-Regular';  
   src: url('../font/AvenirNextLTPro-Regular.otf'); 
 }
@@ -403,8 +403,10 @@ html::-webkit-scrollbar-thumb{
 
     background: #fcfcfc; /* Old browsers */
 	width: 100%;
-	height: 500px;
+	height: 550px;
 	margin: 120px 0;
+  margin-bottom:0;
+	padding-bottom:0;
 }
 .part3 .part3inside{
 	width: 1000px;

@@ -23,6 +23,13 @@
 			  closeOnContentClick: true,
 			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 			});
+			// Image popups
+			$('.video').magnificPopup({
+			  type: 'iframe',
+			  removalDelay: 0, //delay removal by X to allow out-animation
+			  closeOnContentClick: true,
+			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+			});
 
 
 	      function onScroll() {
