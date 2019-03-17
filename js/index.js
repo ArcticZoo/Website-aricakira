@@ -1,5 +1,18 @@
-
-
+function IsPC() {
+         var userAgentInfo = navigator.userAgent;
+         var Agents = ["Android", "iPhone",
+                     "SymbianOS", "Windows Phone",
+                     "iPad", "iPod"];
+         var flag = true;
+         for (var v = 0; v < Agents.length; v++) {
+             if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                 flag = false;
+                 break;
+             }
+         }
+         return flag;
+     }
+//判断打开的平台
 
 	    (function ($){
 
@@ -14,13 +27,13 @@
 	          	if(docWidth>1280){
 	          		return 395;
 	          		$('#container').trigger('refreshWookmark');
-	          	}else if(docWidth<1280 && docWidth>900){
+	          	}else if(docWidth<1280 && docWidth>625){
 	          		return 320;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else{
-	          		return '100%';
+	          		return 355;
 	          	}}
-	           // Optional, the width of a grid item
+	           // 在这儿设置了响应式的相册大小
 	        });
 	      });
 
@@ -105,7 +118,9 @@
 	    })(jQuery);
 
 
-//首页下滑一整屏
+
+if(IsPC()){
+//如果是PC 首页下滑一整屏
 var i=0;//翻屏变量，初始第一屏
 var s = 0; //该变量作用是鼠标滑轮一直向下或者向上滑动时出现抖动现象
 if($(document).scrollTop()<10 &&$(document).width()>900){
@@ -143,29 +158,24 @@ $(function(){
         } 
     });
  
- 
-})
+})}
 
 
-/*
-(function ($) {
-  var loadedImages = 0, // Counter for loaded images
-    handler = $('#tiles li'); // Get a reference to your grid items.
-
-
-  $('#tiles').imagesLoaded(function(){
-    // Call the layout function.
-    handler.wookmark(options);
-
-  }).progress(function(instance, image) {
-    // Update progress bar after each image load
-    loadedImages++;
-    if (loadedImages == handler.length)
-      $('.progress-bar').hide();
-    else
-      $('.progress-bar').width((loadedImages / handler.length * 100) + '%');
-  });
-})(jQuery);
-*/
-
-
+//加载页面 判断是不是PC 是的话等待视频加载 不是的话等待dom加载
+if(IsPC()){
+	document.getElementById('titleVideo').oncanplay=function(){
+		$('#loadding').css({'opacity':"0"});
+		$('#loadding').delay("slow").css({'display':"none"});
+	}
+}else{
+	$(document).ready(function(){
+		$('#loadding').css({'opacity':"0"});
+		$('#loadding').delay("slow").css({'display':"none"});
+	});
+}
+//当手机打开的时候显示手机版本图片
+if(!IsPC()){
+	$('.titleText').css({'display':'none'});
+	$('.titleTextPhone').css({'display':'block'});
+}else{
+}

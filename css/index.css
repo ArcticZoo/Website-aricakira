@@ -32,6 +32,26 @@ html::-webkit-scrollbar-thumb{
 	background: #aaa;
 }
 
+/*-------------------------------------------loadding-----------------------------------------*/
+
+#loadding{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	text-align: center;
+	opacity: 1;
+	transition:opacity .2s ease;
+}
+#loadding img{
+	width: 150px;
+	margin: auto; 
+    position: absolute; 
+    top: 0; left: 0; bottom: 0; right: 0; 
+}
+
 
 /*-----------------------------------------------Nav------------------------------------------*/
 
@@ -218,6 +238,13 @@ html::-webkit-scrollbar-thumb{
 .titleText{
 	width: 900px;
 }
+.titleTextPhone{
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 550px;
+	margin: 0 auto;
+}
 .part1{
 	width: 1187px;
 	margin: 0 auto;
@@ -272,9 +299,10 @@ html::-webkit-scrollbar-thumb{
 @media screen and (max-width: 1280px) {
 	.title{
 		width: 100% !important;
+		text-align: left;
 	}
 	.titleText{
-		width: 600px;
+		width: 80%;
 	}
 	.part1{
 		width: 100% !important;
@@ -282,17 +310,71 @@ html::-webkit-scrollbar-thumb{
 	.part1 ul li{
 		width: 315px;
 	}
+
 	img.mfp-img {
 		max-width: 99% !important;
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width:625px) and (max-width: 900px){
 	.canvasWrap{
 		display: none;
 	}
 	.title{
 		margin-top: 200px;
 	}
+	.titleText{
+		display: none !important;
+	}
+	.titleTextPhone{
+		display: block;
+	}
+
+	img.mfp-img {
+		max-width: 99% !important;
+	}
 }
 
+@media screen and (max-width: 625px){
+	.canvasWrap{
+		display: none;
+	}
+	.title{
+		margin-top: 200px;
+	}
+	.titleText{
+		display: none;
+	}
+	.titleTextPhone{
+		display: block;
+		width: 100%;
+	}
+	.part1 ul li{
+		width: 355px !important;
+	}
+
+	/*---*/
+
+	img.mfp-img {
+		max-width: 99% !important;
+	}
+
+	/*---*/
+
+	#wrap{
+		text-align: center;
+	}
+	#wrap ul{
+		display: none !important;
+	}
+
+	/*---*/
+
+	.scroll{
+		display: none;
+	}
+
+	.share{
+		display: none;
+	}
+}
