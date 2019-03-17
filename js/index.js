@@ -161,16 +161,21 @@ $(function(){
 })}
 
 
-//加载页面 判断是不是PC 是的话等待视频加载 不是的话等待dom加载
+//加载页面 判断是不是PC 是的话等待视频加载 再dom加载 不是的话直接等待dom加载
 if(IsPC()){
 	document.getElementById('titleVideo').oncanplay=function(){
-		$('#loadding').css({'opacity':"0"});
-		$('#loadding').delay("slow").css({'display':"none"});
+		    $(document).ready(function(){
+			$('#loadding').css({'opacity':"0"});
+			$('#loadding').delay("slow").css({'display':"none"});
+		});
 	}
 }else{
 	$(document).ready(function(){
 		$('#loadding').css({'opacity':"0"});
 		$('#loadding').delay("slow").css({'display':"none"});
+		//加载手机提示
+		$('#mobileTip').css({'display':"block"});
+		$('#wrap').css({'top':"100px"});
 	});
 }
 //当手机打开的时候显示手机版本图片
@@ -179,3 +184,12 @@ if(!IsPC()){
 	$('.titleTextPhone').css({'display':'block'});
 }else{
 }
+
+//对滚动进行监听 适当时候销毁提示
+ $(window).scroll(function(event){
+		if($(document).scrollTop()>550 && !IsPC()){
+			$('#mobileTip').css({'top':"-100px"});
+			$('#wrap').css({'top':"60px"});
+			//增加wrap的背景
+		}
+    });
