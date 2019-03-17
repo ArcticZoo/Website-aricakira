@@ -335,7 +335,7 @@ html::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 1280px) {
 	.title{
-		width: 100% !important;
+		width: 950px !important;
 		text-align: left;
 	}
 	.titleText{
@@ -346,6 +346,12 @@ html::-webkit-scrollbar-thumb{
 	}
 	.part1 ul li{
 		width: 315px;
+	}
+
+	#filters{
+		width: 950px;
+		padding: 0;
+		margin: 0 auto;
 	}
 
 	img.mfp-img {
@@ -359,12 +365,21 @@ html::-webkit-scrollbar-thumb{
 	}
 	.title{
 		margin-top: 200px;
+		text-align: center;
+		width: 100% !important;
 	}
 	.titleText{
 		display: none !important;
 	}
 	.titleTextPhone{
+		margin: 0 auto;
 		display: block;
+		padding: 0;
+		text-align: center;
+	}
+	#filters{
+		text-align: center ;
+		width: 100% ;
 	}
 
 	img.mfp-img {
