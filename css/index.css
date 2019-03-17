@@ -226,9 +226,9 @@ html::-webkit-scrollbar-thumb{
 	z-index: 99;
 	font-size: 12px;
 	color: #9a9a9a;
-	line-height: 20px;
-	margin-top: 10px;
-	font-weight: 500;
+	line-height: 10px;
+	font-weight: 400;
+	margin-top: 14px;
 
 }
 
