@@ -335,7 +335,7 @@ html::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 1280px) {
 	.title{
-		width: 950px !important;
+		width: 950px ;
 		text-align: left;
 	}
 	.titleText{
@@ -393,6 +393,7 @@ html::-webkit-scrollbar-thumb{
 	}
 	.title{
 		margin-top: 200px;
+		width: 100%;
 	}
 	.titleText{
 		display: none;
