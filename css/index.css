@@ -33,7 +33,6 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-
 /*-----------------------------------------------Nav------------------------------------------*/
 
 #wrap{
@@ -195,10 +194,6 @@ html::-webkit-scrollbar-thumb{
 	top: 0;
 	background-color: #fffefd;
 }
-body{
-	overflow: hidden;
-}
-
 .canvas{
 	height: 600px;
 	width: 100%;
@@ -270,3 +265,34 @@ body{
 .part1 li:hover{
 	opacity: .35;
 }
+
+
+
+
+@media screen and (max-width: 1280px) {
+	.title{
+		width: 100% !important;
+	}
+	.titleText{
+		width: 600px;
+	}
+	.part1{
+		width: 100% !important;
+	}
+	.part1 ul li{
+		width: 315px;
+	}
+	img.mfp-img {
+		max-width: 99% !important;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.canvasWrap{
+		display: none;
+	}
+	.title{
+		margin-top: 200px;
+	}
+}
+

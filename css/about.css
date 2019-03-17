@@ -298,9 +298,13 @@ html::-webkit-scrollbar-thumb{
 
 .part1 .brief{
 	width: 1000px;
-	margin-top: 160px;
+	margin-top: 380px;
 	height: 200px;
 	text-align: left;
+}
+.part1 .brief .selfimg{
+  width: 100%;
+  margin: 30px 0;
 }
 .part1 .brief p{
 	display: inline-block;
@@ -336,7 +340,7 @@ html::-webkit-scrollbar-thumb{
 .part2{
 	width: 1100px;
 	margin: 0 auto;
-	margin-top: 300px;
+	margin-top: 600px;
 	text-align: center;
 }
 .part2 .break{

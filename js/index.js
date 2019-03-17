@@ -1,4 +1,6 @@
 
+
+
 	    (function ($){
 
 
@@ -7,7 +9,18 @@
 	          autoResize: true, // This will auto-update the layout when the browser window is resized.
 	          offset: 0, // Optional, the distance between grid items
 	          outerOffset: 0, // Optional, the distance to the containers border
-	          itemWidth: 395 // Optional, the width of a grid item
+	          itemWidth: function(){
+	          	let docWidth = $(document).width();
+	          	if(docWidth>1280){
+	          		return 395;
+	          		$('#container').trigger('refreshWookmark');
+	          	}else if(docWidth<1280 && docWidth>900){
+	          		return 320;
+	          		$('#container').trigger('refreshWookmark');
+	          	}else{
+	          		return '100%';
+	          	}}
+	           // Optional, the width of a grid item
 	        });
 	      });
 
@@ -90,10 +103,12 @@
 
 
 	    })(jQuery);
+
+
 //首页下滑一整屏
 var i=0;//翻屏变量，初始第一屏
 var s = 0; //该变量作用是鼠标滑轮一直向下或者向上滑动时出现抖动现象
-if($(document).scrollTop()<10){
+if($(document).scrollTop()<10 &&$(document).width()>900){
   				$('body').css({'overflow':'hidden'});
   			}
 if($(document).scrollTop()>400){
@@ -110,7 +125,7 @@ $(function(){
  		
 
         starttime = new Date().getTime(); //记录翻屏的初始时间
-        if (delta < 0&& i==0 ) { 
+        if (delta < 0&& i==0 && $(document).width()>900) { 
  
             if (s>=0&&(starttime == 0 || (endtime - starttime) <= -300)) { //在500ms内执行一次翻屏 向下翻
                 s=1;
@@ -119,7 +134,7 @@ $(function(){
                 $('body').css({'overflow':'auto'});
                 endtime = new Date().getTime(); //记录翻屏的结束时间
             }
-        } else if (delta > 0&& i>=1&&s==1&& (starttime == 0 || (endtime - starttime) <= -300) && $(document).scrollTop()<1100) {    
+        } else if (delta > 0&& i>=1&&s==1&& (starttime == 0 || (endtime - starttime) <= -300) && $(document).scrollTop()<1100 && $(document).width()>900) {    
             i--;
             //console.log(i);
             $('body, html').animate({scrollTop:0 }, 'slow');
@@ -130,7 +145,6 @@ $(function(){
  
  
 })
-
 
 
 /*
@@ -153,3 +167,5 @@ $(function(){
   });
 })(jQuery);
 */
+
+
