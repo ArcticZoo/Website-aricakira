@@ -151,7 +151,6 @@ html::-webkit-scrollbar-thumb{
 
 
 
-
 /*--------------------------------------------NAV-MOBILE-----------------------------------------*/
 
 #wrapMobile{
@@ -165,12 +164,12 @@ html::-webkit-scrollbar-thumb{
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
-	margin-left: calc(100% - 240px);
+	margin-left: calc(100% - 220px);
 	margin-right: 2px;
 }
 #wrapMobile .menu{
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 600;
 	margin-right: 4px;
 }
 #wrapMobile div{
@@ -281,52 +280,11 @@ html::-webkit-scrollbar-thumb{
 
 }
 
-.canvasWrap{
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	background-color: #fffefd;
-}
-.canvas{
-	height: 600px;
-	width: 100%;
-	overflow: hidden;
-	margin-top: calc(50vh - 330px);
-	/*
-	background: url(../img/background.jpg);*/
-	background-size: cover;
-	background-position: center;
-
-}
-.canvas video{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.title{
-	position: relative;
-	margin: 0 auto;
-	margin-top: calc(100vh + 400px);
-    width: 1187px;
-}
-.titleText{
-	width: 900px;
-}
-.titleTextPhone{
-	display: none;
-	margin: 0;
-	padding: 0;
-	width: 550px;
-	margin: 0 auto;
-}
 .part1{
 	width: 1187px;
 	margin: 0 auto;
 	text-align: right;
-	margin-top: 150px;
+	margin-top: 300px;
 	position: relative;
 }
 .part1 ol{
@@ -442,7 +400,7 @@ html::-webkit-scrollbar-thumb{
 		display: none;
 	}
 	.title{
-		margin-top: 80px;
+		margin-top: 160px;
 		width: 100%;
 	}
 	.titleText{
@@ -452,17 +410,13 @@ html::-webkit-scrollbar-thumb{
 		display: block;
 		width: 100%;
 	}
+	.part1{
+		margin-top: 180px;
+	}
 	.part1 ul li{
 		width: 355px !important;
-		border-radius: 4px;
 	}
 
-	.part1 ul li img{
-		border-radius: 4px;
-	}
-	.part1 ul li video{
-		border-radius: 4px;
-	}
 	/*---*/
 
 	img.mfp-img {
@@ -476,6 +430,7 @@ html::-webkit-scrollbar-thumb{
 		position: absolute;
 		display: none !important;
 	}
+
 
 	/*---*/
 
