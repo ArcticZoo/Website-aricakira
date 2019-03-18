@@ -187,9 +187,27 @@ if(!IsPC()){
 
 //对滚动进行监听 适当时候销毁提示
  $(window).scroll(function(event){
-		if($(document).scrollTop()>550 && !IsPC()){
+		if($(document).scrollTop()>3 && !IsPC()){
 			$('#mobileTip').css({'top':"-100px"});
-			$('#wrap').css({'top':"60px"});
-			//增加wrap的背景
+			$('#wrapMobile').css({'margin-top':'0'});
+		}else if($(document).scrollTop()<3 && !IsPC()){
+			$('#mobileTip').css({'top':"0px"});
+			$('#wrapMobile').css({'margin-top':'55px'});
 		}
     });
+
+
+//手机端menu监听
+
+function mobileMenu(){
+	$('#wrapMobilebg').css({"display":'block'});
+}
+function closeMobileMenu(){
+	$('#wrapMobilebg').css({"display":'none'});
+}
+
+$("#wrapMobilebg").click(function(e){
+  if (e.target == e.currentTarget) {
+		$('#wrapMobilebg').css({"display":'none'});
+	}
+});

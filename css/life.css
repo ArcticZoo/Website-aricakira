@@ -157,6 +157,7 @@ html::-webkit-scrollbar-thumb{
 	width: calc(100% - 40px);
 	font-size:18px;
 	margin:0 auto;
+	display: none;
 }
 #wrapMobile img{
 	width: 110px;
@@ -186,9 +187,11 @@ html::-webkit-scrollbar-thumb{
 	top: 0;
 	overflow: hidden;
 	text-align: right;
+	display: none;
 
 }
 #wrapMobilebg a{
+	text-decoration: none;
 	display: block;
 	margin-top: 24px;
 	margin-right:20px;
@@ -265,7 +268,7 @@ html::-webkit-scrollbar-thumb{
 	z-index: 98;
 	text-align: center;
 	position: fixed;
-	top: 0;
+	bottom:0;
 	border-radius: 12px;
 	display: none;
 	transition:top .7s ease;
@@ -446,5 +449,8 @@ html::-webkit-scrollbar-thumb{
 
 	.share{
 		display: none;
+	}
+	#wrapMobile{
+		display: block;
 	}
 }
