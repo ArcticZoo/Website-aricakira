@@ -22,6 +22,7 @@ function IsPC() {
 	          autoResize: true, // This will auto-update the layout when the browser window is resized.
 	          offset: 0, // Optional, the distance between grid items
 	          outerOffset: 0, // Optional, the distance to the containers border
+	          resizeDelay:50,
 	          itemWidth: function(){
 	          	let docWidth = $(document).width();
 	          	if(docWidth>1280){
