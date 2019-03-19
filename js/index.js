@@ -213,3 +213,9 @@ $("#wrapMobilebg").click(function(e){
 		$('#wrapMobilebg').css({"display":'none'});
 	}
 });
+
+function resizeGrid(){
+	//视频加载后触发重新布局
+	document.getElementById('container').dispatchEvent(new Event('refreshWookmark'));
+	$(window).trigger('resize');
+}
