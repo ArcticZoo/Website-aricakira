@@ -47,7 +47,7 @@ html::-webkit-scrollbar-thumb{
 	transition:opacity .2s ease;
 }
 #loadding img{
-	width: 150px;
+	width: 140px;
 	margin: auto; 
     position: absolute; 
     top: 0; left: 0; bottom: 0; right: 0; 
