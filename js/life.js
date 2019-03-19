@@ -127,7 +127,8 @@ function IsPC() {
 
 	$(document).ready(function(){
 		$('#loadding').css({'opacity':"0"});
-		$('#loadding').delay("slow").css({'display':"none"});
+			//延时执行
+		let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
 		$('#filters .ph').addClass('active');
 	});
 
