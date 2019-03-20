@@ -354,17 +354,16 @@ html::-webkit-scrollbar-thumb{
 	text-align: center;
 	font-weight: 300;
 	word-spacing: -8px;
-	font-family: 'Avenir LT 95 Black Oblique';
 }
 .part1 h4{
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 12px;
+	line-height: 22px;
 	margin: 0;
 	word-spacing: 3px;
 	text-align: center;
 	font-family: 'AvenirNextLTPro-Regular';
 	color: #333;
-	font-weight: 400;
+	font-weight:500;
 }
 
 .part1 .brief{
