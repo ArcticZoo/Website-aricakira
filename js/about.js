@@ -5,3 +5,19 @@
 			//延时执行
 			let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
 		});
+
+
+//手机端menu监听
+
+function mobileMenu(){
+	$('#wrapMobilebg').css({"display":'block'});
+}
+function closeMobileMenu(){
+	$('#wrapMobilebg').css({"display":'none'});
+}
+
+$("#wrapMobilebg").click(function(e){
+  if (e.target == e.currentTarget) {
+		$('#wrapMobilebg').css({"display":'none'});
+	}
+});

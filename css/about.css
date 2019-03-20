@@ -53,16 +53,68 @@ html::-webkit-scrollbar-thumb{
     top: 0; left: 0; bottom: 0; right: 0; 
 }
 
+
+/*--------------------------------------------NAV-MOBILE-----------------------------------------*/
+
+#wrapMobile{
+	width: calc(100% - 40px);
+	font-size:18px;
+	margin:0 auto;
+	display: none;
+	transition: margin-top .4s ease;
+}
+#wrapMobile img{
+	width: 110px;
+}
+#wrapMobile .menuType{
+	display: inline-block;
+	font-weight: 320;
+	margin-left: calc(100% - 245px);
+	margin-right: 2px;
+}
+#wrapMobile .menu{
+	display: inline-block;
+	font-weight: 700;
+	margin-right: 4px;
+}
+#wrapMobile div{
+	display: inline-block;
+}
+
+#wrapMobilebg{
+	background-color: #000;
+	opacity: .8;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	text-align: right;
+	display: none;
+
+}
+#wrapMobilebg a{
+	text-decoration: none;
+	display: block;
+	margin-top: 24px;
+	margin-right:20px;
+	opacity: 1;
+	font-size:26px;
+	color: #eee;
+	line-height: 14px;
+	font-weight: 300;
+}
 /*----------------------------------------------侧边栏------------------------------------------*/
 
 .bottomnav{
   opacity: 0;
 }
 #bottomnav ul{
-  width: 100px;
+  width: 20px;
   position: fixed;
   right: 5.5%;
-  bottom: 45vh;
+  bottom: calc(50vh + 40px);
   display: inline-block;
   text-align: right;
   list-style: none;
@@ -70,7 +122,6 @@ html::-webkit-scrollbar-thumb{
   margin: 0 auto;
   user-select:none;
   z-index: 10;
-
 }
 #bottomnav ul li{
   font-family: 'AvenirNextLTProDemiCnIt';
@@ -89,11 +140,12 @@ html::-webkit-scrollbar-thumb{
   transition: color .2s,opacity .2s,margin-right .2s;
   font-weight: 300;
   margin-right: -8px;
+  writing-mode:vertical-rl;
+  margin-right: -1px;
 }
 #bottomnav li a:hover{
   color: #0b3fff !important; 
   opacity: 1 !important;
-  margin-right:2px;
 
 }
 #bottomnav .selected{
@@ -274,7 +326,7 @@ html::-webkit-scrollbar-thumb{
 	width: 860px;
 	position: absolute;
 	top: 0;
-	left: 90px;
+	left: 180px;
 	-webkit-animation: 3s mymove1 ease infinite normal;
     animation: 3s mymove1 ease infinite normal;
 }
@@ -288,7 +340,7 @@ html::-webkit-scrollbar-thumb{
 	width: 860px;
 	position: absolute;
 	top: 0;
-	left: 90px;
+	left: 180px;
 	-webkit-animation: 3s mymove2 ease infinite normal;
     animation: 3s mymove2 ease infinite normal;
 }
@@ -494,3 +546,26 @@ html::-webkit-scrollbar-thumb{
   margin-top: -1px;
 }
 
+
+
+
+
+
+@media screen and (max-width: 625px){
+
+	#wrap{
+		display: none ;
+	}
+	.scroll{
+		display: none;
+	}
+	#bottomnav{
+		display: none;
+	}
+	.share{
+		display: none;
+	}
+	#wrapMobile{
+		display: block;
+	}
+}
