@@ -15,10 +15,9 @@ function IsPC() {
 //判断打开的平台
 
 	    (function ($){
-
-	      $(window).load(function(){
-	      imagesLoaded(container, function () {
-	          wookmark = new Wookmark(container, {
+	    	//因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
+	      $('#container').wookmark().imagesLoaded().progress( function() {
+ 			  wookmark = new Wookmark(container, {
 	          autoResize: true, // This will auto-update the layout when the browser window is resized.
 	          offset: 3, // Optional, the distance between grid items
 	          outerOffset: 0, // Optional, the distance to the containers border
@@ -30,14 +29,14 @@ function IsPC() {
 	          		return 392;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else if(docWidth<1280 && docWidth>625){
-	          		return 320;
+	          		return 316;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else{
 	          		return 355;
 	          	}}
 	           // 在这儿设置了响应式的相册大小
 	        });
-	      });  });
+ 		  });
 
 
 
@@ -214,3 +213,9 @@ $("#wrapMobilebg").click(function(e){
 		$('#wrapMobilebg').css({"display":'none'});
 	}
 });
+
+function resizeGrid(){
+	//视频加载后触发重新布局
+	document.getElementById('container').dispatchEvent(new Event('refreshWookmark'));
+	$(window).trigger('resize');
+}

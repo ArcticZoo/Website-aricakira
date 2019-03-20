@@ -16,10 +16,8 @@ function IsPC() {
 
 	    (function ($){
 
-
-	      $(window).load(function(){
-	      imagesLoaded(container, function () {
-	          wookmark = new Wookmark(container, {
+	      $('#container').wookmark().imagesLoaded().progress( function() {
+ 			  wookmark = new Wookmark(container, {
 	          autoResize: true, // This will auto-update the layout when the browser window is resized.
 	          offset: 3, // Optional, the distance between grid items
 	          outerOffset: 0, // Optional, the distance to the containers border
@@ -38,7 +36,10 @@ function IsPC() {
 	          	}}
 	           // 在这儿设置了响应式的相册大小
 	        });
-	      });  });
+ 		  });
+
+
+	          
 
 
 	      //灯箱相册
