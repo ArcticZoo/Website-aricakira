@@ -567,4 +567,41 @@ html::-webkit-scrollbar-thumb{
 	#wrapMobile{
 		display: block;
 	}
+
+	/*---------------*/
+
+	.part1{
+		width: 100%;
+	}
+	.part1 .titleImg{
+		width: calc(100% - 50px);
+		left:25px;
+		right:0px;
+	}
+	.part1 .titleImgs{
+		width: calc(100% - 40px);
+		left: 25px;
+		right: 0px;
+	}
+	.part1 h1{
+		font-size: 36px;
+		padding-top: 230px;
+		margin-bottom: 0;
+	}
+	.part1 .brief{
+		width: 100%;
+	}
+	.part1 .brief .selfimg{
+		height: 200px;
+		width: auto;
+	}
+	.part1 .brief .uptext{
+		font-size: 20px;
+		line-height: 30px;
+		padding-left: 12px;
+	}
+	.part1 .brief .downtext{
+		width: calc(100% - 20px);
+		padding-left: 12px;
+	}
 }
