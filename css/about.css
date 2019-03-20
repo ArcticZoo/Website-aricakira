@@ -604,4 +604,26 @@ html::-webkit-scrollbar-thumb{
 		width: calc(100% - 20px);
 		padding-left: 12px;
 	}
+	.part2{
+		width: 100%;
+	}
+	.part2inside{
+		width: 100%;
+	}
+	.part2inside ul{
+		width: 100%;
+		text-align: center;
+	}
+	.part2inside ul li{
+		width: 330px;
+	}
+	.part3{
+		width: 100%;
+	}
+	.part3 .part3inside{
+		width: 100%;
+	}
+	.part3 .part3inside ul{
+		width: 100%;
+	}
 }
