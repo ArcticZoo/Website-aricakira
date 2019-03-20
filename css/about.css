@@ -406,13 +406,13 @@ html::-webkit-scrollbar-thumb{
 	width: 100%;
 	background-color: #fbfbfb;
 	margin:0;
-	margin-top: 450px;
+	margin-top: 490px;
 	border-radius: 80px 0px 0 0;
 }
 .part2inside{
 	width: 1200px;
 	margin: 0 auto;
-	padding:150px 0 60px 0;
+	padding:130px 0 60px 0;
 	text-align: center;
 }
 .part2inside .break{
