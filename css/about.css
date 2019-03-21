@@ -137,7 +137,7 @@ html::-webkit-scrollbar-thumb{
   outline: none;
   color: #000;
   opacity: .8;
-  transition: color .2s,opacity .2s,margin-right .2s;
+  transition: color .3s,opacity .3s,margin-right .3s;
   font-weight: 300;
   margin-right: -8px;
   writing-mode:vertical-rl;
@@ -148,7 +148,7 @@ html::-webkit-scrollbar-thumb{
   opacity: 1 !important;
 
 }
-#bottomnav .selected{
+#bottomnav .active{
   color: #0b3fff;
   opacity: 1;
 }
@@ -198,7 +198,7 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 70px;
+  padding: 0px 0px 0px 55px;
   font-size: 14px;
 }
 #wrap li a{
