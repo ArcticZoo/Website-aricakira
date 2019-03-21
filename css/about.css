@@ -437,7 +437,7 @@ html::-webkit-scrollbar-thumb{
 .part2inside ul li{
 	display: inline-block;
 	height: 170px;
-	width: 500px;
+	width: 555px;
 	background-color: #fff;
 	margin:10px 12px 10px 0px;
 	position: relative;
@@ -468,13 +468,13 @@ html::-webkit-scrollbar-thumb{
 .part2inside ul li .techDetail{
 	display: inline-block;
 	position: absolute;
-	font-size: 12px;
+	font-size: 13px;
 	font-family: 'AvenirNextLTPro-Regular',"PingFang SC",pingfang,"Helvetica Neue","Arial";
 	text-align: left;
-	width: 285px;
+	width: 340px;
 	right: 36px;
-	top: 40px;
-	line-height: 21px;
+	top:37px;
+	line-height: 24px;
 	color: #6c6c6c;
 }
 .part2inside ul li .blockline{
@@ -560,7 +560,7 @@ html::-webkit-scrollbar-thumb{
 
 
 
-@media screen and (max-width: 625px){
+@media screen and (max-width: 930px){
 
 	#wrap{
 		display: none ;
@@ -584,18 +584,18 @@ html::-webkit-scrollbar-thumb{
 		width: 100%;
 	}
 	.part1 .titleImg{
-		width: calc(100% - 50px);
-		left:25px;
+		width: calc(100% + 200px);
+		left:-80px;
 		right:0px;
 	}
 	.part1 .titleImgs{
-		width: calc(100% - 40px);
-		left: 25px;
+		width: calc(100% + 200px);
+		left: -80px;
 		right: 0px;
 	}
 	.part1 h1{
-		font-size: 36px;
-		padding-top: 230px;
+		font-size: 30px;
+		padding-top: 275px;
 		margin-bottom: 0;
 	}
 	.part1 .brief{
@@ -644,6 +644,9 @@ html::-webkit-scrollbar-thumb{
 		text-align: right;
 		left: 25px;
 		top: 10px;
+		font-size: 12px;
+		width: 285px;
+		line-height: 21px;
 	}
 	.part2inside ul li .blockline{
 		display: inline-block;
@@ -673,6 +676,7 @@ html::-webkit-scrollbar-thumb{
 		margin:3px 1px;
 		padding:0 10px 0 5px;
 		font-weight: 350;
+		border:1px solid #fcfcfc;
 	}
 	.part3 .part3inside ul li img{
 		transform: scale(.55);
