@@ -477,7 +477,17 @@ html::-webkit-scrollbar-thumb{
 	line-height: 21px;
 	color: #6c6c6c;
 }
+.part2inside ul li .blockline{
+	display: inline-block;
+	height:5px;
+	width: 22px;
+	background-color: #0060ff;
+	position: absolute;
+	bottom: 0;
+	right: 23px;
+	display: none;
 
+}
 .part3{
 
     background: #fbfbfb; /* Old browsers */
@@ -610,20 +620,60 @@ html::-webkit-scrollbar-thumb{
 	.part2inside{
 		width: 100%;
 	}
+	.part2inside .break {
+		float: none;
+		margin: 0 auto;
+		display: inline-block;
+	}
 	.part2inside ul{
 		width: 100%;
+		margin-top: 40px;
 		text-align: center;
+		padding-bottom: 60px;
 	}
 	.part2inside ul li{
 		width: 330px;
+		margin: 10px auto;
 	}
+	.part2inside ul li .techTitle{
+		top: 89px;
+		left: 97px;
+		font-size: 19px;
+	}
+	.part2inside ul li .techDetail{
+		text-align: right;
+		left: 25px;
+		top: 10px;
+	}
+	.part2inside ul li .blockline{
+		display: inline-block;
+    }
 	.part3{
 		width: 100%;
 	}
 	.part3 .part3inside{
 		width: 100%;
+		padding: 0;
 	}
 	.part3 .part3inside ul{
 		width: 100%;
+		text-align: center;
 	}
+	.part3 .part3inside .break {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 168px;
+	}
+	.part3 .part3inside ul li{
+		font-size: 12px;
+		line-height: 30px;
+		height:30px;
+		margin:3px 1px;
+		padding:0 10px 0 5px;
+	}
+	.part3 .part3inside ul li img{
+		transform: scale(.55);
+	}
+
 }
