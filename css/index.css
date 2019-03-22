@@ -312,11 +312,11 @@ html::-webkit-scrollbar-thumb{
 .title{
 	position: relative;
 	margin: 0 auto;
-	margin-top: calc(100vh + 400px);
+	margin-top: calc(100vh + 200px);
     width: 1187px;
 }
 .titleText{
-	width: 900px;
+	width: 720px;
 }
 .titleTextPhone{
 	display: none;
@@ -329,7 +329,7 @@ html::-webkit-scrollbar-thumb{
 	width: 1187px;
 	margin: 0 auto;
 	text-align: right;
-	margin-top: 150px;
+	margin-top: 300px;
 	position: relative;
 }
 .part1 ol{

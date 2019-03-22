@@ -368,7 +368,7 @@ html::-webkit-scrollbar-thumb{
 
 .part1 .brief{
 	width: 1100px;
-	margin-top: 450px;
+	margin-top: -150px;
 	height: 200px;
 	text-align: left;
 }
