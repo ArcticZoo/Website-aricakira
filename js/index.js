@@ -196,6 +196,12 @@ if(!IsPC()){
 			$('#mobileTip').css({'top':"0px"});
 			$('#wrapMobile').css({'margin-top':'55px'});
 		}
+
+		if($(document).scrollTop()>100){
+			$('#down').css({'margin-top':'-200px'});
+		}else{
+			$('#down').css({'margin-top':'30px'});
+		}
     });
 
 
@@ -218,4 +224,11 @@ function resizeGrid(){
 	//视频加载后触发重新布局
 	document.getElementById('container').dispatchEvent(new Event('refreshWookmark'));
 	$(window).trigger('resize');
+}
+
+function upside(){
+	$('html,body').animate({scrollTop:0}, 500);
+}
+function downside(){
+	$('html,body').animate({scrollTop:1000}, 500);
 }

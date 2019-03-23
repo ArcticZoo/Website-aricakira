@@ -249,6 +249,7 @@ html::-webkit-scrollbar-thumb{
 	transform: scale(.8);
 }
 #down{
+	margin-top: 30px;
 	transition:margin 1.2s ease;
 }
 #up{
@@ -316,7 +317,7 @@ html::-webkit-scrollbar-thumb{
     width: 1187px;
 }
 .titleText{
-	width: 720px;
+	width: 800px;
 }
 .titleTextPhone{
 	display: none;
