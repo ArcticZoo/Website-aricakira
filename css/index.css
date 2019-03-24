@@ -78,13 +78,13 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   left: 42%;
   font-size: 12px;
-  font-family: 'AvenirNextLTProRegular';
+  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
   font-weight: 400;
   color: #888;
 }
 
 #wrap ul{
-  font-family: 'AvenirNextLTProRegular';
+  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
   list-style: none;
   display: inline-block;
   margin: 0px;
