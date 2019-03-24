@@ -137,7 +137,7 @@ html::-webkit-scrollbar-thumb{
   outline: none;
   color: #000;
   opacity: .8;
-  transition: color .2s,opacity .2s,margin-right .2s;
+  transition: color .3s,opacity .3s,margin-right .3s;
   font-weight: 300;
   margin-right: -8px;
   writing-mode:vertical-rl;
@@ -148,7 +148,7 @@ html::-webkit-scrollbar-thumb{
   opacity: 1 !important;
 
 }
-#bottomnav .selected{
+#bottomnav .active{
   color: #0b3fff;
   opacity: 1;
 }
@@ -198,7 +198,7 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 70px;
+  padding: 0px 0px 0px 55px;
   font-size: 14px;
 }
 #wrap li a{
@@ -368,7 +368,7 @@ html::-webkit-scrollbar-thumb{
 
 .part1 .brief{
 	width: 1100px;
-	margin-top: 450px;
+	margin-top: -150px;
 	height: 200px;
 	text-align: left;
 }
@@ -437,7 +437,7 @@ html::-webkit-scrollbar-thumb{
 .part2inside ul li{
 	display: inline-block;
 	height: 170px;
-	width: 500px;
+	width: 555px;
 	background-color: #fff;
 	margin:10px 12px 10px 0px;
 	position: relative;
@@ -468,16 +468,26 @@ html::-webkit-scrollbar-thumb{
 .part2inside ul li .techDetail{
 	display: inline-block;
 	position: absolute;
-	font-size: 12px;
+	font-size: 13px;
 	font-family: 'AvenirNextLTPro-Regular',"PingFang SC",pingfang,"Helvetica Neue","Arial";
 	text-align: left;
-	width: 285px;
+	width: 340px;
 	right: 36px;
-	top: 40px;
-	line-height: 21px;
+	top:37px;
+	line-height: 24px;
 	color: #6c6c6c;
 }
+.part2inside ul li .blockline{
+	display: inline-block;
+	height:5px;
+	width: 22px;
+	background-color: #0060ff;
+	position: absolute;
+	bottom: 0;
+	right: 23px;
+	display: none;
 
+}
 .part3{
 
     background: #fbfbfb; /* Old browsers */
@@ -550,7 +560,7 @@ html::-webkit-scrollbar-thumb{
 
 
 
-@media screen and (max-width: 625px){
+@media screen and (max-width: 930px){
 
 	#wrap{
 		display: none ;
@@ -574,18 +584,18 @@ html::-webkit-scrollbar-thumb{
 		width: 100%;
 	}
 	.part1 .titleImg{
-		width: calc(100% - 50px);
-		left:25px;
+		width: calc(100% + 200px);
+		left:-80px;
 		right:0px;
 	}
 	.part1 .titleImgs{
-		width: calc(100% - 40px);
-		left: 25px;
+		width: calc(100% + 200px);
+		left: -80px;
 		right: 0px;
 	}
 	.part1 h1{
-		font-size: 36px;
-		padding-top: 230px;
+		font-size: 30px;
+		padding-top: 275px;
 		margin-bottom: 0;
 	}
 	.part1 .brief{
@@ -610,20 +620,66 @@ html::-webkit-scrollbar-thumb{
 	.part2inside{
 		width: 100%;
 	}
+	.part2inside .break {
+		float: none;
+		margin: 0 auto;
+		display: inline-block;
+	}
 	.part2inside ul{
 		width: 100%;
+		margin-top: 40px;
 		text-align: center;
+		padding-bottom: 60px;
 	}
 	.part2inside ul li{
 		width: 330px;
+		margin: 10px auto;
 	}
+	.part2inside ul li .techTitle{
+		top: 89px;
+		left: 97px;
+		font-size: 19px;
+	}
+	.part2inside ul li .techDetail{
+		text-align: right;
+		left: 25px;
+		top: 10px;
+		font-size: 12px;
+		width: 285px;
+		line-height: 21px;
+	}
+	.part2inside ul li .blockline{
+		display: inline-block;
+    }
 	.part3{
 		width: 100%;
 	}
 	.part3 .part3inside{
 		width: 100%;
+		padding: 0;
 	}
 	.part3 .part3inside ul{
 		width: 100%;
+		text-align: center;
 	}
+	.part3 .part3inside .break {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: 168px;
+	}
+	.part3 .part3inside ul li{
+		float: none;
+		font-size: 12px;
+		line-height: 30px;
+		height:30px;
+		margin:3px 1px;
+		padding:0 10px 0 5px;
+		font-weight: 350;
+		border:1px solid #fcfcfc;
+	}
+	.part3 .part3inside ul li img{
+		transform: scale(.55);
+	}
+
 }

@@ -98,7 +98,7 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 70px;
+  padding: 0px 0px 0px 55px;
   font-size: 14px;
 }
 #wrap li a{
@@ -249,6 +249,7 @@ html::-webkit-scrollbar-thumb{
 	transform: scale(.8);
 }
 #down{
+	margin-top: 30px;
 	transition:margin 1.2s ease;
 }
 #up{
@@ -312,11 +313,11 @@ html::-webkit-scrollbar-thumb{
 .title{
 	position: relative;
 	margin: 0 auto;
-	margin-top: calc(100vh + 400px);
+	margin-top: calc(100vh + 200px);
     width: 1187px;
 }
 .titleText{
-	width: 900px;
+	width: 800px;
 }
 .titleTextPhone{
 	display: none;
@@ -329,7 +330,7 @@ html::-webkit-scrollbar-thumb{
 	width: 1187px;
 	margin: 0 auto;
 	text-align: right;
-	margin-top: 150px;
+	margin-top: 300px;
 	position: relative;
 }
 .part1 ol{
