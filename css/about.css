@@ -310,9 +310,10 @@ html::-webkit-scrollbar-thumb{
 .part1{
 	width: 1150px;
 	margin: 0 auto;
-	padding-top:calc(50vh - 260px);
 	text-align: center;
+	padding-top: calc(25vh + 120px);
 }
+/*
 @keyframes mymove1
 {
 0%   {top:5px;}
@@ -365,7 +366,7 @@ html::-webkit-scrollbar-thumb{
 	color: #333;
 	font-weight:400;
 }
-
+*/
 .part1 .brief{
 	width: 1100px;
 	margin-top: -150px;
@@ -582,6 +583,7 @@ html::-webkit-scrollbar-thumb{
 
 	.part1{
 		width: 100%;
+		padding-top:calc(50vh - 260px);
 	}
 	.part1 .titleImg{
 		width: calc(100% + 200px);
