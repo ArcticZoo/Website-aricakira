@@ -48,6 +48,7 @@ function IsPC() {
 			  type: 'image',
 			  removalDelay: 0, //delay removal by X to allow out-animation
 			  closeOnContentClick: true,
+			  fixedContentPos:false,
 			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 			});
 			// Image popups
@@ -55,6 +56,7 @@ function IsPC() {
 			  type: 'iframe',
 			  removalDelay: 0, //delay removal by X to allow out-animation
 			  closeOnContentClick: true,
+			  fixedContentPos:false,
 			  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 			});
 
