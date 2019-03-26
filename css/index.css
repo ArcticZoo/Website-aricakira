@@ -385,13 +385,13 @@ html::-webkit-scrollbar-thumb{
 	transition:opacity .2s ease;
 }
 #container li img:hover{
-	opacity: .35;
+	opacity: .3;
 }
 #container li video{
 	transition:opacity .2s ease;
 }
 #container li video:hover{
-	opacity: .35;
+	opacity: .3;
 }
 #container li:hover >p{
 	opacity: 1;
@@ -400,16 +400,16 @@ html::-webkit-scrollbar-thumb{
 	text-align: center;
 }
 #container li p:hover + a > img{
-	opacity: .35;
+	opacity: .3;
 }
 #container li p:hover + a > video{
-	opacity: .35;
+	opacity: .3;
 }
 #container li p{
 	display: inline-block;
-	font-size: 1.05em;
-	letter-spacing: 1.05em;
-	padding-left: 1.05em;
+	font-size: 1.0em;
+	letter-spacing: 1.0em;
+	padding-left: 1.0em;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -419,7 +419,7 @@ html::-webkit-scrollbar-thumb{
 	opacity: 0;
 	color: black;
 	z-index: 99;
-	height: 1.05em;
+	height: 1.0em;
 	transition:opacity .2s ease;
 	font-weight: 350;
 	text-transform : uppercase;
