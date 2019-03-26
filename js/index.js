@@ -232,5 +232,6 @@ function upside(){
 	$('html,body').animate({scrollTop:0}, 500);
 }
 function downside(){
-	$('html,body').animate({scrollTop:1000}, 500);
+	$('body, html').animate({scrollTop:1110 }, 500);
+                $('body').css({'overflow':'auto'});
 }
