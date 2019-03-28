@@ -169,7 +169,7 @@ html::-webkit-scrollbar-thumb{
 
 #wrap img {
   width: 110px;
-  filter: invert(0%);
+  filter: invert(100%);
   transition: filter .2s ease;
 }
 #wrap .label{
@@ -195,6 +195,7 @@ html::-webkit-scrollbar-thumb{
 #wrap ul li a{
   list-style: none;
   text-decoration:none;
+  color: #eee;
 }
 #wrap li{
   display: inline-block;
@@ -306,7 +307,9 @@ html::-webkit-scrollbar-thumb{
 
 /*-----------------------------------------------index------------------------------------------*/
 
-
+body,html{
+	background-color: #050505;
+}
 .part1{
 	width: 1150px;
 	margin: 0 auto;
@@ -385,27 +388,29 @@ html::-webkit-scrollbar-thumb{
 	line-height: 24px;
 	vertical-align:top;
 	font-weight: 350;
-	color: #666;
 	font-family: 'AvenirNextLTPro-Regular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
 }
 .part1 .brief .downtext{
 	padding: 0;
   width: 600px;
+  color: #777;
+  font-weight: 400;
 
 }
 .part1 .brief .uptext{
 	padding: 0 20px 0 0;
-	font-weight: 800;
+	font-weight: 700;
 	color: #111;
   line-height: 34px;
   font-size: 32px;
   line-height: 44px;
   margin: 20px 0;
+  color: white;
 }
 
 .part2{
 	width: 100%;
-	background-color: #fbfbfb;
+	background-color: #161616;
 	margin:0;
 	margin-top: 490px;
 	border-radius: 80px 0px 0 0;
@@ -419,10 +424,10 @@ html::-webkit-scrollbar-thumb{
 .part2inside .break{
 	font-size: 12px;
 	transform: scale(0.9);
-	color: #ddd;
+	color: #777;
 	float: left;
 	font-family: 'AvenirNextLTPro-Regular';
-	background-color: #333;
+	background-color: #121212;
 	border-radius: 5px;
 	padding:4px 8px;
 }
@@ -436,23 +441,23 @@ html::-webkit-scrollbar-thumb{
   text-align: left;
 }
 .part2inside ul li{
+	background-color: #282828;
 	display: inline-block;
 	height: 170px;
 	width: 555px;
-	background-color: #fff;
 	margin:10px 12px 10px 0px;
 	position: relative;
 	z-index: 1;
 	transition: box-shadow .2s ease,border .2s ease,opacity .2s ease; 
-	box-shadow: 0px 8px 30px #ededed;
-	border:1px solid #d8e2e8;
+	/*box-shadow: 0px 8px 30px #ededed;*/
+	border:1px solid #282828;
 	border-radius: 15px;
 	opacity: .8;
 }
 .part2inside ul li:hover{
-	box-shadow:0px 2px 22px #FFFFFF, 0px 20px 28px #DAEEF0;
+	box-shadow:0px 20px 28px #111;
 	z-index: 2;
-	border:1px solid #e5f5fb;
+	border:1px solid #6c8192;
 	opacity: 1;
 }
 .part2inside ul li .techTitle{
@@ -462,9 +467,10 @@ html::-webkit-scrollbar-thumb{
 	top: 35px;
 	text-align: right;
 	transition:color .4s ease;
+	color: white;
 }
 .part2inside ul li:hover .techTitle{
-	color: #0b3fff !important;
+	color: #0066ff !important;
 }
 .part2inside ul li .techDetail{
 	display: inline-block;
@@ -491,7 +497,7 @@ html::-webkit-scrollbar-thumb{
 }
 .part3{
 
-    background: #fbfbfb; /* Old browsers */
+    background: #161616; /* Old browsers */
 	width: 100%;
 	height: 550px;
 	margin: 0px 0 120px 0;
@@ -508,9 +514,9 @@ html::-webkit-scrollbar-thumb{
 	font-size: 12px;
 	float: left;
 	transform: scale(0.9);
-	color: #ddd;
+	color: #777;
 	font-family: 'AvenirNextLTPro-Regular';
-	background-color: #333;
+	background-color: #121212;
 	border-radius: 5px;
 	padding:4px 8px;
 	margin:1px 0;
@@ -530,7 +536,6 @@ html::-webkit-scrollbar-thumb{
 .part3 .part3inside ul li{
   display:inline-block;
   border-radius: 40px;
-  border:1px solid #888;
   color: #777;
   font-size: 13px;
   height: 36px;
@@ -540,14 +545,14 @@ html::-webkit-scrollbar-thumb{
   transition: box-shadow .2s; 
   transition: background-color .2s ease,color .1s ease,border .2s ease; 
   box-shadow: 0px 0px 0px #fafafa;
+  background-color: #282828;
 }
 .part3 .part3inside ul li:hover{
   display:inline-block;
   color:#fff;
   border-radius: 40px;
-  border:1px solid #0b3fff;
   background-color: #0b3fff;
-  box-shadow: 0px 10px 10px #d9e8ff;
+  box-shadow: 0px 10px 10px #111;
 }
 .part3 .part3inside ul li img{
   vertical-align: middle;
@@ -678,7 +683,6 @@ html::-webkit-scrollbar-thumb{
 		margin:3px 1px;
 		padding:0 10px 0 5px;
 		font-weight: 350;
-		border:1px solid #fcfcfc;
 	}
 	.part3 .part3inside ul li img{
 		transform: scale(.55);
