@@ -415,7 +415,7 @@ body,html{
 	width: 100%;
 	background-color: #161616;
 	margin:0;
-	margin-top: 490px;
+	margin-top: 600px;
 	border-radius: 80px 0px 0 0;
 }
 .part2inside{
@@ -626,6 +626,8 @@ body,html{
 	}
 	.part2{
 		width: 100%;
+		border-radius: 50px 0px 0 0;
+		margin-top: 430px;
 	}
 	.part2inside{
 		width: 100%;
