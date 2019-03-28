@@ -65,17 +65,20 @@ html::-webkit-scrollbar-thumb{
 }
 #wrapMobile img{
 	width: 110px;
+	filter: invert(100%);
 }
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
 	margin-left: calc(100% - 245px);
 	margin-right: 2px;
+	color: #ccc;
 }
 #wrapMobile .menu{
 	display: inline-block;
 	font-weight: 700;
 	margin-right: 4px;
+	color: #ccc;
 }
 #wrapMobile div{
 	display: inline-block;
