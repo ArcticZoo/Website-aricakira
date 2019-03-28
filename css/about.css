@@ -444,8 +444,8 @@ html::-webkit-scrollbar-thumb{
 	position: relative;
 	z-index: 1;
 	transition: box-shadow .2s ease,border .2s ease,opacity .2s ease; 
-	box-shadow: 0px 15px 43px #ededed;
-	border:1px solid #fff;
+	box-shadow: 0px 8px 30px #ededed;
+	border:1px solid #d8e2e8;
 	border-radius: 15px;
 	opacity: .8;
 }
