@@ -1,7 +1,4 @@
-﻿@font-face {  
-  font-family: 'IBMPlexSans-Thin';  
-  src: url('../font/IBM-Plex-Sans/IBMPlexSans-Thin.otf'); 
-}
+﻿
 @font-face {  
   font-family: 'IBMPlexSans-Regular';  
   src: url('../font/IBM-Plex-Sans/IBMPlexSans-Regular.otf'); 
@@ -14,10 +11,7 @@
   font-family: 'IBMPlexSans-BoldItalic';  
   src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf'); 
   }
-@font-face {
-  font-family: 'AvenirNextLTProDemiCnIt';  
-  src: url('../font/AvenirNextLTPro-DemiCnIt.otf');    
-}
+
 
 body,html,div{
 	border: 0;
@@ -74,15 +68,17 @@ html::-webkit-scrollbar-thumb{
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
-	margin-left: calc(100% - 245px);
+	margin-left: calc(100% - 236px);
 	margin-right: 2px;
 	color: #ccc;
+	font-family: 'IBMPlexSans-ExtraLight';
 }
 #wrapMobile .menu{
 	display: inline-block;
 	font-weight: 700;
 	margin-right: 4px;
 	color: #ccc;
+	font-family: 'IBMPlexSans-Regular';
 }
 #wrapMobile div{
 	display: inline-block;
@@ -102,6 +98,7 @@ html::-webkit-scrollbar-thumb{
 
 }
 #wrapMobilebg a{
+	font-family: 'IBMPlexSans-ExtraLight';
 	text-decoration: none;
 	display: block;
 	margin-top: 24px;
@@ -590,6 +587,9 @@ body,html{
 		height: 200px;
 		width: auto;
 	}
+	.part1 .brief .briefTitleimg{
+		padding-left: 12px;
+	}
 	.part1 .brief .uptext{
 		font-size: 20px;
 		line-height: 30px;
@@ -602,7 +602,7 @@ body,html{
 	.part2{
 		width: 100%;
 		border-radius: 50px 0px 0 0;
-		margin-top: 430px;
+		margin-top: 480px;
 	}
 	.part2inside{
 		width: 100%;

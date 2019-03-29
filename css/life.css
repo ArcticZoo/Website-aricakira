@@ -1,14 +1,15 @@
+
 @font-face {  
-  font-family: 'AvenirNextLTPro-Regular';  
-  src: url('../font/AvenirNextLTPro-Regular.otf'); 
+  font-family: 'IBMPlexSans-Regular';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-Regular.otf'); 
+}
+@font-face {  
+  font-family: 'IBMPlexSans-ExtraLight';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-ExtraLight.otf'); 
 }
 @font-face {
-  font-family: 'Avenir LT 95 Black Oblique';  
-  src: url('../font/Avenir LT 95 Black Oblique.ttf'); 
-  }
-@font-face {
-  font-family: 'pingfang';  
-  src: url('../font/PingFang Regular.ttf'); 
+  font-family: 'IBMPlexSans-BoldItalic';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf'); 
   }
 @font-face {
   font-family: 'AvenirNextLTProDemiCnIt';  
@@ -16,7 +17,7 @@
 }
 
 body,html,div{
-	font-family: "PingFang SC",pingfang,"Helvetica Neue","Arial";
+	font-family: "PingFang SC","Helvetica Neue","Arial";
 	border: 0;
 	margin:0;
 	padding: 0;
@@ -54,6 +55,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 
+
 /*-----------------------------------------------Nav------------------------------------------*/
 
 #wrap{
@@ -64,7 +66,7 @@ html::-webkit-scrollbar-thumb{
   top: 60px;
   margin:0px auto;
   z-index: 1000;
-  transition:top .2s ease;
+
 }
 
 #wrap img {
@@ -78,13 +80,13 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   left: 42%;
   font-size: 12px;
-  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
   font-weight: 400;
   color: #888;
 }
 
 #wrap ul{
-  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
   list-style: none;
   display: inline-block;
   margin: 0px;
@@ -95,10 +97,11 @@ html::-webkit-scrollbar-thumb{
 #wrap ul li a{
   list-style: none;
   text-decoration:none;
+  color: #111;
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 55px;
+  padding: 0px 0px 0px 50px;
   font-size: 14px;
 }
 #wrap li a{
@@ -111,44 +114,12 @@ html::-webkit-scrollbar-thumb{
   opacity: 1 !important;
 }
 #wrap .active a{
-  color: white;
+  color: black;
   font-weight: 900;
   opacity: 1;
   transition:color .2s ease;
 }
-#wrap .active .hover{
-  background-color: #0b3fff;
-  display: inline-block;
-  width: 130px;
-  height: 30px;
-  position: absolute;
-  z-index: -1;
-  margin-top: -6px;
-  margin-left: -110px;
-  border-radius: 20px;
-  transition: background-color .2s ease,box-shadow .2s ease;
-}
 
-#wrap .designNav.active .hover{
-  width: 90px;
-  margin-left: -73px;
-}
-#wrap .lifeNav.active .hover{
-  width: 90px;
-  margin-left: -60px;
-}
-#wrap .active .hover .hoverPoint{
-  background-color: white;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  z-index: -1;
-  margin-top: 6px;
-  margin-left: 12px;
-  border-radius: 20px;
-  transition: background-color .3s ease;
-}
 
 
 
@@ -166,13 +137,15 @@ html::-webkit-scrollbar-thumb{
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
-	margin-left: calc(100% - 220px);
+	margin-left: calc(100% - 214px);
 	margin-right: 2px;
+	font-family: 'IBMPlexSans-ExtraLight';
 }
 #wrapMobile .menu{
 	display: inline-block;
 	font-weight: 600;
 	margin-right: 4px;
+	font-family: 'IBMPlexSans-ExtraLight';
 }
 #wrapMobile div{
 	display: inline-block;
@@ -192,6 +165,7 @@ html::-webkit-scrollbar-thumb{
 
 }
 #wrapMobilebg a{
+	font-family: 'IBMPlexSans-ExtraLight';
 	text-decoration: none;
 	display: block;
 	margin-top: 24px;
