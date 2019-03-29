@@ -1,14 +1,18 @@
 ﻿@font-face {  
-  font-family: 'AvenirNextLTPro-Regular';  
-  src: url('../font/AvenirNextLTPro-Regular.otf'); 
+  font-family: 'IBMPlexSans-Thin';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-Thin.otf'); 
+}
+@font-face {  
+  font-family: 'IBMPlexSans-Regular';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-Regular.otf'); 
+}
+@font-face {  
+  font-family: 'IBMPlexSans-ExtraLight';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-ExtraLight.otf'); 
 }
 @font-face {
-  font-family: 'Avenir LT 95 Black Oblique';  
-  src: url('../font/Avenir LT 95 Black Oblique.ttf'); 
-  }
-@font-face {
-  font-family: 'pingfang';  
-  src: url('../font/PingFang Regular.ttf'); 
+  font-family: 'IBMPlexSans-BoldItalic';  
+  src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf'); 
   }
 @font-face {
   font-family: 'AvenirNextLTProDemiCnIt';  
@@ -19,7 +23,7 @@ body,html,div{
 	border: 0;
 	margin:0;
 	padding: 0;
-  font-family: "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: "PingFang SC","Helvetica Neue","Arial";
 }
 body,html{
 	width: 100% !important;
@@ -181,13 +185,13 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   left: 42%;
   font-size: 12px;
-  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
   font-weight: 400;
   color: #888;
 }
 
 #wrap ul{
-  font-family: 'AvenirNextLTProRegular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
   list-style: none;
   display: inline-block;
   margin: 0px;
@@ -202,7 +206,7 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 55px;
+  padding: 0px 0px 0px 50px;
   font-size: 14px;
 }
 #wrap li a{
@@ -219,39 +223,6 @@ html::-webkit-scrollbar-thumb{
   font-weight: 900;
   opacity: 1;
   transition:color .2s ease;
-}
-#wrap .active .hover{
-  background-color: #0b3fff;
-  display: inline-block;
-  width: 130px;
-  height: 30px;
-  position: absolute;
-  z-index: -1;
-  margin-top: -6px;
-  margin-left: -110px;
-  border-radius: 20px;
-  transition: background-color .2s ease,box-shadow .2s ease;
-}
-
-#wrap .designNav.active .hover{
-  width: 90px;
-  margin-left: -73px;
-}
-#wrap .lifeNav.active .hover{
-  width: 90px;
-  margin-left: -60px;
-}
-#wrap .active .hover .hoverPoint{
-  background-color: white;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  z-index: -1;
-  margin-top: 6px;
-  margin-left: 12px;
-  border-radius: 20px;
-  transition: background-color .3s ease;
 }
 
 
@@ -383,6 +354,10 @@ body,html{
   width: 100%;
   margin: 30px 0;
 }
+.part1 .brief .briefTitleimg{
+	width: 120px;
+	margin-top: 40px;
+}
 .part1 .brief p{
 	display:block;
 	width:100%;
@@ -391,7 +366,7 @@ body,html{
 	line-height: 24px;
 	vertical-align:top;
 	font-weight: 350;
-	font-family: 'AvenirNextLTPro-Regular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+	font-family: 'IBMPlexSans-ExtraLight', "PingFang SC","Helvetica Neue","Arial";
 }
 .part1 .brief .downtext{
 	padding: 0;
@@ -407,7 +382,7 @@ body,html{
   line-height: 34px;
   font-size: 32px;
   line-height: 44px;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
   color: white;
 }
 
@@ -429,7 +404,7 @@ body,html{
 	transform: scale(0.9);
 	color: #777;
 	float: left;
-	font-family: 'AvenirNextLTPro-Regular';
+	font-family: 'IBMPlexSans-ExtraLight';
 	background-color: #121212;
 	border-radius: 5px;
 	padding:4px 8px;
@@ -439,7 +414,7 @@ body,html{
   margin: 0;
   padding: 0;
   margin-top: 60px;
-  font-family: 'Avenir LT 95 Black Oblique', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: 'IBMPlexSans-BoldItalic', "PingFang SC",pingfang,"Helvetica Neue","Arial";
   font-size: 22px;
   text-align: left;
 }
@@ -479,7 +454,7 @@ body,html{
 	display: inline-block;
 	position: absolute;
 	font-size: 13px;
-	font-family: 'AvenirNextLTPro-Regular',"PingFang SC",pingfang,"Helvetica Neue","Arial";
+	font-family: 'IBMPlexSans-Regular',"PingFang SC","Helvetica Neue","Arial";
 	text-align: left;
 	width: 340px;
 	right: 36px;
@@ -518,7 +493,7 @@ body,html{
 	float: left;
 	transform: scale(0.9);
 	color: #777;
-	font-family: 'AvenirNextLTPro-Regular';
+	font-family: 'IBMPlexSans-ExtraLight';
 	background-color: #121212;
 	border-radius: 5px;
 	padding:4px 8px;
@@ -532,7 +507,7 @@ body,html{
   padding: 0;
   margin-top: 50px;
   margin-bottom: 80px;
-  font-family: "PingFang SC",pingfang,"Helvetica Neue","Arial";
+  font-family: "IBMPlexSans-Regular","PingFang SC","Helvetica Neue","Arial";
   font-size: 28px;
   text-align: left;
 }
