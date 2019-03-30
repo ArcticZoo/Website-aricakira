@@ -55,7 +55,7 @@ html::-webkit-scrollbar-thumb{
 /*--------------------------------------------NAV-MOBILE-----------------------------------------*/
 
 #wrapMobile{
-	width: calc(100% - 40px);
+	width: calc(100% - 30px);
 	font-size:18px;
 	margin:0 auto;
 	display: none;
@@ -563,7 +563,7 @@ body,html{
 
 	.part1{
 		width: 100%;
-		padding-top:calc(50vh - 260px);
+		padding-top:calc(30vh - 70px);
 	}
 	.part1 .titleImg{
 		width: calc(100% + 200px);

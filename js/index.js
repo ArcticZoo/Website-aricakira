@@ -165,16 +165,20 @@ $(function(){
 
 
 //加载页面 判断是不是PC 是的话等待视频加载 再dom加载 不是的话直接等待dom加载
+//PC端时加载完视频后才控制图片显示 这样优先加载视频
+//
 if(IsPC()){
 	document.getElementById('titleVideo').oncanplaythrough=function(){
 		    $(document).ready(function(){
-			$('#loadding').css({'opacity':"0"});
+		    	$("#container").css({"display":"auto"});
+			    $('#loadding').css({'opacity':"0"});
 			//延时执行
-			let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
+		    	let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
 		});
 	}
 }else{
 	$(document).ready(function(){
+		$("#container").css({"display":"auto"});
 		$('#loadding').css({'opacity':"0"});
 		$('#loadding').delay("slow").css({'display':"none"});
 		//加载手机提示
