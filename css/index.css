@@ -394,8 +394,40 @@ html::-webkit-scrollbar-thumb{
 	transition:opacity .2s ease;
 	font-weight: 600;
 	text-transform : uppercase;
-	font-family: 'IBMPlexSans-ExtraLight';;
+	font-family: 'IBMPlexSans-ExtraLight';
 }
+.footer{
+	text-align: center;
+	margin: 150px 0 0px 0;
+	height: 180px;
+	opacity: 0;
+	transition:opacity .4s ease;
+}
+.footer .divline{
+	height: 1px;
+	width: 60%;
+	background-color: #eee;
+	margin:0 auto;
+}
+.footer img{
+	margin-top:0px;
+	margin-bottom: 80px;
+	width: 80px;
+}
+.footer p{
+	margin:0;
+	font-family: 'IBMPlexSans-ExtraLight';
+	margin-top: 50px;
+	margin-bottom: 8px;
+	font-size: 12px;
+	transform: scale(.9);
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1280px) {

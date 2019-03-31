@@ -208,6 +208,13 @@ if(!IsPC()){
 		}else{
 			$('#down').css({'margin-top':'30px'});
 		}
+
+		//底部footer
+		if($(document).scrollTop() >= $(document).height() - $(window).height()-50){
+			$('.footer').css({'opacity':'1'});
+		}else{
+			$('.footer').css({'opacity':'0'});
+		}
     });
 
 
