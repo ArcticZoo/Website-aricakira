@@ -68,7 +68,7 @@ html::-webkit-scrollbar-thumb{
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
-	margin-left: calc(100% - 236px);
+	margin-left: calc(100% - 240px);
 	margin-right: 2px;
 	color: #ccc;
 	font-family: 'IBMPlexSans-ExtraLight';
@@ -232,6 +232,7 @@ html::-webkit-scrollbar-thumb{
 	left: 6%;
 	bottom: 85px;
 	z-index: 1999;
+	filter: invert(100%);
 }
 .share img{
 	padding: 0 14px;
@@ -271,8 +272,8 @@ html::-webkit-scrollbar-thumb{
 	transition:margin 1.2s ease;
 }
 #up{
-	margin-top: -8px;
-	filter: invert(0%);
+	margin-top: 0px;
+	filter: invert(100%);
 	transition: filter .2s ease;
 }
 

@@ -137,7 +137,7 @@ html::-webkit-scrollbar-thumb{
 #wrapMobile .menuType{
 	display: inline-block;
 	font-weight: 320;
-	margin-left: calc(100% - 214px);
+	margin-left: calc(100% - 218px);
 	margin-right: 2px;
 	font-family: 'IBMPlexSans-ExtraLight';
 }
@@ -224,7 +224,7 @@ html::-webkit-scrollbar-thumb{
 	transition:margin 1.2s ease;
 }
 #up{
-	margin-top: -8px;
+	margin-top: 0px;
 	filter: invert(0%);
 	transition: filter .2s ease;
 }
