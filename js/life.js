@@ -173,3 +173,9 @@ $("#wrapMobilebg").click(function(e){
 		$('#wrapMobilebg').css({"display":'none'});
 	}
 });
+
+$(".wechatBtn").hover(function(){
+    $(".wechatImg").css("display","inline-block");
+},function(){
+    $(".wechatImg").css("display","none");
+});

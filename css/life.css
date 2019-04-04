@@ -197,6 +197,15 @@ html::-webkit-scrollbar-thumb{
 .share img:hover{
 	opacity: 1;
 }
+.share .wechatImg{
+	width: 160px;
+	position: absolute;
+	top: -160px;
+	right:-4px;
+	transition:opacity .4s ease;
+	display: none;
+	opacity: 1;
+}
 
 /*-----------------------------------------------UptotheTop------------------------------------------*/
 

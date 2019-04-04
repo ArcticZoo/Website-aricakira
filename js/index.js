@@ -246,3 +246,9 @@ function downside(){
 	$('body, html').animate({scrollTop:1110 }, 500);
                 $('body').css({'overflow':'auto'});
 }
+
+$(".wechatBtn").hover(function(){
+    $(".wechatImg").css("display","inline-block");
+},function(){
+    $(".wechatImg").css("display","none");
+});
