@@ -203,7 +203,7 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: inline-block;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 35px;
   font-size: 14px;
 }
 #wrap li a{
