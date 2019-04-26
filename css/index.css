@@ -210,13 +210,13 @@ html::-webkit-scrollbar-thumb{
 /*-----------------------------------------------UptotheTop------------------------------------------*/
 
 .scroll{
+	opacity: .9;
 	width: 20px;
 	height: 160px;
 	position: fixed;
 	right: 5.5%;
 	bottom:82px;
 	overflow: hidden;
-	opacity: .2;
 	transition:opacity .2s ease-out;
 	cursor: pointer;
 	z-index: 99;
