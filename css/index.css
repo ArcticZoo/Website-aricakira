@@ -406,6 +406,9 @@ html::-webkit-scrollbar-thumb{
 	text-transform : uppercase;
 	font-family: 'IBMPlexSans-ExtraLight';
 }
+.othermenu{
+	display: none;
+}
 .footer{
 	text-align: center;
 	margin: 150px 0 0px 0;
@@ -432,6 +435,9 @@ html::-webkit-scrollbar-thumb{
 	font-size: 12px;
 	transform: scale(.9);
 }
+
+
+
 
 
 
@@ -547,4 +553,36 @@ html::-webkit-scrollbar-thumb{
 		display: block;
 		margin-top: 55px;
 	}
+
+	.othermenu{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+	.othermenu p{
+		font-family: 'IBMPlexSans-ExtraLight', "PingFang SC","Helvetica Neue","Arial";
+		font-size: 26px;
+		font-weight: 200;
+		padding-left: 4px;
+	}
+	.othermenu ul{
+		padding:0;
+	}
+	.othermenu ul li{
+		list-style: none;
+		background-color: #003BDA;
+		width: 100%;
+		height: 68px;
+		margin-top: 12px;
+		border-radius: 20px;
+	}
+	.othermenu ul li p{
+		font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
+		font-size: 22px;
+		color: white;
+		line-height: 68px;
+		font-weight: 800;
+	}
+
 }
