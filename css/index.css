@@ -576,13 +576,31 @@ html::-webkit-scrollbar-thumb{
 		height: 68px;
 		margin-top: 12px;
 		border-radius: 20px;
+		position: relative;
+	}
+	.othermenu ul li img{
+		width: 20px;
+		margin-left: 26px;
+		margin-bottom:-4px;
+		margin-right: 6px;
+		display: inline-block;
 	}
 	.othermenu ul li p{
 		font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
 		font-size: 22px;
 		color: white;
-		line-height: 68px;
 		font-weight: 800;
+		display: inline-block;
+		line-height: 68px;
+		margin:0;
+	}
+	.othermenu ul li .menubrife{
+		font-size: 12px;
+		font-family: 'IBMPlexSans-ExtraLight', "PingFang SC","Helvetica Neue","Arial";
+		font-weight: 200;
+		position: absolute;
+		right: 24px;
+		opacity: .8;
 	}
 
 }
