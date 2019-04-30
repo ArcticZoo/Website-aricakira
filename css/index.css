@@ -414,7 +414,7 @@ html::-webkit-scrollbar-thumb{
 }
 .footer{
 	text-align: center;
-	margin: 110px 0 0px 0;
+	margin: 100px 0 0px 0;
 	height: 180px;
 	opacity: 0;
 	transition:opacity .4s ease;
@@ -561,7 +561,7 @@ html::-webkit-scrollbar-thumb{
 		display: block;
 		width: 90%;
 		margin: 0 auto;
-		padding-top: 110px;
+		padding-top: 120px;
 	}
 	.othermenu p{
 		font-family: 'IBMPlexSans-ExtraLight', "PingFang SC","Helvetica Neue","Arial";
