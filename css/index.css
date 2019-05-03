@@ -568,6 +568,7 @@ html::-webkit-scrollbar-thumb{
 		font-size: 26px;
 		font-weight: 200;
 		padding-left: 4px;
+		margin-bottom: 22px;
 	}
 	.othermenu ul{
 		padding:0;
