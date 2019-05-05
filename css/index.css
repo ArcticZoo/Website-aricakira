@@ -361,6 +361,9 @@ html::-webkit-scrollbar-thumb{
        -o-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
 }
+#container{
+	display: none;
+}
 /*hover显示名称*/
 #container li img{
 	transition:opacity .2s ease;
@@ -411,7 +414,7 @@ html::-webkit-scrollbar-thumb{
 }
 .footer{
 	text-align: center;
-	margin: 150px 0 0px 0;
+	margin: 100px 0 0px 0;
 	height: 180px;
 	opacity: 0;
 	transition:opacity .4s ease;
@@ -558,23 +561,25 @@ html::-webkit-scrollbar-thumb{
 		display: block;
 		width: 90%;
 		margin: 0 auto;
-		padding-top: 30px;
+		padding-top: 120px;
 	}
 	.othermenu p{
 		font-family: 'IBMPlexSans-ExtraLight', "PingFang SC","Helvetica Neue","Arial";
 		font-size: 26px;
 		font-weight: 200;
 		padding-left: 4px;
+		margin-bottom: 22px;
 	}
 	.othermenu ul{
 		padding:0;
+		margin: 0;
 	}
 	.othermenu ul a{
 		list-style: none;
 		background-color: #003BDA;
 		width: 100%;
 		height: 68px;
-		margin-top: 12px;
+		margin-top: 13px;
 		border-radius: 18px;
 		position: relative;
 		display: inline-block;
@@ -587,10 +592,9 @@ html::-webkit-scrollbar-thumb{
 		display: inline-block;
 	}
 	.othermenu ul a p{
-		font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
+		font-family: 'IBMPlexSans-BoldItalic', "PingFang SC","Helvetica Neue","Arial";
 		font-size: 22px;
 		color: white;
-		font-weight: 800;
 		display: inline-block;
 		line-height: 68px;
 		margin:0;

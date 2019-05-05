@@ -1,3 +1,4 @@
+
 function IsPC() {
          var userAgentInfo = navigator.userAgent;
          var Agents = ["Android", "iPhone",
@@ -14,31 +15,34 @@ function IsPC() {
      }
 //判断打开的平台
 
-	    (function ($){
+
+
+ (function ($){
 	    	//因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
+	    if(!IsPC()){
 	      $('#container').wookmark().imagesLoaded().progress( function() {
- 			  wookmark = new Wookmark(container, {
-	          autoResize: true, // This will auto-update the layout when the browser window is resized.
-	          offset: 3, // Optional, the distance between grid items
-	          outerOffset: 0, // Optional, the distance to the containers border
-	          resizeDelay:50,
-	          verticalOffset:-2,
-	          itemWidth: function(){
-	          	let docWidth = $(document).width();
-	          	if(docWidth>1280){
-	          		return 392;
-	          		$('#container').trigger('refreshWookmark');
-	          	}else if(docWidth<1280 && docWidth>625){
-	          		return 316;
-	          		$('#container').trigger('refreshWookmark');
-	          	}else{
-	          		return 355;
-	          	}}
-	           // 在这儿设置了响应式的相册大小
-	        });
- 		  });
+		 			  wookmark = new Wookmark(container, {
+			          autoResize: true, // This will auto-update the layout when the browser window is resized.
+			          offset: 3, // Optional, the distance between grid items
+			          outerOffset: 0, // Optional, the distance to the containers border
+			          resizeDelay:50,
+			          verticalOffset:-2,
+			          itemWidth: function(){
+			          	let docWidth = $(document).width();
+			          	if(docWidth>1280){
+			          		return 392;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else if(docWidth<1280 && docWidth>625){
+			          		return 316;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else{
+			          		return 355;
+			          	}}
+			           // 在这儿设置了响应式的相册大小
+			        });
+		 		  });
 
-
+			}
 
 	      //灯箱相册
 		  
@@ -117,8 +121,7 @@ function IsPC() {
 	      // Capture filter click events.
 	      $('#filters').on('click.wookmark-filter', 'li', onClickFilter);
 
-
-	    })(jQuery);
+	   })(jQuery);
 
 
 
@@ -170,6 +173,27 @@ $(function(){
 if(IsPC()){
 	document.getElementById('titleVideo').oncanplaythrough=function(){
 		    $(document).ready(function(){
+				    	$('#container').wookmark().imagesLoaded().progress( function() {
+		 			  wookmark = new Wookmark(container, {
+			          autoResize: true, // This will auto-update the layout when the browser window is resized.
+			          offset: 3, // Optional, the distance between grid items
+			          outerOffset: 0, // Optional, the distance to the containers border
+			          resizeDelay:50,
+			          verticalOffset:-2,
+			          itemWidth: function(){
+			          	let docWidth = $(document).width();
+			          	if(docWidth>1280){
+			          		return 392;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else if(docWidth<1280 && docWidth>625){
+			          		return 316;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else{
+			          		return 355;
+			          	}}
+			           // 在这儿设置了响应式的相册大小
+			        });
+		 		  });
 		    	$("#container").css({"display":"auto"});
 			    $('#loadding').css({'opacity':"0"});
 			//延时执行
