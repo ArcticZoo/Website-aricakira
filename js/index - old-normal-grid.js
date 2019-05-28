@@ -176,14 +176,14 @@ if(IsPC()){
 				    	$('#container').wookmark().imagesLoaded().progress( function() {
 		 			  wookmark = new Wookmark(container, {
 			          autoResize: true, // This will auto-update the layout when the browser window is resized.
-			          offset: 55, // Optional, the distance between grid items
+			          offset: 3, // Optional, the distance between grid items
 			          outerOffset: 0, // Optional, the distance to the containers border
 			          resizeDelay:50,
-			          verticalOffset:50,
+			          verticalOffset:-2,
 			          itemWidth: function(){
 			          	let docWidth = $(document).width();
 			          	if(docWidth>1280){
-			          		return 322;
+			          		return 392;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else if(docWidth<1280 && docWidth>625){
 			          		return 316;
