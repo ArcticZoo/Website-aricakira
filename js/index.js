@@ -179,11 +179,11 @@ if(IsPC()){
 			          offset: 55, // Optional, the distance between grid items
 			          outerOffset: 0, // Optional, the distance to the containers border
 			          resizeDelay:50,
-			          verticalOffset:50,
+			          verticalOffset:18,
 			          itemWidth: function(){
 			          	let docWidth = $(document).width();
 			          	if(docWidth>1280){
-			          		return 322;
+			          		return 360;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else if(docWidth<1280 && docWidth>625){
 			          		return 316;
