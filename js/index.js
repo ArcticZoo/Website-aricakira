@@ -19,18 +19,17 @@ function IsPC() {
 
  (function ($){
 	    	//因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
-	    if(!IsPC()){
 	      $('#container').wookmark().imagesLoaded().progress( function() {
 		 			  wookmark = new Wookmark(container, {
 			          autoResize: true, // This will auto-update the layout when the browser window is resized.
-			          offset: 3, // Optional, the distance between grid items
+			          offset: 4, // Optional, the distance between grid items
 			          outerOffset: 0, // Optional, the distance to the containers border
 			          resizeDelay:50,
 			          verticalOffset:-2,
 			          itemWidth: function(){
 			          	let docWidth = $(document).width();
 			          	if(docWidth>1280){
-			          		return 392;
+			          		return 362;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else if(docWidth<1280 && docWidth>625){
 			          		return 316;
@@ -42,7 +41,6 @@ function IsPC() {
 			        });
 		 		  });
 
-			}
 
 	      //灯箱相册
 		  
@@ -125,81 +123,16 @@ function IsPC() {
 
 
 
+
+
+//加载完成后关闭加载页
 if(IsPC()){
-//如果是PC 首页下滑一整屏
-var i=0;//翻屏变量，初始第一屏
-var s = 0; //该变量作用是鼠标滑轮一直向下或者向上滑动时出现抖动现象
-if($(document).scrollTop()<10 &&$(document).width()>900){
-  				$('body').css({'overflow':'hidden'});
-  			}
-if($(document).scrollTop()>400){
-  				i=1;
-  				s=1;
-  				$('body').css({'overflow':'auto'});
-  			}
-$(function(){
- 
-    var starttime = 0,
-        endtime = 0;
-    $("body").mousewheel(function(event, delta) {
-
- 		
-
-        starttime = new Date().getTime(); //记录翻屏的初始时间
-        if (delta < 0&& i==0 && $(document).width()>900) { 
- 
-            if (s>=0&&(starttime == 0 || (endtime - starttime) <= -300)) { //在500ms内执行一次翻屏 向下翻
-                s=1;
-                i++;
-                $('body, html').animate({scrollTop:1100 }, 'slow');
-                $('body').css({'overflow':'auto'});
-                endtime = new Date().getTime(); //记录翻屏的结束时间
-            }
-        } else if (delta > 0&& i>=1&&s==1&& (starttime == 0 || (endtime - starttime) <= -300) && $(document).scrollTop()<1100 && $(document).width()>900) {    
-            i--;
-            //console.log(i);
-            $('body, html').animate({scrollTop:0 }, 'slow');
-            $('body').css({'overflow':'hidden'});
-            endtime = new Date().getTime();                     
-        } 
-    });
- 
-})}
-
-
-//加载页面 判断是不是PC 是的话等待视频加载 再dom加载 不是的话直接等待dom加载
-//PC端时加载完视频后才控制图片显示 这样优先加载视频
-//
-if(IsPC()){
-	document.getElementById('titleVideo').oncanplaythrough=function(){
 		    $(document).ready(function(){
-				    	$('#container').wookmark().imagesLoaded().progress( function() {
-		 			  wookmark = new Wookmark(container, {
-			          autoResize: true, // This will auto-update the layout when the browser window is resized.
-			          offset: 55, // Optional, the distance between grid items
-			          outerOffset: 0, // Optional, the distance to the containers border
-			          resizeDelay:50,
-			          verticalOffset:18,
-			          itemWidth: function(){
-			          	let docWidth = $(document).width();
-			          	if(docWidth>1280){
-			          		return 360;
-			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<1280 && docWidth>625){
-			          		return 316;
-			          		$('#container').trigger('refreshWookmark');
-			          	}else{
-			          		return 355;
-			          	}}
-			           // 在这儿设置了响应式的相册大小
-			        });
-		 		  });
 		    	$("#container").css({"display":"auto"});
 			    $('#loadding').css({'opacity':"0"});
 			//延时执行
 		    	let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
 		});
-	}
 }else{
 	$(document).ready(function(){
 		$("#container").css({"display":"auto"});
@@ -263,13 +196,7 @@ function resizeGrid(){
 	$(window).trigger('resize');
 }
 
-function upside(){
-	$('html,body').animate({scrollTop:0}, 500);
-}
-function downside(){
-	$('body, html').animate({scrollTop:1110 }, 500);
-                $('body').css({'overflow':'auto'});
-}
+
 
 $(".wechatBtn").hover(function(){
     $(".wechatImg").css("display","inline-block");
