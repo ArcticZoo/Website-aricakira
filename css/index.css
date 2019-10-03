@@ -85,12 +85,12 @@ html::-webkit-scrollbar-thumb{
   position: absolute;
   left: 42%;
   font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
-  font-weight: 400;
+  font-weight: 600;
   color: #888;
 }
 
 #wrap ul{
-  font-family: 'AvenirNextLTPro-Regular', "PingFang SC","Helvetica Neue","Arial";
+  font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
   list-style: none;
   display: inline-block;
   margin: 0px;
@@ -106,11 +106,11 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap li{
   display: block;
-  padding: 5px 0px 5px 2px;
-  font-size: 16px;
+  padding: 5px 0px 6px 2px;
+  font-size: 26px;
 }
 #wrap li a{
-  opacity: .4;
+  opacity: .3;
   transition: opacity .2s ease;
   cursor: pointer;
   color: #000;
@@ -223,7 +223,7 @@ html::-webkit-scrollbar-thumb{
 	right: 120px;
 	height: 80px;
 	background-color: #fff;
-	opacity: .9;
+	opacity: .95;
 	z-index: 9;
 }
 #wrapTitle p{
@@ -272,15 +272,18 @@ html::-webkit-scrollbar-thumb{
 .title{
 	width: 1110px;
 	text-align: left;
-	margin-top: 420px;
+	margin-top: 150px;
 	right: 120px;
 	position: absolute;
 }
+.title span{
+	color: #b87e32;
+}
 .title img{
-	height: 700px;
+	height: 600px;
 	position: absolute;
 	z-index: -1;
-	margin-top: -470px;
+	margin-top: -190px;
 	left: 280px;
 }
 .title .brief{
@@ -292,7 +295,7 @@ html::-webkit-scrollbar-thumb{
 .part1{
 	width: 1110px;
 	text-align: right;
-	margin-top: 700px;
+	margin-top: 660px;
 	right: 120px;
 	position: absolute;
 }
