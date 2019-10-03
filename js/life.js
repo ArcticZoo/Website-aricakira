@@ -26,7 +26,7 @@ function IsPC() {
 	          itemWidth: function(){
 	          	let docWidth = $(document).width();
 	          	if(docWidth>1280){
-	          		return 392;
+	          		return 362;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else if(docWidth<1280 && docWidth>625){
 	          		return 316;

@@ -24,30 +24,10 @@ $("#wrapMobilebg").click(function(e){
 });
 //设置nav的active
 function navActiveSet(){
-	if($(document).scrollTop()<550){
-		$('.indexNav2').addClass('active');
-		$('.aboutNav2').removeClass('active');
-		$('.techNav2').removeClass('active');
-	}else if($(document).scrollTop()>=600 && $(document).scrollTop()<1400){
-		$('.indexNav2').removeClass('active');
-		$('.aboutNav2').addClass('active');
-		$('.techNav2').removeClass('active');
-	}else if($(document).scrollTop()>1500){
-		$('.indexNav2').removeClass('active');
-		$('.aboutNav2').removeClass('active');
-		$('.techNav2').addClass('active');
-	}
+	if($(document).scrollTop()<550){}
 }
 //滚动监听
  $(window).scroll(function(){
  	navActiveSet();
  });
 
- function navJump(n){
- 	switch(n){
- 		case 1:$('html,body').animate({scrollTop:0}, 500);break;
- 		case 2:$('html,body').animate({scrollTop:1100}, 500);break;
- 		case 3:$('html,body').animate({scrollTop:1800}, 500);break;
- 	}
- 	navActiveSet();
- }

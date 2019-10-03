@@ -220,10 +220,11 @@ html::-webkit-scrollbar-thumb{
 	position: fixed;
 	padding-top: 36px;
 	top: 0;
-	right: 120px;
+	right: 0px;
+	padding-right: 120px;
 	height: 80px;
 	background-color: #fff;
-	opacity: .95;
+	opacity: 1;
 	z-index: 9;
 }
 #wrapTitle p{
@@ -270,11 +271,13 @@ html::-webkit-scrollbar-thumb{
 
 
 .title{
-	width: 1110px;
+	width: 1232px;
+	height: 500px;
 	text-align: left;
-	margin-top: 150px;
-	right: 120px;
+	margin-top: 50px;
+	right: 0px;
 	position: absolute;
+	overflow:hidden;
 }
 .title span{
 	color: #b87e32;
@@ -283,11 +286,12 @@ html::-webkit-scrollbar-thumb{
 	height: 600px;
 	position: absolute;
 	z-index: -1;
-	margin-top: -190px;
+	margin-top: -90px;
 	left: 280px;
 }
 .title .brief{
 	margin-left: 10px;
+	margin-top: 100px;
 	font-size: 34px;
 	text-transform:uppercase;
 	font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";

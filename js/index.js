@@ -160,10 +160,11 @@ if(!IsPC()){
 			$('#wrapMobile').css({'margin-top':'55px'});
 		}
 
-		if($(document).scrollTop()>100){
-			$('#down').css({'margin-top':'-200px'});
+		//顶部底色变白
+		if($(document).scrollTop()>600){
+			$('#wrapTitle').css({'opacity':'0.95'});
 		}else{
-			$('#down').css({'margin-top':'30px'});
+			$('#wrapTitle').css({'opacity':'1'});
 		}
 
 		//底部footer

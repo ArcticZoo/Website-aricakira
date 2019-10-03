@@ -11,11 +11,14 @@
   font-family: 'IBMPlexSans-BoldItalic';  
   src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf'); 
   }
-@font-face {
-  font-family: 'AvenirNextLTProDemiCnIt';  
-  src: url('../font/AvenirNextLTPro-DemiCnIt.otf');    
+@font-face {  
+  font-family: 'AvenirNextLTPro-Demi';  
+  src: url('../font/AvenirNextLTPro-Demi.otf'); 
 }
-
+@font-face {  
+  font-family: 'AvenirNextLTPro-Regular';  
+  src: url('../font/AvenirNextLTPro-Regular.otf'); 
+}
 body,html,div{
 	font-family: "PingFang SC","Helvetica Neue","Arial";
 	border: 0;
@@ -59,40 +62,40 @@ html::-webkit-scrollbar-thumb{
 /*-----------------------------------------------Nav------------------------------------------*/
 
 #wrap{
-  width: 88%;
+  width: 400px;
   position: fixed;
-  left: 0;
+  left: 55px;
   right: 0;
   top: 60px;
-  margin:0px auto;
   z-index: 1000;
 
 }
 
 #wrap img {
-  width: 110px;
+  width: 90px;
   filter: invert(0%);
   transition: filter .2s ease;
+  display: block;
 }
 #wrap .label{
   display: inline-block;
   margin:0;
   position: absolute;
   left: 42%;
-  font-size: 12px;
-  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
-  font-weight: 400;
+  font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
+  font-weight: 600;
   color: #888;
 }
 
 #wrap ul{
-  font-family: 'IBMPlexSans-Regular', "PingFang SC","Helvetica Neue","Arial";
+  font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
   list-style: none;
   display: inline-block;
   margin: 0px;
   padding: 0px;
+  padding-top:120px; 
   white-space: nowrap;
-  float: right;
+  float: left;
 }
 #wrap ul li a{
   list-style: none;
@@ -100,12 +103,12 @@ html::-webkit-scrollbar-thumb{
   color: #111;
 }
 #wrap li{
-  display: inline-block;
-  padding: 0px 0px 0px 35px;
-  font-size: 14px;
+  display: block;
+  padding: 5px 0px 6px 2px;
+  font-size: 26px;
 }
 #wrap li a{
-  opacity: .2;
+  opacity: .3;
   transition: opacity .2s ease;
   cursor: pointer;
   color: #000;
@@ -115,10 +118,11 @@ html::-webkit-scrollbar-thumb{
 }
 #wrap .active a{
   color: black;
-  font-weight: 900;
+  font-family: 'AvenirNextLTPro-Demi';
   opacity: 1;
   transition:color .2s ease;
 }
+
 
 
 
@@ -182,13 +186,13 @@ html::-webkit-scrollbar-thumb{
 
 .share{
 	position: fixed;
-	left: 6%;
-	bottom: 85px;
+	left: 50px;
+	bottom: 65px;
 	z-index: 1999;
 }
 .share img{
-	padding: 0 14px;
-	transform: scale(0.8);
+	padding: 0 8px;
+	transform: scale(0.7);
 	opacity: .4;
 	transition: opacity .2s;
 	cursor: pointer;
@@ -201,41 +205,37 @@ html::-webkit-scrollbar-thumb{
 	width: 160px;
 	position: absolute;
 	top: -160px;
-	right:-4px;
+	right:-25px;
 	transition:opacity .4s ease;
 	display: none;
 	opacity: 1;
 }
-
-/*-----------------------------------------------UptotheTop------------------------------------------*/
-
-.scroll{
-	width: 20px;
-	height: 150px;
+/*---------------------------------------------wrapTitle------------------------------------------*/
+#wrapTitle{
+	display: inline-block;
 	position: fixed;
-	right: 5.5%;
-	bottom:82px;
-	overflow: hidden;
-	opacity: .2;
-	transition:opacity .2s ease-out;
-	cursor: pointer;
-	z-index: 99;
+	padding-top: 36px;
+	top: 0;
+	right: 120px;
+	height: 80px;
+	background-color: #fff;
+	opacity: .95;
+	z-index: 9;
 }
-.scroll:hover{
-	opacity: 1;
+#wrapTitle p{
+	display: inline-block;
+	font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
+	font-size: 18px;
 }
-.scroll img{
-	padding: 6px 0;
-	margin:0;
-	transform: scale(.8);
+#wrapTitle img{
+	height: 36px;
+	padding-right: 20px;
 }
-#down{
-	transition:margin 1.2s ease;
+#wrapTitle .wrapP1{
+	padding-right:545px; 
 }
-#up{
-	margin-top: 0px;
-	filter: invert(0%);
-	transition: filter .2s ease;
+#wrapTitle .wrapP2{
+	text-align: right;
 }
 
 /*-----------------------------------------------index------------------------------------------*/
@@ -267,12 +267,13 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+
 .part1{
-	width: 1187px;
-	margin: 0 auto;
+	width: 1110px;
 	text-align: right;
-	margin-top: 300px;
-	position: relative;
+	margin-top: 102px;
+	right: 120px;
+	position: absolute;
 }
 .part1 ol{
 	list-style: none;
@@ -301,7 +302,7 @@ html::-webkit-scrollbar-thumb{
 	list-style-type: none;
 }
 .part1 ul li{
-	width: 392px;
+	width: 362px;
 	padding: 0;
 	margin: 0;
 }
