@@ -25,11 +25,11 @@ function IsPC() {
 	          verticalOffset:-2,
 	          itemWidth: function(){
 	          	let docWidth = $(document).width();
-	          	if(docWidth>1280){
-	          		return 362;
+	          	if(docWidth>1480){
+	          		return 382;
 	          		$('#container').trigger('refreshWookmark');
-	          	}else if(docWidth<1280 && docWidth>625){
-	          		return 316;
+	          	}else if(docWidth<1480 && docWidth>625){
+	          		return 320;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else{
 	          		return 355;

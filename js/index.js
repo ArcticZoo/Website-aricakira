@@ -1,3 +1,18 @@
+if(!IsPC()){
+	//在移动端动态调节不同dpi适配
+	let htmlwidth = document.documentElement.clientWidth || document.body.clientWidth;  //浏览器兼容
+	console.log("屏幕宽度："+htmlwidth) //iphone5:320 iphone6:375
+
+	//获得html DOM元素
+	let htmlDom = document.getElementsByTagName('html')[0];
+
+	//给DOM元素设置样式
+	//htmlDom.style.fontSize = htmlwidth/120 + 'px';  
+	//以iphone5为基础 iphone5默认字体大小为16px 320/16=20 即1rem字体大小是屏幕宽度的1/20
+}
+
+
+
 
 function IsPC() {
          var userAgentInfo = navigator.userAgent;
@@ -22,20 +37,20 @@ function IsPC() {
 	      $('#container').wookmark().imagesLoaded().progress( function() {
 		 			  wookmark = new Wookmark(container, {
 			          autoResize: true, // This will auto-update the layout when the browser window is resized.
-			          offset: 4, // Optional, the distance between grid items
+			          offset: 3, // Optional, the distance between grid items
 			          outerOffset: 0, // Optional, the distance to the containers border
 			          resizeDelay:50,
 			          verticalOffset:-2,
 			          itemWidth: function(){
 			          	let docWidth = $(document).width();
-			          	if(docWidth>1280){
-			          		return 362;
+			          	if(docWidth>1480){
+			          		return 382;
 			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<1280 && docWidth>625){
-			          		return 316;
+			          	}else if(docWidth<1480 && docWidth>625){
+			          		return 320;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else{
-			          		return 355;
+			          		return 316;
 			          	}}
 			           // 在这儿设置了响应式的相册大小
 			        });
