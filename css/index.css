@@ -433,22 +433,23 @@
 
  @media screen and (max-width: 78.125rem){
 
-     .canvasWrap{
+     #wrapTitle{
          display: none;
     }
      .title{
          margin-top: 5rem;
          width: 100%;
-    }
-     .titleText{
          display: none;
     }
-     .titleTextPhone{
-         display: block;
-         width: 100%;
+    .part1{
+        padding: 0;
+        width: 23rem;
+        margin:0 auto;
+        margin-top: 5rem;
+        position: relative;
     }
      .part1 ul li{
-         width: 22.1875rem !important;
+         width: 22.8rem !important;
     }
     
      img.mfp-img {

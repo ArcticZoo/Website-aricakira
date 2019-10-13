@@ -46,11 +46,11 @@ function IsPC() {
 			          	if(docWidth>1480){
 			          		return 382;
 			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<1480 && docWidth>625){
+			          	}else if(docWidth<1480 && docWidth>1250){
 			          		return 320;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else{
-			          		return 316;
+			          		return 320;
 			          	}}
 			           // 在这儿设置了响应式的相册大小
 			        });
