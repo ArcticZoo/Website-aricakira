@@ -404,11 +404,19 @@
      transform: scale(.9);
 }
  @media screen and (max-width: 92.5rem) {
-     .title{
-         text-align: left;
+    #wrapTitle{
+        padding-right: 5.1rem;
+    }
+    #wrapTitle .wrapP1 {
+        padding-right: 25.6rem;
+    }
+    .title .brief{
+        font-size: 2rem;
+        line-height:2.57rem;
+        margin-left: 15.25rem;
     }
     .part1{
-        right: 1.8rem;
+        right: -1.2rem;
     }
      .part1 ul li{
          width: 20rem;
@@ -423,33 +431,8 @@
 }
 
 
- @media screen and (min-width:39.0625rem) and (max-width: 56.25rem){
-     .canvasWrap{
-         display: none;
-    }
-     .title{
-         margin-top: 10rem;
-         text-align: center;
-         width: 100% !important;
-    }
-     .titleText{
-         display: none !important;
-    }
-     .titleTextPhone{
-         margin: 0 auto;
-         display: block;
-         padding: 0;
-         text-align: center;
-    }
-     #filters{
-         text-align: center ;
-         width: 100% ;
-    }
-     img.mfp-img {
-         max-width: 99% !important;
-    }
-}
- @media screen and (max-width: 39.0625rem){
+
+ @media screen and (max-width: 56.25rem){
      .canvasWrap{
          display: none;
     }

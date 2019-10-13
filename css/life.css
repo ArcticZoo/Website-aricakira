@@ -327,24 +327,23 @@
      font-size: 0.75rem;
      transform: scale(.9);
 }
- @media screen and (max-width: 80rem) {
-     .title{
-         width: 59.375rem ;
-         text-align: left;
+ @media screen and (max-width: 92.5rem) {
+    #wrapTitle{
+        padding-right: 5.1rem;
+        right: 0rem;
     }
-     .titleText{
-         width: 80%;
+    #wrapTitle .wrapP1 {
+        padding-right: 25.6rem;
     }
      .part1{
-         width: 100% !important;
+        right: -1.2rem;
     }
      .part1 ul li{
-         width: 19.6875rem;
+         width: 20rem;
     }
      #filters{
-         width: 59.375rem;
+         width: 66rem;
          padding: 0;
-         margin: 0 auto;
     }
      img.mfp-img {
          max-width: 99% !important;

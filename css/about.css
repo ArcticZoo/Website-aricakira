@@ -545,153 +545,27 @@
      opacity: 1;
      top: 9.75rem;
 }
- @media screen and (max-width: 58.125rem){
-     #wrap{
-         display: none ;
+ @media screen and (max-width: 92.5rem){
+    #wrapTitle{
+        padding-right: 5.1rem;
     }
-     .scroll{
-         display: none;
+    #wrapTitle .wrapP1 {
+        padding-right: 25.6rem;
     }
-     #bottomnav{
-         display: none;
+    .title .brief{
+        font-size: 2rem;
+        line-height:2.57rem;
+        margin-left: 15.25rem;
     }
-     .share{
-         display: none;
+    .title .downtext{
+        margin-left: 15.25rem;
     }
-     #wrapMobile{
-         display: block;
+    .title img{
+        margin-left: 14.55rem;
     }
-    /*---------------*/
-     .part1{
-         width: 100%;
-         padding-top:calc(30vh - 4.375rem);
-    }
-     .part1 .titleImg{
-         width: calc(100% + 12.5rem);
-         left:-5rem;
-         right:0rem;
-    }
-     .part1 .titleImgs{
-         width: calc(100% + 12.5rem);
-         left: -5rem;
-         right: 0rem;
-    }
-     .part1 h1{
-         font-size: 1.875rem;
-         padding-top: 17.1875rem;
-         margin-bottom: 0;
-    }
-     .part1 .brief{
-         width: 100%;
-    }
-     .part1 .brief .selfimg{
-         height: 12.5rem;
-         width: auto;
-    }
-     .part1 .brief .briefTitleimg{
-         padding-left: 0.75rem;
-    }
-     .part1 .brief .uptext{
-         font-size: 1.25rem;
-         line-height: 1.875rem;
-         padding-left: 0.75rem;
-    }
-     .part1 .brief .downtext{
-         width: calc(100% - 1.25rem);
-         padding-left: 0.75rem;
-    }
-     .part2{
-         width: 100%;
-         border-radius: 3.125rem 0rem 0 0;
-         margin-top: 30rem;
-    }
-     .part2inside{
-         width: 100%;
-    }
-     .part2inside .break {
-         float: none;
-         margin: 0 auto;
-         display: inline-block;
-    }
-     .part2inside ul{
-         width: 100%;
-         margin-top: 2.5rem;
-         text-align: center;
-         padding-bottom: 3.75rem;
-    }
-     .part2inside ul li{
-         width: 20.625rem;
-         margin: 0.625rem auto;
-    }
-     .part2inside ul li .techTitle{
-         top: 5.5625rem;
-         left: 6.0625rem;
-         font-size: 1.1875rem;
-    }
-     .part2inside ul li .techDetail{
-         text-align: right;
-         left: 1.5625rem;
-         top: 0.625rem;
-         font-size: 0.75rem;
-         width: 17.8125rem;
-         line-height: 1.3125rem;
-    }
-     .part2inside ul li .blockline{
-         display: inline-block;
-    }
-     .part3{
-         width: 100%;
-    }
-     .part3 .part3inside{
-         width: 100%;
-         padding: 0;
-    }
-     .part3 .part3inside ul{
-         width: 100%;
-         text-align: center;
-    }
-     .part3 .part3inside .break {
-         float: none;
-         margin: 0 auto;
-         text-align: center;
-         width: 10.5rem;
-    }
-     .part3 .part3inside ul li{
-         float: none;
-         font-size: 0.75rem;
-         line-height: 1.875rem;
-         height:1.875rem;
-         margin:0.1875rem 0.0625rem;
-         padding:0 0.625rem 0 0.3125rem;
-         font-weight: 350;
-    }
-     .part3 .part3inside ul li img{
-         transform: scale(.55);
-    }
-     .part4{
-         width: 100%;
-         height: 53.125rem;
-    }
-     .part4 .part4inside{
-         width: 100%;
-         padding: 0;
-    }
-     .part4 .part4inside ul{
-         width: 100%;
-         text-align: center;
-    }
-     .part4 .part4inside .break {
-         float: none;
-         margin: 0 auto;
-         text-align: center;
-         width: 7.5rem;
-    }
-     .part4 .part4inside ul a{
-         width: 20.625rem;
-         margin:0.625rem 0.625rem 0.625rem 0.625rem;
-    }
-     .part4 .part4inside ul a img{
-         right: 3.625rem;
+    .part2,.part3,.part4{
+        padding-right: 0;
+        width: 66.5rem;
     }
 }
  
