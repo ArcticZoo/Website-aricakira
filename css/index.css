@@ -403,7 +403,7 @@
      font-size: 0.75rem;
      transform: scale(.9);
 }
- @media screen and (max-width: 92.5rem) {
+ @media screen and (max-width: 94.1rem) {
     #wrapTitle{
         padding-right: 5.1rem;
     }
@@ -431,9 +431,8 @@
     }
 }
 
+ @media screen and (max-width: 78.125rem){
 
-
- @media screen and (max-width: 56.25rem){
      .canvasWrap{
          display: none;
     }
@@ -451,22 +450,22 @@
      .part1 ul li{
          width: 22.1875rem !important;
     }
-    /*---*/
+    
      img.mfp-img {
          max-width: 99% !important;
     }
-    /*---*/
+    
      #wrap{
          text-align: center;
          position: absolute;
          display: none !important;
     }
-    /*---*/
+    
      #filters{
          width: auto;
          text-align: center;
     }
-    /*---*/
+    
      .scroll{
          display: none;
     }
@@ -528,4 +527,5 @@
          opacity: .8;
     }
 }
+
  

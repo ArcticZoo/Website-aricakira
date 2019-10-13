@@ -545,7 +545,7 @@
      opacity: 1;
      top: 9.75rem;
 }
- @media screen and (max-width: 92.5rem){
+ @media screen and (max-width: 94.1rem){
     #wrapTitle{
         padding-right: 5.1rem;
     }

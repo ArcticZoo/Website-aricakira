@@ -327,7 +327,7 @@
      font-size: 0.75rem;
      transform: scale(.9);
 }
- @media screen and (max-width: 92.5rem) {
+ @media screen and (max-width: 94.1rem) {
     #wrapTitle{
         padding-right: 5.1rem;
         right: 0rem;
