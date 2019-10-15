@@ -403,6 +403,10 @@
      font-size: 0.75rem;
      transform: scale(.9);
 }
+/*imac*/
+ @media screen and (max-width: 125rem) {
+
+ }
  @media screen and (max-width: 94.1rem) {
     #wrapTitle{
         padding-right: 5.1rem;
