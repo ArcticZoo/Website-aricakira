@@ -449,12 +449,16 @@
         padding: 0;
         width: 22rem;
         margin:0 auto;
-        margin-left: 0rem;
         margin-top: 5rem;
+        text-align: center;
         position: relative;
     }
      .part1 ul li{
-         width: 21.5rem !important;
+         width: 21.1rem !important;
+    }
+    #container{
+        padding: 0;
+        margin-left: 1rem; 
     }
     
      img.mfp-img {
