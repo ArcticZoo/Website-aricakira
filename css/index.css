@@ -447,13 +447,14 @@
     }
     .part1{
         padding: 0;
-        width: 23rem;
+        width: 22rem;
         margin:0 auto;
+        margin-left: 0rem;
         margin-top: 5rem;
         position: relative;
     }
      .part1 ul li{
-         width: 22.8rem !important;
+         width: 21.5rem !important;
     }
     
      img.mfp-img {
