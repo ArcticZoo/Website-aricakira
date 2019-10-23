@@ -32,7 +32,7 @@ function IsPC() {
 	          		return 320;
 	          		$('#container').trigger('refreshWookmark');
 	          	}else{
-	          		return 355;
+	          		return 320;
 	          	}}
 	           // 在这儿设置了响应式的相册大小
 	        });
