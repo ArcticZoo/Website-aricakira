@@ -25,15 +25,18 @@ function IsPC() {
 	          verticalOffset:-2,
 	          itemWidth: function(){
 	          	let docWidth = $(document).width();
-	          	if(docWidth>1480){
-	          		return 382;
-	          		$('#container').trigger('refreshWookmark');
-	          	}else if(docWidth<1480 && docWidth>625){
-	          		return 320;
-	          		$('#container').trigger('refreshWookmark');
-	          	}else{
-	          		return 320;
-	          	}}
+			          	if(docWidth>1480 ){
+			          		return 382;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else if(docWidth<1480 && docWidth>1248){
+			          		return 320;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else if(docWidth<=1248 && docWidth>928){
+			          		return 240;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else{
+			          		return 320;
+			          	}}
 	           // 在这儿设置了响应式的相册大小
 	        });
  		  });
