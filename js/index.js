@@ -46,8 +46,11 @@ function IsPC() {
 			          	if(docWidth>1480 ){
 			          		return 382;
 			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<1480 && docWidth>1250){
+			          	}else if(docWidth<1480 && docWidth>1248){
 			          		return 320;
+			          		$('#container').trigger('refreshWookmark');
+			          	}else if(docWidth<=1248 && docWidth>928){
+			          		return 240;
 			          		$('#container').trigger('refreshWookmark');
 			          	}else{
 			          		return 320;

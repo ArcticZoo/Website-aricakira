@@ -407,6 +407,7 @@
  @media screen and (max-width: 125rem) {
 
  }
+ /*中等屏幕*/
  @media screen and (max-width: 94.1rem) {
     #wrapTitle{
         padding-right: 5.1rem;
@@ -434,8 +435,40 @@
          max-width: 99% !important;
     }
 }
-
- @media screen and (max-width: 78.125rem){
+/*小屏幕 ipad*/
+ @media screen and (max-width: 78rem){
+    #wrapTitle{
+        padding-right: 1.2rem;
+        padding-top: 5.25rem;
+    }
+    #wrapTitle .wrapP1 {
+        padding-right: 10.75rem;
+    }
+    #wrap ul{
+        padding-top: 5.2rem;
+    }
+    .title .brief{
+        font-size: 1.5rem;
+        line-height:2rem;
+        margin-left: 34.25rem;
+    }
+    .part1{
+        width: 48rem;
+        right: 0rem;
+    }
+     .part1 ul li{
+         width: 15rem;
+    }
+     #filters{
+         width: 47rem;
+         padding: 0;
+    }
+     img.mfp-img {
+         max-width: 99% !important;
+    }
+ }
+ /*进入手机模式*/
+ @media screen and (max-width: 58rem){
 
      #wrapTitle{
          display: none;
