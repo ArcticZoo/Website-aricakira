@@ -568,4 +568,66 @@
         width: 66.5rem;
     }
 }
+ /*进入手机模式*/
+
+ @media screen and (max-width: 58rem){
+    #wrapTitle{
+         display: none;
+    }
+    #wrap{
+        display: none;
+    }
+    .share{
+        display: none;
+    }
+    #wrapMobile{
+         display: block;
+    }
+    .title{
+        width: 58rem;
+        right: unset;
+    }
+    .title .brief{
+        margin-top: 10rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .title .downtext{
+        font-size: 0.8rem;
+    }
+    .title .brief,.title .downtext,.title .selfimg{
+        margin-left: 0.7rem;
+    }
+    .title .selfimg{
+        height:6rem;
+        padding-left: 0;
+        margin-left: 0;
+        position: absolute;
+        top: 0.5rem;
+    }
+    .part2{
+        padding-top: 16rem;
+        float: initial;
+    }
+    .part2inside{
+        width: 69rem;
+    }
+    .part3{
+        float: initial;
+    }
+    .part3 .part3inside{
+        width: 24rem;
+        margin-left: 0;
+    }
+    .part4{
+        float: initial;
+    }
+    .part4 .part4inside{
+        padding-top: 8.125rem;
+    }
+
+
+
+
+ }
  

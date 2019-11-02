@@ -379,6 +379,8 @@
     }
  }
 
+ /*进入手机模式*/
+
  @media screen and (max-width: 58rem){
     #wrapTitle{
          display: none;
