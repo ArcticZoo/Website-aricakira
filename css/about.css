@@ -627,7 +627,18 @@
     .part4 .part4inside{
         padding-top: 8.125rem;
     }
-
+    .part4 .part4inside ul{
+        width: 22rem;
+    }
+    .part4 .part4inside ul a{
+        width: 20rem;
+    }
+    .part4 ul a img {
+        right: 3.5rem;
+    }
+    .part4 ul a .resumeImg {
+        right: 3.5rem;
+    }
 
 
 
