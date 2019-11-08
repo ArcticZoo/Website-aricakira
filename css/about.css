@@ -584,7 +584,7 @@
          display: block;
     }
     .title{
-        width: 58rem;
+        width: 100%;
         right: unset;
     }
     .title .brief{
@@ -618,8 +618,11 @@
         float: initial;
     }
     .part3 .part3inside{
-        width: 24rem;
+        width: 23.8rem;
         margin-left: 0;
+    }
+    .part3 .part3inside ul{
+        text-align: center;
     }
     .part4{
         float: initial;
@@ -629,6 +632,7 @@
     }
     .part4 .part4inside ul{
         width: 22rem;
+        text-align: center;
     }
     .part4 .part4inside ul a{
         width: 20rem;
@@ -639,7 +643,6 @@
     .part4 ul a .resumeImg {
         right: 3.5rem;
     }
-
 
 
  }
