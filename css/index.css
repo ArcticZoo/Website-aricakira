@@ -73,7 +73,15 @@
      filter: invert(0%);
      transition: filter .2s ease;
      display: block;
+     position: absolute;
 }
+  #wrap .img2{
+    opacity: 0;
+ }
+  #wrap .img2:hover{
+    opacity: 1;
+    transition: .3s ease;
+ }
  #wrap .label{
      display: inline-block;
      margin:0;
@@ -89,7 +97,7 @@
      display: inline-block;
      margin: 0rem;
      padding: 0rem;
-     padding-top:7.5rem;
+     padding-top:11.7rem;
      white-space: nowrap;
      float: left;
 }
