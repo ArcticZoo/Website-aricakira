@@ -116,7 +116,7 @@
      position: fixed;
      left: 3.4375rem;
      right: 0;
-     top: 3.75rem;
+     top: 3.7rem;
      z-index: 1000;
 }
  #wrap img {
@@ -222,16 +222,16 @@
      padding-top: 2.25rem;
      top: 0;
      right: 0rem;
-     padding-right: 7.5rem;
+     padding-right: 8rem;
      background-color: #111;
-     height: 5rem;
+     height: 4.2rem;
      opacity: 1;
      z-index: 9;
 }
  #wrapTitle p{
      display: inline-block;
      font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
-     font-size: 1.125rem;
+     font-size: 1rem;
      color: #ddd;
 }
  #wrapTitle img{
@@ -240,8 +240,8 @@
      filter: invert(90%);
 }
  #wrapTitle .wrapP1{
-     padding-right:37.8rem;
-     padding-left: 1.25rem;
+     padding-right:37.01rem;
+     padding-left: 1.125rem;
 }
  #wrapTitle .wrapP2{
      text-align: right;
