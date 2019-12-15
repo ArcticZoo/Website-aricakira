@@ -284,15 +284,9 @@
      position: absolute;
      z-index: -1;
      margin-top: -5.625rem;
-     left: 17.5rem;
+     left: -7.6rem;
 }
- .title .brief{
-     margin-left: 0.625rem;
-     margin-top: 6.25rem;
-     font-size: 2.125rem;
-     text-transform:uppercase;
-     font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
-}
+
  .part1{
      width: 73rem;
      text-align: right;
