@@ -120,7 +120,7 @@
      z-index: 1000;
 }
  #wrap img {
-     width: 5.625rem;
+     width: 3.8rem;
      filter: invert(100%);
      transition: filter .2s ease;
      display: block;
@@ -140,6 +140,7 @@
      left: 42%;
      font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
      font-weight: 600;
+     color: #888;
 }
  #wrap ul{
      font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
@@ -147,28 +148,40 @@
      display: inline-block;
      margin: 0rem;
      padding: 0rem;
-     padding-top:11.7rem;
+     padding-top:6.6rem;
      white-space: nowrap;
      float: left;
 }
  #wrap ul li a{
      list-style: none;
      text-decoration:none;
-     color: #DDD;
 }
  #wrap li{
+     color:#ddd; 
      display: block;
-     padding: 0.3125rem 0rem 0.375rem 0.125rem;
-     font-size: 1.625rem;
+     padding: 0.26rem 0rem 0.26rem 0.125rem;
+     font-size: 1rem;
 }
  #wrap li a{
-     opacity: .25;
-     transition: opacity .2s ease;
+     color:#ddd; 
+     opacity: 1;
+     transition: color .2s ease;
      cursor: pointer;
-     color: #DDD;
 }
+ #wrap p{
+     font-size: 0.7rem;
+     font-family: 'AvenirNextLTPro-Regular';
+     transition: color .5s ease;
+     line-height: 1.2rem;
+     padding-top: 1rem;
+     color: #444;
+}
+ #wrap p:hover{
+    color: #ddd;
+ }
  #wrap li a:hover{
      opacity: 1 !important;
+     color: #00aeff;
 }
  #wrap .active a{
      font-family: 'AvenirNextLTPro-Demi';
