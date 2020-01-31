@@ -641,6 +641,7 @@
     }
     .part2inside ul li{
         width: 22.6rem;
+        margin:0.38rem 0.75rem 0.38rem 0rem;
     }
     .part2inside ul li .techDetail{
         width: 19.25rem;
