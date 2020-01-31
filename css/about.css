@@ -342,6 +342,9 @@
      transition:color .4s ease;
      color: white;
 }
+  .part2inside ul li .techTitleMini{
+        display: none;
+    }
  .part2inside ul li:hover .techTitle{
      color: #0066ff !important;
 }
@@ -615,7 +618,7 @@
     }
     .title .downtext{
         font-size: 0.4rem;
-        width: 22rem;
+        width: 20rem;
         line-height: 1.2rem;
     }
     .title .brief,.title .downtext,.title .selfimg{
@@ -633,7 +636,29 @@
         float: initial;
     }
     .part2inside{
-        width: 69rem;
+        width: 30rem;
+        margin: 0;
+    }
+    .part2inside ul li{
+        width: 22.6rem;
+    }
+    .part2inside ul li .techDetail{
+        width: 19.25rem;
+        right: 1.25rem;
+        top: 3.4rem;
+        text-align: center;
+    }
+    .part2inside ul li .techTitle{
+        display: none;
+    }
+    .part2inside ul li .techTitleMini{
+        display: inline-block;
+        color: white;
+        width: 12rem;
+        top: 0.5rem;
+        left: 5.2rem;
+        position: relative;
+        text-align: center;
     }
     .part3{
         float: initial;
