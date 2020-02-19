@@ -176,6 +176,14 @@
      padding-top: 1rem;
      color: #444;
 }
+ #wrap ul li .dot{
+    height: 0.7rem;
+    width: 0.7rem;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+ }
  #wrap p:hover{
     color: #ddd;
  }
