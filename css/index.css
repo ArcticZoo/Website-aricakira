@@ -130,6 +130,7 @@
     width: 0.7rem;
     display: inline-block;
     margin: 0;
+    position: relative;
     padding-left: 0.5rem;
     padding-top: 0.2rem;
  }
