@@ -38,6 +38,10 @@
      border-radius: 0.625rem;
      background: #aaa;
 }
+
+* { 
+    cursor: none!important;
+} 
 /*-------------------------------------------loadding-----------------------------------------*/
  #loadding{
      width: 100%;

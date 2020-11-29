@@ -33,6 +33,20 @@ function IsPC() {
 
 
  (function ($){
+ 		  const cursor=curDot({
+ 		  	zIndex: 2999,
+			diameter: 45,
+			borderWidth:2,
+			easing: 2
+
+ 		  });
+ 		  cursor.over("a",{
+			scale:0.5,
+			borderWidth:0,
+			borderColor: "transparent",
+			background:'#fff'
+			});
+
 	    	//因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
 	      //执行图片排版
 	      $('#container').isotope({
@@ -177,3 +191,4 @@ $(".wechatBtn").hover(function(){
 },function(){
     $(".wechatImg").css("display","none");
 });
+
