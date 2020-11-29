@@ -60,6 +60,105 @@
      right: 0;
 }
 /*-----------------------------------------------Nav------------------------------------------*/
+#wrapUpBg{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    clip: rect(0,auto,auto,0);
+}
+ #wrapUp{
+     width: 25rem;
+     position: fixed;
+     left: 3.4375rem;
+     right: 0;
+     top: 3.75rem;
+     z-index: 1001;
+     filter: invert(100%);
+
+ }
+  #wrapUp img {
+     width: 3.8rem;
+     filter: invert(0%);
+     transition: filter .2s ease;
+     display: block;
+     position: absolute;
+     background-blend-mode:exclusion;
+}
+  #wrapUp .img2{
+    opacity: 0;
+ }
+  #wrapUp .img2:hover{
+    opacity: 1;
+    transition: .3s ease;
+ }
+ #wrapUp .label{
+     display: inline-block;
+     margin:0;
+     position: absolute;
+     left: 42%;
+     font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
+     font-weight: 600;
+     color: #888;
+}
+ #wrapUp ul{
+     font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
+     list-style: none;
+     display: inline-block;
+     margin: 0rem;
+     padding: 0rem;
+     padding-top:6.6rem;
+     white-space: nowrap;
+     float: left;
+}
+ #wrapUp ul li a{
+     list-style: none;
+     text-decoration:none;
+     color: #111;
+}
+ #wrapUp li{
+     display: block;
+     padding: 0.26rem 0rem 0.26rem 0.125rem;
+     font-size: 1rem;
+}
+ #wrapUp li a{
+     opacity: 1;
+     transition: color .2s ease;
+     cursor: pointer;
+     color: #000;
+}
+ #wrapUp p{
+     font-size: 0.7rem;
+     font-family: 'AvenirNextLTPro-Regular';
+     transition: color .5s ease;
+     line-height: 1.2rem;
+     padding-top: 1rem;
+     color: #ccc;
+}
+ #wrapUp ul li .dot{
+    height: 0.7rem;
+    width: 0.7rem;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+ }
+ #wrapUp p:hover{
+    color: #000;
+ }
+ #wrapUp li a:hover{
+     opacity: 1 !important;
+     color:#00aeff;
+}
+ #wrapUp .active a{
+     color: black;
+     font-family: 'AvenirNextLTPro-Demi';
+     opacity: 1;
+     transition:color .2s ease;
+}
+
  #wrap{
      width: 25rem;
      position: fixed;
@@ -74,6 +173,7 @@
      transition: filter .2s ease;
      display: block;
      position: absolute;
+     background-blend-mode:exclusion;
 }
   #wrap .img2{
     opacity: 0;
@@ -227,15 +327,15 @@
 /*---------------------------------------------wrapTitle------------------------------------------*/
  #wrapTitle{
      display: inline-block;
-     position: fixed;
+     position: absolute;
      padding-top: 2.25rem;
      top: 0;
      right: 0rem;
      padding-right: 8rem;
      height: 4.2rem;
-     background-color: #fff;
      opacity: 1;
      z-index: 9;
+     color: #fff;
 }
  #wrapTitle p{
      display: inline-block;
@@ -245,6 +345,7 @@
  #wrapTitle img{
      height: 2.25rem;
      padding-right: 1.25rem;
+     filter: invert(100%);
 }
  #wrapTitle .wrapP1{
      padding-right:37.01rem;
@@ -277,13 +378,13 @@
      margin-top: 1rem;
 }
  .title{
-     width: 80.8rem;
-     height: 31.25rem;
+     width: 100%;
+     height: 100%;
      text-align: left;
-     margin-top: 3.125rem;
+     margin-top:0;
      right: 0rem;
-     position: absolute;
      overflow:hidden;
+     background-color: #0f0f0f;
 }
  .title span{
      color: #b87e32;
@@ -297,10 +398,10 @@
 }
 
  .part1{
-     width: 73rem;
+     width: 80rem;
      text-align: right;
-     margin-top: 41.25rem;
-     right: 7.5rem;
+     margin-top: 10rem;
+     right: 5rem;
      position: absolute;
 }
  .part1 ol{
@@ -308,6 +409,7 @@
      position: relative;
      top: -2.375rem;
      padding: 0;
+     padding-right: 2.5rem;
      margin: 0;
      font-size: 0.75rem;
 }
@@ -338,10 +440,7 @@
  .part1 ul li video{
      width: 100%;
 }
- .part1 ul .wookmark-inactive {
-     visibility: hidden;
-     opacity: 0;
-}
+
  .part1 li {
      -webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
@@ -349,7 +448,7 @@
      transition: all 0.3s ease-out;
 }
  #container{
-     display: none;
+     
 }
 /*hover显示名称*/
  #container li img{
@@ -370,7 +469,16 @@
 }
  #container li{
      text-align: center;
+     width: 31%;
+     float: left;
+     margin-bottom: -0.1rem;
 }
+ #container .column-sizer{
+    width: 0.25rem;
+ }
+ #container .column-2{
+    
+ }
  #container li p:hover + a > img{
      opacity: .3;
 }
@@ -399,6 +507,7 @@
 }
  .othermenu{
      display: none;
+}
 }
  .footer{
      text-align: center;
