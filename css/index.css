@@ -400,7 +400,13 @@
      margin-top: -5.625rem;
      left: -7.6rem;
 }
-
+.title video{
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-size: cover;
+}
  .part1{
      width: 80rem;
      text-align: right;
@@ -452,6 +458,7 @@
      transition: all 0.3s ease-out;
 }
  #container{
+}
      
 }
 /*hover显示名称*/
