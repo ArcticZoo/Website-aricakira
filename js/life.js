@@ -16,33 +16,23 @@ function IsPC() {
 
 	    (function ($){
 
-	      $('#container').wookmark().imagesLoaded().progress( function() {
- 			  wookmark = new Wookmark(container, {
-	          autoResize: true, // This will auto-update the layout when the browser window is resized.
-	          offset: 3, // Optional, the distance between grid items
-	          outerOffset: 0, // Optional, the distance to the containers border
-	          resizeDelay:50,
-	          verticalOffset:-2,
-	          itemWidth: function(){
-	          	let docWidth = $(document).width();
-			          	if(docWidth>1480 ){
-			          		return 382;
-			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<1480 && docWidth>1248){
-			          		return 320;
-			          		$('#container').trigger('refreshWookmark');
-			          	}else if(docWidth<=1248 && docWidth>928){
-			          		return 240;
-			          		$('#container').trigger('refreshWookmark');
-			          	}else{
-			          		return 320;
-			          	}}
-	           // 在这儿设置了响应式的相册大小
-	        });
- 		  });
+	      //因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
+	      //执行图片排版
+	      $('#container').isotope({
+	      	layoutMode: 'masonry',
+	      	itemSelector:".element-item",
+	      	percentPosition: true,
+	      	masonry:{
+	      		gutter:".column-sizer",
+	      		columWidth:"li"
+	      		
+	      	}
+	      })
 
+	      $('#container').imagesLoaded().progress( function() {
+  			$('#container').isotope('layout');
+		  });
 
-	          
 
 
 	      //灯箱相册
@@ -85,40 +75,8 @@ function IsPC() {
 	        }
 	      };
 
-	      // Capture scroll event.
-	      $('window').bind('scroll.wookmark', onScroll);
 
 
-
-
-          //图片标签过滤功能
-		  // Setup filter buttons when jQuery is available
-	      var $filters = $('#filters li');
-
-	      /**
-	       * When a filter is clicked, toggle it's active state and refresh.
-	       */
-	      function onClickFilter(e) {
-	        var $item = $(e.currentTarget),
-	            activeFilters = [],
-	            filterType = $item.data('filter');
-
-	        if (filterType === 'all') {
-	          $filters.removeClass('active');
-	        } else {
-	          $item.toggleClass('active');
-
-	          // Collect active filter strings
-	          $filters.filter('.active').each(function() {
-	            activeFilters.push($(this).data('filter'));
-	          });
-	        }
-
-	        wookmark.filter(activeFilters, 'or');
-	      }
-
-	      // Capture filter click events.
-	      $('#filters').on('click.wookmark-filter', 'li', onClickFilter);
 
 
 	    })(jQuery);
