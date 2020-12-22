@@ -551,7 +551,7 @@
 
  }
  /*中等屏幕*/
- @media screen and (max-width: 94.1rem) {
+ @media screen and (max-width: 98rem) {
     #wrapTitle{
         padding-right: 5.1rem;
     }
@@ -568,7 +568,7 @@
     }
     .part1{
         width: 70.4rem;
-        right: 0;
+        right: 1rem;
     }
      .part1 ul li{
          width: 20rem;
@@ -582,7 +582,7 @@
     }
 }
 /*小屏幕 ipad*/
- @media screen and (max-width: 78rem){
+ @media screen and (max-width: 84rem){
     #wrapTitle{
         padding-right: 1.2rem;
         
@@ -607,7 +607,7 @@
     }
     .part1{
         width: 48rem;
-        right: 0rem;
+        right: 3rem;
     }
      .part1 ul li{
          width: 15rem;

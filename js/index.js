@@ -33,6 +33,7 @@ function IsPC() {
 
 
  (function ($){
+ 	//鼠标样式
  		  const cursor=curDot({
  		  	zIndex: 2999,
 			diameter: 45,
