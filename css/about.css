@@ -245,7 +245,7 @@
 }
  #wrapTitle img{
      height: 2.25rem;
-     padding-right: 1.25rem;
+     padding-right: 3.8rem;
      filter: invert(90%);
 }
  #wrapTitle .wrapP1{
@@ -264,7 +264,7 @@
      height: 44.375rem;
      text-align: left;
      margin-top: 0rem;
-     right: 0rem;
+     right: 2.3rem;
      position: absolute;
      overflow:hidden;
      color: #eee;
@@ -294,7 +294,7 @@
      padding-top: 45.375rem;
      float: right;
      border-radius: 5rem 0rem 0 0;
-     padding-right: 4.94rem;
+     padding-right: 7rem;
 }
  .part2inside{
      width: 75rem;
@@ -386,7 +386,7 @@
      margin: 0rem 0 7.5rem 0;
      margin-bottom:0;
      padding-bottom:0;
-     padding-right: 4.94rem;
+     padding-right: 7rem;
 }
  .part3 .part3inside{
      width: 75rem;
@@ -450,7 +450,7 @@
      margin: 0rem 0 7.5rem 0;
      margin-bottom:0;
      padding-bottom:0;
-     padding-right: 4.94rem;
+     padding-right: 7rem;
 }
  .part4 .part4inside{
      width: 75rem;

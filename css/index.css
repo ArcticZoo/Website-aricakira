@@ -348,7 +348,7 @@
 }
  #wrapTitle img{
      height: 2.25rem;
-     padding-right: 1.25rem;
+     padding-right: 3.8rem;
      filter: invert(100%);
 }
  #wrapTitle .wrapP1{
@@ -553,10 +553,10 @@
  /*中等屏幕*/
  @media screen and (max-width: 98rem) {
     #wrapTitle{
-        padding-right: 5.1rem;
+        padding-right: 8.4rem;
     }
     #wrapTitle .wrapP1 {
-        padding-right: 25.6rem;
+        padding-right: 23rem;
     }
     .title .brief{
         font-size: 2rem;
@@ -584,11 +584,11 @@
 /*小屏幕 ipad*/
  @media screen and (max-width: 84rem){
     #wrapTitle{
-        padding-right: 1.2rem;
+        padding-right: 3.1rem;
         
     }
     #wrapTitle .wrapP1 {
-        padding-right: 10.75rem;
+        padding-right: 7.9rem;
     }
     #wrap ul{
         padding-top: 5.2rem;
