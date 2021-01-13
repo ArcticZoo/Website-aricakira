@@ -33,6 +33,7 @@ function IsPC() {
 
 
  (function ($){
+
  	//鼠标样式
  		  const cursor=curDot({
  		  	zIndex: 2999,
@@ -174,6 +175,10 @@ function closeMobileMenu(){
 	$('#wrapMobilebg').css({"display":'none'});
 }
 
+//显示被加载完的视频
+function showVideo(){
+	$('.bgVideo').css('opacity',1);
+}
 $("#wrapMobilebg").click(function(e){
   if (e.target == e.currentTarget) {
 		$('#wrapMobilebg').css({"display":'none'});
