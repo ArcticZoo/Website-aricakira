@@ -291,10 +291,20 @@
 #share{
     font-family: 'Neue-Plak-Extended-Regular';
      position: fixed;
-     left: 1.5rem;
+     left: 1.8rem;
      bottom: 1rem;
      z-index: 10;
      width: 1.4rem;
+}
+#share .crossbar{
+    position: fixed;
+    width: 0.3rem;
+    height: 1.1rem;
+    background-color: #515151;
+    margin: auto 0;
+    left: 2.4rem;
+    top: 0;
+    bottom:0;
 }
 #share img{
     display: inline-block;
