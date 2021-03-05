@@ -346,8 +346,11 @@
 }
 .arrowUp{
     display: inline-block;
-    position: relative;
+    position: absolute;
     filter: invert(100%);
+    right: 0rem;
+    bottom: 0;
+    transform:rotate(180deg);
 }
 
 
