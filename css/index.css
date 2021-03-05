@@ -344,6 +344,11 @@
     bottom:1.8rem;
     z-index: 99;
 }
+.arrowUp{
+    display: inline-block;
+    position: relative;
+    filter: invert(100%);
+}
 
 
 /*-----------------------------------------------index------------------------------------------*/
