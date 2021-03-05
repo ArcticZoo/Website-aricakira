@@ -348,8 +348,9 @@
     display: inline-block;
     position: absolute;
     filter: invert(100%);
-    right: 0rem;
-    bottom: 0;
+    right: 2rem;
+    bottom: 1rem;
+    margin-bottom: -20rem;
     transform:rotate(180deg);
 }
 
