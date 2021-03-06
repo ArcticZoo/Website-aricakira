@@ -15,6 +15,21 @@ function IsPC() {
 //判断打开的平台
 
 	    (function ($){
+	    	//鼠标样式
+ 		  const cursor=curDot({
+ 		  	zIndex: 2999,
+			diameter: 48,
+			borderWidth:3,
+			easing: 2,
+			borderColor:"#ddd"
+
+ 		  });
+ 		  cursor.over("a",{
+			scale:0.5,
+			borderWidth:0,
+			borderColor: "transparent",
+			background:'#ddd'
+			});
 
 	      //因为在没有完全加载图片之前排列会乱掉 所以需要使用imagesloaded，逐一让图片加载后排列执行
 	      //执行图片排版

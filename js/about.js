@@ -8,6 +8,30 @@
 		});
 
 
+
+
+(function ($){
+
+ 	//鼠标样式
+ 		  const cursor=curDot({
+ 		  	zIndex: 2999,
+			diameter: 48,
+			borderWidth:3,
+			easing: 2,
+			borderColor:"#ddd"
+
+ 		  });
+ 		  cursor.over("a",{
+			scale:0.5,
+			borderWidth:0,
+			borderColor: "transparent",
+			background:'#ddd'
+			});
+ 		  
+ })(jQuery);
+
+
+
 //手机端menu监听
 
 function mobileMenu(){
