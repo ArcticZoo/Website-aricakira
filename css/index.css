@@ -417,7 +417,7 @@
  .part1 ol{
      list-style: none;
      position: relative;
-     top: -2.375rem;
+     top: -1rem;
      padding: 0;
      padding-right: 0.5rem;
      margin: 0;
@@ -440,7 +440,6 @@
      list-style-type: none;
 }
  .part1 ul li{
-     width: 23.8rem;
      padding: 0;
      margin: 0;
 }

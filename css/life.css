@@ -330,18 +330,47 @@
      font-weight: 400;
      margin-top: 1rem;
 }
+ .title{
+     width: 100%;
+     height: 100%;
+     text-align: left;
+     margin-top:0;
+     right: 0rem;
+     overflow:hidden;
+     background-color: #0f0f0f;
+}
+ .title span{
+     color: #b87e32;
+}
+ .title img{
+     height: 37.5rem;
+     position: absolute;
+     z-index: -1;
+     margin-top: -5.625rem;
+     left: -7.6rem;
+}
+.title video{
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
  .part1{
      width: 80rem;
      text-align: right;
-     margin-top: 6.375rem;
-     right: 5rem;
+     margin-top: 5.5rem;
+     right: 0.1rem;
      position: absolute;
 }
  .part1 ol{
      list-style: none;
      position: relative;
-     top: -2.375rem;
+     top: -1rem;
      padding: 0;
+     padding-right: 0.5rem;
      margin: 0;
      font-size: 0.75rem;
 }
@@ -351,12 +380,11 @@
      padding: 0 0.375rem;
      opacity: 1 !important;
      color: #555;
-     border-radius: 0.25rem;
 }
  .part1 ol .active{
      background: #333;
      color: #eee;
-     border-radius: 0.25rem;
+     border-radius: 0.2rem;
 }
  .part1 ul{
      display: block;
@@ -364,7 +392,6 @@
      list-style-type: none;
 }
  .part1 ul li{
-     width: 31%;
      padding: 0;
      margin: 0;
 }
@@ -374,25 +401,77 @@
  .part1 ul li video{
      width: 100%;
 }
- .part1 ul .wookmark-inactive {
-     visibility: hidden;
-     opacity: 0;
-}
+
  .part1 li {
      -webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
      -o-transition: all 0.3s ease-out;
      transition: all 0.3s ease-out;
 }
- .part1 li:hover{
-     opacity: .35;
+ #container{
 }
-#container .column-sizer{
+     
+}
+/*hover显示名称*/
+ #container li img{
+     transition:opacity .2s ease;
+     object-fit: cover;
+}
+ #container li img:hover{
+     opacity: .3;
+}
+ #container li video{
+     transition:opacity .2s ease;
+}
+ #container li video:hover{
+     opacity: .3;
+}
+ #container li:hover >p{
+     opacity: 1;
+}
+ #container li{
+     text-align: center;
+     width: 32%;
+     float: left;
+     margin-bottom: -0.1rem;
+}
+ #container .column-sizer{
     width: 0.25rem;
  }
+ #container .column-2{
+    
+ }
+ #container li p:hover + a > img{
+     opacity: .3;
+}
+ #container li p:hover + a > video{
+     opacity: .3;
+}
+ #container li p{
+     display: inline-block;
+     font-size: 1.0em;
+     letter-spacing: 1.0em;
+     padding-left: 1.0em;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin:auto;
+     opacity: 0;
+     color: black;
+     z-index: 99;
+     height: 1.0em;
+     transition:opacity .2s ease;
+     font-weight: 600;
+     text-transform : uppercase;
+     font-family: 'IBMPlexSans-ExtraLight';
+}
+
+
  .footer{
      text-align: center;
-     margin: 9.375rem 0 0rem 0;
+     margin: 0rem 0 0rem 0;
      height: 11.25rem;
      opacity: 0;
      transition:opacity .4s ease;
