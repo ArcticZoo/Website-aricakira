@@ -15,7 +15,7 @@
      src: url('../font/Neue-Plak-Extended-Regular.ttf');
 }
  @font-face {
-     font-family: 'Neue-Plak-Wide-Regular.';
+     font-family: 'Neue-Plak-Wide-Regular';
      src: url('../font/Neue-Plak-Wide-Regular.ttf');
 }
  @font-face {
@@ -291,24 +291,27 @@
 }
  .title .brief{
      margin-left: 0.625rem;
-     margin-top: 15.625rem;
-     font-size: 2.125rem;
+     margin-top: 2rem;
+     font-size: 1.8rem;
      text-transform:uppercase;
-     font-family: 'AvenirNextLTPro-Demi', "PingFang SC","Helvetica Neue","Arial";
+     line-height: 2.1rem;
+     font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
 }
  .title .downtext{
      color: #ccc;
      margin-left: 0.75rem;
-     line-height: 1.375rem;
+     padding-top: 0.6rem;
+     line-height: 1.4rem;
+     font-size: 0.9rem;
 }
  .title img{
      height: 12.0625rem;
-     padding-top: 0.625rem;
+     padding-top: 1rem;
      padding-left:0.625rem;
 }
  .part2{
      width: 75.75rem;
-     padding-top: 45.375rem;
+     padding-top: 38rem;
      float: right;
      border-radius: 5rem 0rem 0 0;
      padding-right: 7rem;
