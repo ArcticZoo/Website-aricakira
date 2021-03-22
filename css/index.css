@@ -617,11 +617,11 @@
         width: 100%;
     }
     .part1{
-        width: 70.4rem;
-        right: 1rem;
+        width: 60rem;
+        right: 0rem;
     }
-     .part1 ul li{
-         width: 20rem;
+     #container li{
+         width: 31.5%;
     }
      #filters{
          width: 66rem;
