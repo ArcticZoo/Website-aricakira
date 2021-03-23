@@ -608,6 +608,14 @@
     #wrapTitle .wrapP1 {
         padding-right: 23rem;
     }
+    #wrapUp li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+    }
+    #wrap li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+    }
     .title .brief{
         font-size: 2rem;
         line-height:2.57rem;

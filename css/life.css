@@ -518,6 +518,14 @@
     #wrapTitle .wrapP1 {
         padding-right: 23rem;
     }
+    #wrapUp li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+    }
+    #wrap li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+    }
     .part1{
         width: 60rem;
         right: 0rem;

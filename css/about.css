@@ -598,7 +598,7 @@
      opacity: 1;
      top: 9.75rem;
 }
- @media screen and (max-width: 94.1rem){
+ @media screen and (max-width: 98rem){
     #wrapTitle{
         padding-right: 5.1rem;
     }
@@ -609,6 +609,14 @@
         font-size: 2rem;
         line-height:2.57rem;
         margin-left: 15.25rem;
+    }
+    #wrapUp li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+    }
+    #wrap li{
+        font-size: 3.4rem;
+        line-height: 4.1rem;
     }
     .title .downtext{
         margin-left: 15.25rem;
