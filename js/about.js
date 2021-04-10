@@ -27,9 +27,10 @@
 			borderColor: "transparent",
 			background:'#ddd'
 			});
+
  		  	
 
- 		  	//三维初始化
+       		//三维初始化
  		  	const app = new SpeRuntime.Application();
 			app.start('./img/scene.gltf');
 

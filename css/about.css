@@ -285,10 +285,10 @@
      position: absolute;
      overflow:hidden;
      color: #eee;
+     z-index: 99;
 }
  .title span{
      color: #b87e32;
-     z-index: 20;
 }
  .title .brief{
      margin-left: 0.625rem;
@@ -297,7 +297,6 @@
      text-transform:uppercase;
      line-height: 2.1rem;
      font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
-     z-index: 20;
 }
  .title .downtext{
      color: #ccc;
@@ -305,24 +304,26 @@
      padding-top: 0.6rem;
      line-height: 1.4rem;
      font-size: 0.9rem;
-     z-index: 20;
 }
  .title img{
      height: 12.0625rem;
      padding-top: 1rem;
      padding-left:0.625rem;
 }
-.title #spline{
+ #spline{
     position: absolute;
-    top: -3rem;
-    left: 15rem;
+    top: -4rem;
+    right: 40rem;
     z-index: 0;
 }
- .title #spline #splineIndex{
+ #spline #splineIndex{
     position: relative;
     z-index: 0;
  }
- .title #spline #splineIndex canvas{
+ #spline #splineIndex canvas{
+    background-color: #aaa;
+    z-index: 0;
+    border: none;
  }
  .part2{
      width: 75.75rem;
@@ -331,7 +332,7 @@
      border-radius: 5rem 0rem 0 0;
      padding-right: 7rem;
 }
-}
+
  .part2inside{
      width: 75rem;
      margin: 0 auto;
