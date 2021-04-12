@@ -34,6 +34,10 @@
  		  	const app = new SpeRuntime.Application();
 			app.start('./img/scene.gltf');
 
+			$(".title").on('click',function(){
+				return false;
+			});
+
  })(jQuery);
 
 
