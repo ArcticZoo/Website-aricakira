@@ -277,11 +277,11 @@
      background-color: #111;
 }
  .title{
-     width: 80.8rem;
-     height: 20rem;
+     width: 56.8rem;
+     height: 22rem;
      text-align: left;
      margin-top: 0rem;
-     right: 2.3rem;
+     right: 25.3rem;
      position: absolute;
      overflow:hidden;
      color: #eee;
@@ -299,6 +299,7 @@
      font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
 }
  .title .downtext{
+     width: 40rem;
      color: #ccc;
      margin-left: 0.75rem;
      padding-top: 0.7rem;
@@ -626,8 +627,8 @@
         padding-right: 25.6rem;
     }
     .title .brief{
-        font-size: 2rem;
-        line-height:2.57rem;
+        font-size: 1.8rem;
+        line-height:2.3rem;
         margin-left: 15.25rem;
     }
     #wrapUp li{
