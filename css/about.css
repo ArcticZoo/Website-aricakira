@@ -286,6 +286,7 @@
      overflow:hidden;
      color: #eee;
      z-index: 99;
+     pointer-events:none;
 }
  .title span{
      color: #b87e32;
@@ -297,6 +298,7 @@
      text-transform:uppercase;
      line-height: 2.3rem;
      font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
+     pointer-events:none;
 }
  .title .downtext{
      width: 40rem;
@@ -305,6 +307,7 @@
      padding-top: 0.7rem;
      line-height: 1.6rem;
      font-size: 0.86rem;
+     pointer-events:none;
 }
  .title img{
      height: 12.0625rem;
@@ -314,8 +317,8 @@
 }
  #spline{
     position: absolute;
-    top: -1rem;
-    right: 0rem;
+    top: 0rem;
+    right: 1rem;
     z-index: 0;
     outline:none;
 }
