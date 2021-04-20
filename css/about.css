@@ -368,9 +368,9 @@
  .part2inside ul li{
      background-color: #202020;
      display: inline-block;
-     height: 8rem;
-     width: 30rem;
-     margin:3.1rem 1.5rem 3.1rem 0rem;
+     height: 9rem;
+     width: 28rem;
+     margin:3.4rem 1.8rem 3.4rem 0rem;
      position: relative;
      z-index: 1;
      transition: box-shadow .2s ease,border .2s ease,opacity .2s ease;
@@ -389,14 +389,14 @@
  .part2inside ul li .techTitle{
      position: relative;
      display: inline-block;
-     top: -4.5rem;
-     left: 0.2rem;
+     top: -5rem;
+     left: 0.4rem;
      text-align: left;
      transition:color .4s ease;
      color: white;
-     border: 0.15rem solid #fff;
-     border-radius: 1.5rem;
-     padding:0.05rem 1rem 0.25rem 1rem;
+     border: 0.14rem solid #fff;
+     border-radius: 1.6rem;
+     padding:0.1rem 1rem 0.3rem 1rem;
 }
   .part2inside ul li .techTitleMini{
         display: none;
@@ -410,9 +410,9 @@
      font-size: 0.8125rem;
      font-family: 'Neue-Plak-Wide-Regular',"PingFang SC","Helvetica Neue","Arial";
      text-align: left;
-     width: 26rem;
-     right: 2rem;
-     top:1.6rem;
+     width: 24.5rem;
+     right: 2.1rem;
+     top:1.3rem;
      line-height: 1.5rem;
      color: #7c7c7c;
 }
