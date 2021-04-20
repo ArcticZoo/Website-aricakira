@@ -361,15 +361,15 @@
      margin: 0;
      padding: 0;
      margin-top: 3.75rem;
-     font-family: 'IBMPlexSans-BoldItalic', "PingFang SC",pingfang,"Helvetica Neue","Arial";
-     font-size: 1.375rem;
+     font-family: 'Neue-Plak-Wide-Regular', "PingFang SC",pingfang,"Helvetica Neue","Arial";
+     font-size: 1.1rem;
      text-align: left;
 }
  .part2inside ul li{
      background-color: #202020;
      display: inline-block;
-     height: 10.625rem;
-     width: 34.6875rem;
+     height: 8rem;
+     width: 30rem;
      margin:0.625rem 0.75rem 0.625rem 0rem;
      position: relative;
      z-index: 1;
@@ -389,11 +389,14 @@
  .part2inside ul li .techTitle{
      position: relative;
      display: inline-block;
-     right: -2.5rem;
-     top: 2.1875rem;
+     right: 0rem;
+     top: -5rem;
      text-align: right;
      transition:color .4s ease;
      color: white;
+     border: 0.15rem solid #fff;
+     border-radius: 1.5rem;
+     padding:0.15rem 0.8rem;
 }
   .part2inside ul li .techTitleMini{
         display: none;
@@ -405,11 +408,11 @@
      display: inline-block;
      position: absolute;
      font-size: 0.8125rem;
-     font-family: 'IBMPlexSans-Regular',"PingFang SC","Helvetica Neue","Arial";
+     font-family: 'Neue-Plak-Wide-Regular',"PingFang SC","Helvetica Neue","Arial";
      text-align: left;
-     width: 21.25rem;
-     right: 2.25rem;
-     top:2.3125rem;
+     width: 26rem;
+     right: 2rem;
+     top:1.6rem;
      line-height: 1.5rem;
      color: #7c7c7c;
 }
