@@ -370,14 +370,14 @@
      display: inline-block;
      height: 8rem;
      width: 30rem;
-     margin:0.625rem 0.75rem 0.625rem 0rem;
+     margin:3.1rem 1.5rem 3.1rem 0rem;
      position: relative;
      z-index: 1;
      transition: box-shadow .2s ease,border .2s ease,opacity .2s ease;
     /*box-shadow: 0rem 0.5rem 1.875rem #ededed;
      */
      border:1px solid #202020;
-     border-radius: 0.9375rem;
+     border-radius: 1rem;
      opacity: .8;
 }
  .part2inside ul li:hover{
@@ -389,9 +389,9 @@
  .part2inside ul li .techTitle{
      position: relative;
      display: inline-block;
-     right: 0rem;
-     top: -5rem;
-     text-align: right;
+     top: -4.5rem;
+     left: 0.2rem;
+     text-align: left;
      transition:color .4s ease;
      color: white;
      border: 0.15rem solid #fff;
