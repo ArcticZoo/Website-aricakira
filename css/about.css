@@ -402,7 +402,7 @@
         display: none;
     }
  .part2inside ul li:hover .techTitle{
-     color: #0066ff !important;
+     /*color: #0066ff !important;*/
 }
  .part2inside ul li .techDetail{
      display: inline-block;
