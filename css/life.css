@@ -15,7 +15,7 @@
      src: url('../font/Neue-Plak-Extended-Regular.ttf');
 }
  @font-face {
-     font-family: 'Neue-Plak-Wide-Regular.';
+     font-family: 'Neue-Plak-Wide-Regular';
      src: url('../font/Neue-Plak-Wide-Regular.ttf');
 }
  @font-face {
@@ -484,32 +484,28 @@
 }
 
 
- .footer{
+ .part1 .over{
+    margin-top: 12rem;
+    width: 100%;
+    text-align: center;
+     font-family: 'Neue-Plak-Wide-Regular';
+     font-size: 1.2rem;
+ }
+ .part1 .over p{
+    display: inline-block;
+    margin:0 auto;
+    padding: 0.3rem 1.4rem 0.4rem 1.4rem;
+    border:0.2rem solid #000;
+    border-radius: 2rem;
+ }
+ .part1 .footer{
      text-align: center;
-     margin: 0rem 0 0rem 0;
-     height: 11.25rem;
-     opacity: 0;
-     transition:opacity .4s ease;
-}
- .footer .divline{
-     height: 0.0625rem;
-     width: 60%;
-     background-color: #eee;
-     margin:0 auto;
-}
- .footer img{
-     margin-top:0rem;
-     margin-bottom: 5rem;
-     width: 5rem;
-}
- .footer p{
-     margin:0;
-     font-family: 'IBMPlexSans-ExtraLight';
-     margin-top: 3.125rem;
-     margin-bottom: 0.5rem;
-     font-size: 0.75rem;
-     transform: scale(.9);
-}
+     margin: 13rem 0rem 0rem 0rem;
+     padding-bottom: 0.6rem;
+     font-family: 'Neue-Plak-Wide-Regular';
+     font-size: 1rem;
+ }
+ 
  @media screen and (max-width: 98rem) {
     #wrapTitle{
         padding-right: 8.4rem;
