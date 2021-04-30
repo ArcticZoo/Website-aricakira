@@ -157,12 +157,12 @@ if(!IsPC()){
 			$('#wrapTitle').css({'opacity':'1'});
 		}
 
-		//底部footer
+		/*底部footer
 		if($(document).scrollTop() >= $(document).height() - $(window).height()-50){
 			$('.footer').css({'opacity':'1'});
 		}else{
 			$('.footer').css({'opacity':'0'});
-		}
+		}*/
     });
 
 
