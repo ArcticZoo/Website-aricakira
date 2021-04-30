@@ -570,7 +570,7 @@
      display: none;
 }
  .part1 .over{
-    margin-top: 10rem;
+    margin-top: 12rem;
     width: 100%;
     text-align: center;
      font-family: 'Neue-Plak-Wide-Regular';
@@ -585,7 +585,8 @@
  }
  .part1 .footer{
      text-align: center;
-     margin: 10rem 0 0rem 0;
+     margin: 13rem 0rem 0rem 0rem;
+     padding-bottom: 0.6rem;
      font-family: 'Neue-Plak-Wide-Regular';
      font-size: 1rem;
  }

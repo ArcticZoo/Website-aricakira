@@ -124,12 +124,13 @@ if(!IsPC()){
 			//增加wrap的背景
 		}
 
-		//底部footer
+		/*
 		if($(document).scrollTop() >= $(document).height() - $(window).height()-50){
 			$('.footer').css({'opacity':'1'});
 		}else{
 			$('.footer').css({'opacity':'0'});
 		}
+		*/
 
     });
 
