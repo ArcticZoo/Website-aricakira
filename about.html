@@ -129,8 +129,8 @@ houdini的vex以及一小部分unity的C#
         <div class="part4inside">
         <p class="break">Resume and Portfolio</p>
         <ul>
-          <a target="_blank" href='./img/邓平伟-简历-压缩.pdf'><p class="part4title">Resume</p><p>查看简历 ></p><img class="resumeImg" src='./img/1.png' /></a>
-          <a target="_blank" href='./img/邓平伟-作品集-PDF版本-压缩.pdf'><p class="part4title">Portfolio</p><p>查看作品集 ></p><img src='./img/2.png' /></a>
+          <a class='resumeCard' target="_blank" href='./img/邓平伟-简历-压缩.pdf'><p class="part4title">Resume</p><p>查看简历 ></p><img class="resumeImg" src='./img/1.png' /></a>
+          <a class='resumeCard' target="_blank" href='./img/邓平伟-作品集-PDF版本-压缩.pdf'><p class="part4title">Portfolio</p><p>查看作品集 ></p><img src='./img/2.png' /></a>
         </ul>
       </div>
       </section>
@@ -144,11 +144,20 @@ houdini的vex以及一小部分unity的C#
 <script src="./js/spline.runtime.min.js"></script>
 <script src="./js/about.js" type="text/javascript"></script>
 <script>
-      sr.reveal('.selfimg',{duration:700,delay:400},1000);
-      sr.reveal('.brief',{duration:700,delay:0});
-      sr.reveal('.downtext',{duration:700,delay:100});
-      sr.reveal('.techcard',{reset: true},400);
-      sr.reveal('.skillcard',{duration: 200,reset: true},50);
+      var fooReveal = {
+       origin: 'bottom',
+       distance : '60px',
+       duration:700,
+       useDelay: 'onload',
+       opacity: 0, 
+       easing   : 'ease-in-out'
+      };
+
+      sr.reveal('.brief',fooReveal);
+      sr.reveal('.downtext',fooReveal);
+      sr.reveal('.part2inside',fooReveal);
+      sr.reveal('.skillcard',fooReveal);
+      sr.reveal('.resumeCard',fooReveal);
 </script>
 
 </html>
