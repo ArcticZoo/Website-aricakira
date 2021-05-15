@@ -30,6 +30,11 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<script src="./js/scrollreveal.js" type="text/javascript"></script>
+<script>
+      window.sr = ScrollReveal();
+</script>
+
 
 </head>
 
@@ -91,7 +96,6 @@ var _hmt = _hmt || [];
         <img src="./img/arrow.png" />
       </div>
       <section class="title">
-        <img src="./img/indexbg.png" />
         <video class="bgVideo" src='./img/loop.mp4' muted="muted" loop autoplay="autoplay" oncanplaythrough="showVideo()" />
       </section>
       <section class="part1">
@@ -173,4 +177,18 @@ var _hmt = _hmt || [];
 <script src="./js/packery-mode.pkgd.min.js"></script>
 <script src="./js/jquery.mousewheel.min.js"></script>
 <script src="./js/index.js" type="text/javascript"></script>
+<script>
+      var fooReveal = {
+       origin: 'bottom',
+       distance : '60px',
+       duration:960,
+       useDelay: 'onload',
+       opacity: 0, 
+       easing   : 'cubic-bezier(0.47, 0.00, 0.08, 1.00)'
+      };
+
+      sr.reveal('#container',fooReveal);
+      sr.reveal('.over',fooReveal);
+      sr.reveal('.footer',fooReveal);
+</script>
 </html>
