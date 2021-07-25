@@ -684,6 +684,18 @@
          width: 100%;
          display: none;
     }
+    #wrapUpBg{
+        display: none !important;
+    }
+    #shareUpBg{
+        display: none;
+    }
+    #share{
+        display: none;
+    }
+    .arrowDown{
+        display: none;
+    }
     .part1{
         padding: 0;
         width: 22rem;

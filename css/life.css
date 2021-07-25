@@ -570,6 +570,12 @@
     #wrapTitle{
          display: none;
     }
+    #share{
+        display: none;
+    }
+    #wrapUp{
+        display: none;
+    }
      .title{
          margin-top: 5rem;
          width: 100%;

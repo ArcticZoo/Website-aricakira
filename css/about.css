@@ -660,10 +660,19 @@
     #wrapTitle{
          display: none;
     }
-    #wrap{
+    #wrapUp{
+        display: none !important;
+    }
+    #shareUpBg{
         display: none;
     }
-    .share{
+    #share{
+        display: none;
+    }
+    .arrowDown{
+        display: none;
+    }
+    #wrap{
         display: none;
     }
     #wrapMobile{
