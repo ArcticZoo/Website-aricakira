@@ -39,9 +39,7 @@
      border-radius: 0.625rem;
      background: #aaa;
 }
-* { 
-    cursor: none!important;
-} 
+
 /*-------------------------------------------loadding-----------------------------------------*/
  #loadding{
      width: 100%;
@@ -334,7 +332,7 @@
  }
  .part2{
      width: 75.75rem;
-     padding-top: 34rem;
+     padding-top: 38rem;
      float: right;
      border-radius: 5rem 0rem 0 0;
      padding-right: 7rem;
@@ -430,7 +428,7 @@
      float: right;
      width: 75.75rem;
      height: 25rem;
-     margin: 0rem 0 7.5rem 0;
+     margin-top: 4rem;
      margin-bottom:0;
      padding-bottom:0;
      padding-right: 7rem;
@@ -494,7 +492,7 @@
      float: right;
      width: 75.75rem;
      height: 40.625rem;
-     margin: 0rem 0 7.5rem 0;
+     margin-top: 4rem;
      margin-bottom:0;
      padding-bottom:0;
      padding-right: 7rem;

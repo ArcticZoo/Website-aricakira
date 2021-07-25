@@ -17,7 +17,7 @@
  		  	zIndex: 2999,
 			diameter: 48,
 			borderWidth:3,
-			easing: 2,
+			easing: 4,
 			borderColor:"#ddd"
 
  		  });
