@@ -137,6 +137,7 @@ if(IsPC()){
 if(!IsPC()){
 	$('.titleText').css({'display':'none'});
 	$('.titleTextPhone').css({'display':'block'});
+	$('#mobileMask').css({'display':'block'});//检修中提示
 }else{
 }
 
