@@ -1,3 +1,71 @@
+//监测页面加载进度函数
+function siteloader(){
+    var imgs = document.getElementsByTagName("img");
+	var video = document.getElementsByTagName("video");
+    var len = 0;
+    var percent = document.getElementById("percent");
+    for(let i=0; i<imgs.length; i++){
+		imgs[i].onload = function(){
+			len++;
+			percent.innerText = Math.round(len*100/imgs.length);
+			//console.log(len);
+		}(len)
+		if(len*100/imgs.length==100){
+			console.log('done');
+			readyloader();
+		}
+    }
+ }
+
+
+//都准备好后再执行
+ function readyloader(){
+	//利用queue来将动画按照序列播放
+	$('.loadingLine').queue(function(){
+		$(this).dequeue(); // 执行下一个函数
+	  }).delay(200) // 延迟1秒后执行下一个函数
+		.queue(function(){
+		$(this).css({"width":"164px"}); // 播放第一个动画，进度条走满
+		$(this).dequeue(); 
+	  }).delay(800) // 延迟1秒后执行下一个函数
+		.queue(function(){
+			//将width的动画值和height统一
+			$(this).css({"transition":"width 1s cubic-bezier(1.000, 0.015, 0.880, 0.580),height 1s cubic-bezier(1.000, 0.015, 0.880, 0.580)"}); 
+			$('#introVideo').css({"height":"1100px"});
+			$('#introVideo').css({"width":"2900px"});
+			
+			$(this).css({"height":"1100px"}); 
+			$(this).css({"width":"2900px"}); 
+			
+			$(this).dequeue(); // 执行下一个函数
+	  }).delay(2000)
+	  .queue(function(){
+		//视频窗口回缩
+		$(this).css({"transition":"width .6s cubic-bezier(0.475, 0.005, 0.315, 0.995),height .6s cubic-bezier(0.475, 0.005, 0.315, 0.995)"}); 
+		$('#introVideo').css({"transition":"width .6s cubic-bezier(0.475, 0.005, 0.315, 0.995),height .6s cubic-bezier(0.475, 0.005, 0.315, 0.995)"}); 
+		$('#introVideo').css({"z-index":"10"});
+		$('#introVideo').css({"height":"640px"});
+		$('#introVideo').css({"width":"1700px"});
+		$(this).css({"height":"640px"}); 
+		$(this).css({"width":"1700px"}); 
+		$(this).css({"border-radius":"50px"}); 
+
+		$("#container").css({"display":"auto"});
+		$('#loading').css({'opacity':"0"});
+		$("#loading").css({"display":"none"});
+		$(this).dequeue(); // 执行下一个函数
+  }).delay(200);
+
+	
+	//$("#container").css({"display":"auto"});
+	//$('#loading').css({'opacity':"0"});
+	//延时执行
+	//let loading=setTimeout('$("#loadding").css({"display":"none"})',200);
+
+ }
+
+
+
 if(!IsPC()){
 	//在移动端动态调节不同dpi适配
 	let htmlwidth = document.documentElement.clientWidth || document.body.clientWidth;  //浏览器兼容
@@ -33,7 +101,7 @@ function IsPC() {
 
 
  (function ($){
-
+	
  	//鼠标样式
  		  const cursor=curDot({
  		  	zIndex: 2999,
@@ -118,16 +186,13 @@ function IsPC() {
 //加载完成后关闭加载页
 if(IsPC()){
 		    $(document).ready(function(){
-		    	$("#container").css({"display":"auto"});
-			    $('#loadding').css({'opacity':"0"});
-			//延时执行
-		    	let loadding=setTimeout('$("#loadding").css({"display":"none"})',200);
+				siteloader();
 		});
 }else{
 	$(document).ready(function(){
 		$("#container").css({"display":"auto"});
-		$('#loadding').css({'opacity':"0"});
-		$('#loadding').delay("slow").css({'display':"none"});
+		$('#loading').css({'opacity':"0"});
+		$('#loading').delay("slow").css({'display':"none"});
 		//加载手机提示
 		$('#mobileTip').css({'display':"block"});
 		$('#wrap').css({'top':"100px"});

@@ -46,26 +46,56 @@
 
 
 /*-------------------------------------------loadding-----------------------------------------*/
- #loadding{
+ #loading{
      width: 100%;
      height: 100%;
-     background: #fff;
+     background: #060606;
      position: fixed;
      top: 0;
-     z-index: 99999;
+     z-index: 99998;
      text-align: center;
      opacity: 1;
      transition:opacity .2s ease;
 }
- #loadding img{
-     width: 8.75rem;
-     margin: auto;
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
+#loading p{
+    color: #ddd;
+    font-size: 20px;
+    font-family: 'Neue-Plak-Extended-Regular';
+    display: inline-block;
+    user-select:none;
+    line-height: 5px;
 }
+#loading .loadingDiv{
+    position: absolute;
+    height: 50px;
+    margin:auto; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#introVideo{
+    position: fixed;
+    z-index: 99999;
+    margin:auto; 
+    display: inline-block;
+    height: 28px;
+    width: 164px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: width 1s cubic-bezier(1.000, 0.015, 0.880, 0.580),height 1s cubic-bezier(1.000, 0.015, 0.880, 0.580);
+}
+#introVideo  .loadingLine{
+    z-index: 99999;
+    background-color: rgb(243, 243, 243);
+    position: relative;
+    height: 28px;
+    width: 0px;
+    transition: width .8s cubic-bezier(0.605, 0.010, 0.005, 0.995),height 1s cubic-bezier(0.785, 0.015, 0.835, 0.610);
+}
+
 /*-----------------------------------------------Nav------------------------------------------*/
 #wrapUpBg{
     overflow: hidden;
