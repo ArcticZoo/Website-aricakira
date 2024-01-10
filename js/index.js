@@ -53,6 +53,7 @@ function siteloader(){
 		$("#container").css({"display":"auto"});
 		$('#loading').css({'opacity':"0"});
 		$("#loading").css({"display":"none"});
+		$('#introVideo').css({"opacity":"0"});
 		$(this).dequeue(); // 执行下一个函数
   }).delay(200);
 

@@ -35,6 +35,7 @@
  body,html{
      width: 100% !important;
      height: 100%;
+     background-color: #171922;
 }
  html::-webkit-scrollbar{
      width: 0rem;
@@ -512,11 +513,11 @@
     transition: opacity 1s ease-in-out;
 }
  .part1{
-     width: 80rem;
+     background-color: #171922;
+     width: 85rem;
      text-align: right;
      margin-top: 10rem;
-     right: 0.1rem;
-     position: absolute;
+     margin:10rem auto;
 }
  .part1 ol{
      list-style: none;
@@ -544,14 +545,16 @@
      list-style-type: none;
 }
  .part1 ul li{
-     padding: 0;
+     padding:0;
      margin: 0;
 }
  .part1 ul li img{
      width: 100%;
+     border-radius: 10px;
 }
  .part1 ul li video{
      width: 100%;
+     border-radius: 10px;
 }
 
  .part1 li {
@@ -583,16 +586,14 @@
 }
  #container li{
      text-align: center;
-     width: 32%;
+     width: 31.3%;
      float: left;
-     margin-bottom: -0.1rem;
+     margin-bottom: 0.46rem;
 }
  #container .column-sizer{
-    width: 0.25rem;
+    width: 0.9rem;
  }
- #container .column-2{
-    
- }
+
  #container li p:hover + a > img{
      opacity: .3;
 }
