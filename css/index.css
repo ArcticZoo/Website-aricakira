@@ -95,6 +95,7 @@
     height: 28px;
     width: 0px;
     transition: width .8s cubic-bezier(0.605, 0.010, 0.005, 0.995),height 1s cubic-bezier(0.785, 0.015, 0.835, 0.610);
+    display: none;
 }
 
 /*-----------------------------------------------Nav------------------------------------------*/
@@ -104,12 +105,11 @@
     height: 100%;
     position: absolute;
     top: 0;
-    clip: rect(0,auto,auto,0);
 }
  #wrapUp{
      width: 25rem;
      position: fixed;
-     left: 2rem;
+     left: 1rem;
      right: 0;
      top: 0.5rem;
      z-index: 1001;
@@ -141,10 +141,10 @@
      text-decoration:none;
 }
  #wrapUp li{
-     display: block;
-     font-size: 4.2rem;
+     display: inline-block;
+     font-size: 2.6rem;
      padding: 0rem 0rem 0rem 0.1rem;
-     line-height: 5.2rem;
+     line-height: 2.6rem;
 
 }
  #wrapUp li a{
@@ -195,15 +195,7 @@
      top: 0.5rem;
      z-index: 1000;
 }
- #wrap .label{
-     display: inline-block;
-     margin:0;
-     position: absolute;
-     left: 42%;
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     font-weight: 600;
-     color: #888;
-}
+
  #wrap ul{
      font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
      list-style: none;
@@ -420,8 +412,12 @@
 .arrowDown{
     display: inline;
     position: absolute;
-    right: 2.6rem;
-    bottom:1.8rem;
+    height: 3rem;
+    width: 3rem;
+    right: 0rem;
+    left:0rem;
+    margin: auto;
+    bottom:5rem;
     z-index: 99;
 }
 .arrowUp{
