@@ -31,6 +31,7 @@
  body,html{
      width: 100% !important;
      height: 100%;
+     background-color: #f3f3f3;
 }
  html::-webkit-scrollbar{
      width: 0rem;
@@ -63,165 +64,94 @@
 }
 /*-----------------------------------------------Nav------------------------------------------*/
  
-
- #wrapUp{
-     width: 25rem;
-     position: fixed;
-     left: 2rem;
-     right: 0;
-     top: 0.5rem;
-     z-index: 1001;
-     filter: invert(100%);
-
- }
-
- #wrapUp .label{
-     display: inline-block;
-     margin:0;
-     position: absolute;
-     left: 42%;
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     font-weight: 600;
-     color: #888;
-}
- #wrapUp ul{
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     list-style: none;
-     display: inline-block;
-     margin: 0rem;
-     padding: 0rem;
-     padding-top:0rem;
-     white-space: nowrap;
-     float: left;
-}
- #wrapUp ul li a{
-     list-style: none;
-     text-decoration:none;
-}
- #wrapUp li{
-     display: block;
-     font-size: 4.2rem;
-     padding: 0rem 0rem 0rem 0.1rem;
-     line-height: 5.2rem;
+#wrapUp{
+    width: 25rem;
+    position: fixed;
+    left: 1rem;
+    right: 0;
+    top: 0.5rem;
+    z-index: 1001;
 
 }
- #wrapUp li a{
-     opacity: 1;
-     transition: color .2s ease;
-     cursor: pointer;
-     color: rgba(0,0,0,0);
-     -webkit-text-stroke:0.07rem #000;
-}
- #wrapUp p{
-     font-size: 0.7rem;
-     font-family: 'Neue-Plak-Extended-Regular';
-     transition: color .5s ease;
-     line-height: 1.2rem;
-     padding-top: 1rem;
-     padding-left: 0.1rem;
-     color: #555;
-}
- #wrapUp ul li .dot{
-    height: 2rem;
-    width: 2rem;
+
+#wrapUp .label{
     display: inline-block;
-    margin: 0;
-    position: relative;
-    padding-left: 1.1rem;
-    padding-top: 0.2rem;
- }
- #wrapUp p:hover{
-    color: #000;
- }
- #wrapUp li a:hover{
-     opacity: 1 !important;
-     color:#00aeff;
-     -webkit-text-stroke:0.07rem #00aeff;
+    margin:0;
+    position: absolute;
+    left: 42%;
+    font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
+    font-weight: 600;
+    color: #888;
 }
- #wrapUp .active a{
-     color: black;
-     font-family: 'Neue-Plak-Wide-SemiBold';
-     opacity: 1;
-     transition:color .2s ease;
-}
-
- #wrap{
-     width: 25rem;
-     position: fixed;
-     left: 2rem;
-     right: 0;
-     top: 0.5rem;
-     z-index: 1000;
-}
- #wrap .label{
-     display: inline-block;
-     margin:0;
-     position: absolute;
-     left: 42%;
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     font-weight: 600;
-     color: #888;
-}
- #wrap ul{
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     list-style: none;
-     display: inline-block;
-     margin: 0rem;
-     padding: 0rem;
-     padding-top:0rem;
-     white-space: nowrap;
-     float: left;
-}
- #wrap ul li a{
-     list-style: none;
-     text-decoration:none;
-}
- #wrap li{
-     display: block;
-     padding: 0rem 0rem 0rem 0.1rem;
-     font-size: 4.2rem;
-     line-height: 5.2rem;
-}
- #wrap li a{
-     opacity: 1;
-     transition: color .2s ease;
-     cursor: pointer;
-     color: rgba(255,255,255,0);
-     -webkit-text-stroke:0.07rem #000;
-}
- #wrap p{
-     font-size: 0.7rem;
-     font-family: 'Neue-Plak-Extended-Regular';
-     transition: color .5s ease;
-     line-height: 1.2rem;
-     padding-top: 1rem;
-     z-index: -10;
-     color: #bbb;
-     padding-left: 0.1rem;
-}
- #wrap ul li .dot{
-    height: 2rem;
-    width: 2rem;
+#wrapUp ul{
+    font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
+    list-style: none;
     display: inline-block;
-    margin: 0;
-    position: relative;
-    padding-left: 1.1rem;
-    padding-top: 0.2rem;
- }
- #wrap p:hover{
-    color: #000;
-
- }
- #wrap li a:hover{
-     opacity: 1 !important;
-     color:#00aeff;
-     -webkit-text-stroke:0.07rem #00aeff;
+    margin: 0rem;
+    padding: 0rem;
+    padding-top:0.7rem;
+    white-space: nowrap;
+    float: left;
 }
- #wrap .active a{
-     color: black;
-     font-family: 'Neue-Plak-Wide-SemiBold';
-     opacity: 1;
-     transition:color .2s ease;
+#wrapUp ul li a{
+    list-style: none;
+    text-decoration:none;
+    color: #444;
+}
+#wrapUp ul li{
+    display: inline-block;
+    font-size: 2.4rem;
+    padding: 0.1rem 0.9rem 0.6rem 1rem;
+    margin-right: 0.1rem;
+    line-height: 2.4rem;
+    background-color: rgba(244, 244, 244, 0.9);
+    border-radius: 5rem;
+    border-style: solid;
+    border-width:0.09rem;
+    border-color: rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(10px);
+
+}
+#wrapUp li a{
+    opacity: 1 !important;
+    transition: color .2s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+#wrapUp p{
+    font-size: 0.7rem;
+    font-family: 'Neue-Plak-Extended-Regular';
+    transition: color .5s ease;
+    line-height: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 0.1rem;
+    color: #555;
+}
+
+#wrapUp p:hover{
+   color: rgb(121, 121, 121);
+}
+#wrapUp li a:hover{
+    opacity: 1 !important;
+    color:#00aeff;
+}
+#wrapUp .active{
+   background-color: #000;
+   color: #fff ;
+}
+#wrapUp .active a{
+    color: rgb(255, 255, 255);
+    font-family: 'Neue-Plak-Wide-Regular';
+    opacity: 1;
+    transition:color .2s ease;
+}
+
+#wrapUp .percent{
+   position: fixed;
+   right: 1rem;
+   top: -0.96rem;
+   font-size: 0.9rem;
+   color: #000;
 }
 
 
@@ -276,43 +206,7 @@
      font-weight: 300;
 }
 /*-----------------------------------------------share------------------------------------------*/
-#share{
-    font-family: 'Neue-Plak-Extended-Regular';
-     position: fixed;
-     left: 1.8rem;
-     bottom: 1rem;
-     z-index: 10;
-     width: 1.4rem;
-}
-#share .crossbar{
-    position: fixed;
-    width: 0.3rem;
-    height: 1.1rem;
-    background-color: #515151;
-    margin: auto 0;
-    left: 2.4rem;
-    top: 0;
-    bottom:0;
-}
-#share img{
-    display: inline-block;
-    width: 1.3rem;
-}
-#share ul{
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-#share ul li{
-    -webkit-writing-mode: vertical-rl;  
-    margin: 1rem 0;
-}
-#share ul li a{
-    text-decoration: none;
-    color: #515151;
-    font-size: 1.1rem;
-}
+
 /*---------------------------------------------wrapTitle------------------------------------------*/
 
 
@@ -343,167 +237,150 @@
      font-weight: 400;
      margin-top: 1rem;
 }
- .title{
-     width: 100%;
-     height: 100%;
-     text-align: left;
-     margin-top:0;
-     right: 0rem;
-     overflow:hidden;
-     background-color: #0f0f0f;
+ 
+.part0{
+    width: 100%;
+    height: 10rem;
+    padding:25rem 0 0 0;
 }
- .title span{
-     color: #b87e32;
+.part0 p{
+    font-size: 2.2rem;
+    text-align: center;
 }
- .title img{
-     height: 37.5rem;
-     position: absolute;
-     z-index: -1;
-     margin-top: -5.625rem;
-     left: -7.6rem;
+.part1{
+    background-color: #f3f3f3;
+    width: 85rem;
+    text-align: right;
+    margin:15rem auto;
+    margin-top: 0rem;
 }
-.title video{
-    width: auto;
-    min-width: 100%;
-    height: auto;
-    min-height: 100%;
-    background-size: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+.part1 ol{
+    list-style: none;
+    position: relative;
+    top: -1rem;
+    padding: 0;
+    padding-right: 0.5rem;
+    margin: 0;
+    font-size: 0.75rem;
 }
- .part1{
-     width: 80rem;
-     text-align: right;
-     margin-top: 5.5rem;
-     right: 0.1rem;
-     position: absolute;
+.part1 ol li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 0.375rem;
+    opacity: 1 !important;
+    color: #555;
 }
- .part1 ol{
-     list-style: none;
-     position: relative;
-     top: -1rem;
-     padding: 0;
-     padding-right: 0.5rem;
-     margin: 0;
-     font-size: 0.75rem;
+.part1 ol .active{
+    background: #333;
+    color: #eee;
 }
- .part1 ol li{
-     display: inline-block;
-     cursor: pointer;
-     padding: 0 0.375rem;
-     opacity: 1 !important;
-     color: #555;
+.part1 ul{
+    display: block;
+    top: 0rem;
+    list-style-type: none;
+    padding-inline-start: 25px;
 }
- .part1 ol .active{
-     background: #333;
-     color: #eee;
-     border-radius: 0.2rem;
+.part1 ul li{
+    padding:0;
+    margin: 0;
 }
- .part1 ul{
-     display: block;
-     top: 0rem;
-     list-style-type: none;
+.part1 ul li img{
+    width: 100%;
+    border-radius: 10px;
 }
- .part1 ul li{
-     padding: 0;
-     margin: 0;
-}
- .part1 ul li img{
-     width: 100%;
-}
- .part1 ul li video{
-     width: 100%;
+.part1 ul li video{
+    width: 100%;
+    border-radius: 10px;
 }
 
- .part1 li {
-     -webkit-transition: all 0.3s ease-out;
-     -moz-transition: all 0.3s ease-out;
-     -o-transition: all 0.3s ease-out;
-     transition: all 0.3s ease-out;
+.part1 li {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
- #container{
+#container{
 }
-     
+    
 }
 /*hover显示名称*/
- #container li img{
-     transition:opacity .2s ease;
-     object-fit: cover;
+#container li img{
+    transition:opacity .2s ease;
+    object-fit: cover;
 }
- #container li img:hover{
-     opacity: .3;
+#container li img:hover{
+    opacity: .3;
 }
- #container li video{
-     transition:opacity .2s ease;
+#container li video{
+    transition:opacity .2s ease;
 }
- #container li video:hover{
-     opacity: .3;
+#container li video:hover{
+    opacity: .3;
 }
- #container li:hover >p{
-     opacity: 1;
+#container li:hover >p{
+    opacity: 1;
 }
- #container li{
-     text-align: center;
-     width: 32%;
-     float: left;
-     margin-bottom: -0.1rem;
-}
- #container .column-sizer{
-    width: 0.25rem;
- }
- #container .column-2{
-    
- }
- #container li p:hover + a > img{
-     opacity: .3;
-}
- #container li p:hover + a > video{
-     opacity: .3;
-}
- #container li p{
-     display: inline-block;
-     font-size: 1.0em;
-     letter-spacing: 1.0em;
-     padding-left: 1.0em;
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     margin:auto;
-     opacity: 0;
-     color: black;
-     z-index: 99;
-     height: 1.0em;
-     transition:opacity .2s ease;
-     font-weight: 600;
-     text-transform : uppercase;
-     font-family: 'IBMPlexSans-ExtraLight';
-}
-
-
- .part1 .over{
-    margin-top: 12rem;
-    width: 100%;
+#container li{
     text-align: center;
-     font-family: 'Neue-Plak-Wide-Regular';
-     font-size: 1.2rem;
- }
- .part1 .over p{
+    width: 31.3%;
+    float: left;
+    margin-bottom: 0.46rem;
+}
+#container .column-sizer{
+   width: 0.9rem;
+}
+
+#container li p:hover + a > img{
+    opacity: .3;
+}
+#container li p:hover + a > video{
+    opacity: .3;
+}
+#container li p{
     display: inline-block;
-    margin:0 auto;
-    padding: 0.3rem 1.4rem 0.4rem 1.4rem;
-    border:0.2rem solid #000;
-    border-radius: 2rem;
- }
- .part1 .footer{
-     text-align: center;
-     margin: 13rem 0rem 0rem 0rem;
-     padding-bottom: 0.6rem;
-     font-family: 'Neue-Plak-Wide-Regular';
-     font-size: 1rem;
- }
- 
+    font-size: 1.0em;
+    letter-spacing: 1.0em;
+    padding-left: 1.0em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    opacity: 0;
+    color: #fff;
+    z-index: 99;
+    height: 1.0em;
+    transition:opacity .2s ease;
+    font-weight: 600;
+    text-transform : uppercase;
+    font-family: 'IBMPlexSans-ExtraLight';
+}
+.othermenu{
+    display: none;
+}
+.part1 .over{
+   margin-top: 12rem;
+   width: 100%;
+   text-align: center;
+    font-family: 'Neue-Plak-Wide-Regular';
+    font-size: 1.2rem;
+}
+.part1 .over p{
+   display: inline-block;
+   margin:0 auto;
+   padding: 0.3rem 1.4rem 0.4rem 1.4rem;
+   border:0.2rem solid #000;
+   border-radius: 2rem;
+}
+.part1 .footer{
+    text-align: center;
+    margin: 13rem 0rem 0rem 0rem;
+    padding-bottom: 0.6rem;
+    font-family: 'Neue-Plak-Wide-Regular';
+    font-size: 1rem;
+    color: #aaa;
+}
  @media screen and (max-width: 98rem) {
     #wrapTitle{
         padding-right: 8.4rem;
