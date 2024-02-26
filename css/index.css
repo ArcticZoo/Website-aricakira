@@ -489,7 +489,6 @@
  #container{
 }
      
-}
 /*hover显示名称*/
  #container li img{
      transition:opacity .2s ease;
@@ -543,9 +542,7 @@
      text-transform : uppercase;
      font-family: 'IBMPlexSans-ExtraLight';
 }
- .othermenu{
-     display: none;
-}
+
  .part1 .over{
     margin-top: 12rem;
     width: 100%;
@@ -560,13 +557,65 @@
     border:0.2rem solid #000;
     border-radius: 2rem;
  }
- .part1 .footer{
+.footer{
+    width: 100%;
+    height:22rem;
+    background-color: #000;
      text-align: center;
      margin: 13rem 0rem 0rem 0rem;
      padding-bottom: 0.6rem;
      font-family: 'Neue-Plak-Wide-Regular';
      font-size: 1rem;
      color: #aaa;
+     overflow: hidden;
+     position: relative;
+ }
+ .footer .content{
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 100%;
+ }
+ .footer .content .name{
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    font-family: 'Neue-Plak-Wide-Regular';
+    font-size: 16.5vw;
+    color: #ddd;
+ }
+ .footer .copyright{
+    font-family: 'Neue-Plak-Wide-Regular';
+    text-align: left;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+ }
+ .footer .contact{
+    font-family: 'Neue-Plak-Wide-Regular';
+    text-align: left;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 17rem;
+    color: #fff;
+    font-size: 2rem;
+ }
+ .footer .link{
+    font-size: 0.8rem;
+    display: inline;
+    font-family: 'Neue-Plak-Wide-Regular';
+    text-align: right;
+    position: absolute;
+    right: 2rem;
+    bottom: 1.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+ }
+ .footer .link p{
+    padding-left: 2rem;
  }
 
 /*imac*/
