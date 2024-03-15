@@ -424,8 +424,17 @@
     border-radius: 10rem;
     line-height: 2.5rem;
     padding-bottom: 0.7rem;
-    padding-right: 0.5rem;
-    padding-left: 3.3rem;
+    padding-right: 0.6rem;
+    padding-left: 1.1rem;
+}
+.aboutme .briefA .tag .circle{
+    background-color: #171922;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    border-radius: 3rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 .aboutme .briefB{
     margin-top: 1.6rem;
@@ -434,6 +443,27 @@
     color: #ccc;
     text-align: center;
 }
+.aboutme .skill{
+    width: 68rem;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+.aboutme .skill .skillCard{
+    width: 24rem;
+    height: 14rem;
+    background-color: #171922;
+    border: solid;
+    border-width: 0.1rem;
+    border-color: #52576c;
+    margin-right: -10rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 1.1rem;
+    transform: rotateX(350deg) rotateY(32deg) rotateZ(0deg);
+}
+
+
+
 
  .part1{
      background-color: #171922;
