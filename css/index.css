@@ -460,6 +460,9 @@
     position: relative;
     border-radius: 1.1rem;
     transform: rotateX(350deg) rotateY(32deg) rotateZ(0deg);
+    color: #fff;
+    font-size: 3.0rem;
+    font-family: 'Neue-Plak-Extended-Regular';
 }
 
 
