@@ -411,8 +411,8 @@
 }
 .aboutme .briefA{
     margin-top: 23rem;
-    font-size: 2.9rem;
-    line-height: 4.2rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
     color: #fff;
     text-align: center;
     font-family: 'Neue-Plak-Wide-Regular';
@@ -422,7 +422,7 @@
     background-color: #f1f1f1;
     display: inline-block;
     border-radius: 10rem;
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     padding-bottom: 0.7rem;
     padding-right: 0.6rem;
     padding-left: 1.1rem;
@@ -437,7 +437,7 @@
     margin-bottom: 0.2rem;
 }
 .aboutme .briefB{
-    margin-top: 1.6rem;
+    margin-top: 2rem;
     font-size: 0.8rem;
     line-height: 1.9rem;
     color: #ccc;
@@ -450,21 +450,25 @@
 }
 .aboutme .skill .skillCard{
     width: 24rem;
-    height: 14rem;
+    height: 12rem;
     background-color: #171922;
     border: solid;
     border-width: 0.1rem;
     border-color: #52576c;
-    margin-right: -10rem;
+    margin-right: -9rem;
     display: inline-block;
     position: relative;
     border-radius: 1.1rem;
     transform: rotateX(350deg) rotateY(32deg) rotateZ(0deg);
     color: #fff;
-    font-size: 3.0rem;
-    font-family: 'Neue-Plak-Extended-Regular';
+    font-size: 1rem;
 }
-
+.aboutme .skill .skillCard .cardTitle{
+    display: block;
+    position: absolute;
+    font-size: 2.3rem;
+    top: 9.6rem;
+}
 
 
 
