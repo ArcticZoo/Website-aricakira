@@ -2,18 +2,6 @@
 /*1rem =16px*/
 
  @font-face {
-     font-family: 'IBMPlexSans-Regular';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-Regular.otf');
-}
- @font-face {
-     font-family: 'IBMPlexSans-ExtraLight';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-ExtraLight.otf');
-}
- @font-face {
-     font-family: 'IBMPlexSans-BoldItalic';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf');
-}
- @font-face {
      font-family: 'Neue-Plak-Extended-Regular';
      src: url('../font/Neue-Plak-Extended-Regular.ttf');
 }
@@ -24,6 +12,10 @@
  @font-face {
      font-family: 'Neue-Plak-Wide-SemiBold';
      src: url('../font/Neue-Plak-Wide-SemiBold.otf');
+}
+@font-face {
+    font-family: 'NeuePower-Regular';
+    src: url('../font/NeuePower-Regular.ttf');
 }
 
  body,html,div{
@@ -464,12 +456,20 @@
     font-size: 1rem;
 }
 .aboutme .skill .skillCard .cardTitle{
+    font-family: 'NeuePower-Regular';
     display: block;
     position: absolute;
     font-size: 2.3rem;
     top: 9.6rem;
 }
-
+.part1 .part1Title{
+    font-family: 'NeuePower-Regular';
+    font-size: 2.3rem;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 7rem;
+}
 
 
  .part1{
