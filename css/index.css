@@ -594,6 +594,20 @@
     border:0.2rem solid #000;
     border-radius: 2rem;
  }
+
+
+.part2{
+    width: 100%;
+}
+.part2 .detail{
+    width: 26rem;
+    height: 11rem;
+    background-color: #000;
+    border-radius: 1.2rem;
+    display: inline-block;
+}
+
+
 .footer{
     width: 100%;
     height:22rem;
