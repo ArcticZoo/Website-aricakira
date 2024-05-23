@@ -2,18 +2,6 @@
 /*1rem =16px*/
 
  @font-face {
-     font-family: 'IBMPlexSans-Regular';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-Regular.otf');
-}
- @font-face {
-     font-family: 'IBMPlexSans-ExtraLight';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-ExtraLight.otf');
-}
- @font-face {
-     font-family: 'IBMPlexSans-BoldItalic';
-     src: url('../font/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf');
-}
- @font-face {
      font-family: 'Neue-Plak-Extended-Regular';
      src: url('../font/Neue-Plak-Extended-Regular.ttf');
 }
@@ -24,6 +12,10 @@
  @font-face {
      font-family: 'Neue-Plak-Wide-SemiBold';
      src: url('../font/Neue-Plak-Wide-SemiBold.otf');
+}
+@font-face {
+    font-family: 'NeuePower-Regular';
+    src: url('../font/NeuePower-Regular.ttf');
 }
 
  body,html,div{
@@ -411,8 +403,8 @@
 }
 .aboutme .briefA{
     margin-top: 23rem;
-    font-size: 2.9rem;
-    line-height: 4.2rem;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
     color: #fff;
     text-align: center;
     font-family: 'Neue-Plak-Wide-Regular';
@@ -422,18 +414,63 @@
     background-color: #f1f1f1;
     display: inline-block;
     border-radius: 10rem;
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     padding-bottom: 0.7rem;
-    padding-right: 0.5rem;
-    padding-left: 3.3rem;
+    padding-right: 0.6rem;
+    padding-left: 1.1rem;
+}
+.aboutme .briefA .tag .circle{
+    background-color: #171922;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    border-radius: 3rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 .aboutme .briefB{
-    margin-top: 1.6rem;
+    margin-top: 2rem;
     font-size: 0.8rem;
     line-height: 1.9rem;
     color: #ccc;
     text-align: center;
 }
+.aboutme .skill{
+    width: 68rem;
+    margin: 0 auto;
+    margin-top: 12rem;
+}
+.aboutme .skill .skillCard{
+    width: 24rem;
+    height: 12rem;
+    background-color: #171922;
+    border: solid;
+    border-width: 0.1rem;
+    border-color: #52576c;
+    margin-right: -9rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 1.1rem;
+    transform: rotateX(350deg) rotateY(32deg) rotateZ(0deg);
+    color: #fff;
+    font-size: 1rem;
+}
+.aboutme .skill .skillCard .cardTitle{
+    font-family: 'NeuePower-Regular';
+    display: block;
+    position: absolute;
+    font-size: 2.3rem;
+    top: 9.6rem;
+}
+.part1 .part1Title{
+    font-family: 'NeuePower-Regular';
+    font-size: 2.3rem;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
 
  .part1{
      background-color: #171922;
@@ -557,6 +594,20 @@
     border:0.2rem solid #000;
     border-radius: 2rem;
  }
+
+
+.part2{
+    width: 100%;
+}
+.part2 .detail{
+    width: 26rem;
+    height: 11rem;
+    background-color: #000;
+    border-radius: 1.2rem;
+    display: inline-block;
+}
+
+
 .footer{
     width: 100%;
     height:22rem;
@@ -582,7 +633,7 @@
     line-height: 1rem;
     font-family: 'Neue-Plak-Wide-Regular';
     font-size: 16.5vw;
-    color: #ddd;
+    color: #eee;
  }
  .footer .copyright{
     font-family: 'Neue-Plak-Wide-Regular';
