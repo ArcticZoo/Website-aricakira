@@ -598,10 +598,18 @@
 
 .part2{
     width: 100%;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+.part2 .detailWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .part2 .detail{
     width: 26rem;
     height: 11rem;
+    margin: 0 0.7rem;
     background-color: #000;
     border-radius: 1.2rem;
     display: inline-block;
