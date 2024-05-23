@@ -614,6 +614,10 @@
     border-radius: 1.2rem;
     display: inline-block;
 }
+.part2 .detail .title{
+    font-size: 2.8rem;
+    color: #ddd;
+}
 
 
 .footer{
