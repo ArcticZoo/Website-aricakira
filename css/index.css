@@ -27,7 +27,7 @@
  body,html{
      width: 100% !important;
      height: 100%;
-     background-color: #171922;
+     background-color: #1A1C23;
 }
  html::-webkit-scrollbar{
      width: 0rem;
@@ -598,8 +598,8 @@
 
 .part2{
     width: 100%;
-    margin-top: 20rem;
-    margin-bottom: 20rem;
+    margin-top: 25rem;
+    margin-bottom: 22rem;
 }
 .part2 .detailWrap{
     display: flex;
@@ -611,12 +611,22 @@
     height: 11rem;
     margin: 0 0.7rem;
     background-color: #000;
-    border-radius: 1.2rem;
+    border-radius: 1.1rem;
     display: inline-block;
 }
-.part2 .detail .title{
+.part2 .detail .title2{
     font-size: 2.8rem;
-    color: #ddd;
+    color: #eee;
+    font-family: 'NeuePower-Regular';
+    line-height: 2rem;
+    margin: 0;
+    margin-left: 1.3rem;
+    margin-top: 1.2rem;
+}
+.part2 .detail .subTitle{
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-left: 1.3rem;
 }
 
 
