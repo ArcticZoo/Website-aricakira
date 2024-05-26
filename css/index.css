@@ -435,33 +435,41 @@
     color: #ccc;
     text-align: center;
 }
-.aboutme .skill{
-    width: 68rem;
-    margin: 0 auto;
-    margin-top: 12rem;
+
+.aboutme .skillList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
 }
-.aboutme .skill .skillCard{
-    width: 24rem;
-    height: 12rem;
-    background-color: #171922;
-    border: solid;
-    border-width: 0.1rem;
-    border-color: #52576c;
-    margin-right: -9rem;
-    display: inline-block;
-    position: relative;
-    border-radius: 1.1rem;
-    transform: rotateX(350deg) rotateY(32deg) rotateZ(0deg);
+
+.aboutme .skillList .skillCard{
+    width: 20rem;
+    height: 10rem;
+    background-color: #1F2129;
+    border-radius: 1rem;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+    background: linear-gradient(#1F2129, #1F2129) padding-box,
+                linear-gradient(to bottom, #64676C, #282932) border-box;
+    border: 0.04rem solid transparent;
+}
+
+.aboutme .skillList .skillCard .skillTitle{
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-family: 'Neue-Plak-Wide-Regular';
+    margin-top: 0;
+    line-height: 1.8rem;
 }
-.aboutme .skill .skillCard .cardTitle{
-    font-family: 'NeuePower-Regular';
-    display: block;
-    position: absolute;
-    font-size: 2.3rem;
-    top: 9.6rem;
+
+.aboutme .skillList .skillCard .skillDetail{
+    color: #aaa;
+    font-size: 0.8rem;
+    line-height: 1.45rem;
+    margin-top: 4.0rem;
 }
+
 .part1 .part1Title{
     font-family: 'NeuePower-Regular';
     font-size: 2.3rem;
