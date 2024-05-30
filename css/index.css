@@ -401,12 +401,16 @@
     width: 100%;
     height: 90%;
 }
+.aboutme .briefAWrap{
+    width: 91.5rem;
+    margin: 0 auto;
+}
 .aboutme .briefA{
     margin-top: 23rem;
     font-size: 2.2rem;
     line-height: 3.2rem;
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-family: 'Neue-Plak-Wide-Regular';
 }
 .aboutme .briefA .tag{
@@ -433,7 +437,7 @@
     font-size: 0.8rem;
     line-height: 1.9rem;
     color: #ccc;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutme .skillList{
