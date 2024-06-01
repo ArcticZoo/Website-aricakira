@@ -407,7 +407,7 @@
 }
 .aboutme .briefA{
     margin-top: 23rem;
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     line-height: 3.2rem;
     color: #fff;
     text-align: left;
@@ -418,8 +418,8 @@
     background-color: #f1f1f1;
     display: inline-block;
     border-radius: 10rem;
-    line-height: 2.1rem;
-    padding-bottom: 0.7rem;
+    line-height: 2.0rem;
+    padding-bottom: 0.5rem;
     padding-right: 0.6rem;
     padding-left: 1.1rem;
 }
@@ -455,7 +455,7 @@
     margin: 0 0.5rem 0 0.5rem;
     padding: 1.1rem 1.1rem 1.1rem 1.1rem;
     background: linear-gradient(#1F2129, #1F2129) padding-box,
-                linear-gradient(to bottom, #64676C, #282932) border-box;
+                linear-gradient(to bottom, #494E54, #282932) border-box;
     border: 0.04rem solid transparent;
 }
 
