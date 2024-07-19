@@ -155,7 +155,7 @@
      font-size: 0.7rem;
      font-family: 'Neue-Plak-Extended-Regular';
      transition: color .5s ease;
-     line-height: 1.2rem;
+     line-height: 1.1rem;
      padding-top: 1rem;
      padding-left: 0.1rem;
      color: #555;
@@ -181,8 +181,8 @@
 #wrapUp .detail{
     position: fixed;
     left: 55rem;
-    top: -0.96rem;
-    font-size: 0.8rem;
+    top: -0.46rem;
+    font-size: 0.7rem;
     color: #fff;
 }
 #wrapUp .percent{
