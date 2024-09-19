@@ -117,128 +117,96 @@
 }
 /*-----------------------------------------------Nav------------------------------------------*/
  
- #wrapUp{
-     width: 25rem;
-     position: fixed;
-     left: 2rem;
-     right: 0;
-     top: 0.5rem;
-     z-index: 1001;
-     filter: invert(100%);
-
- }
-
- #wrapUp .label{
-     display: inline-block;
-     margin:0;
-     position: absolute;
-     left: 42%;
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     font-weight: 600;
-     color: #888;
-}
- #wrapUp ul{
-     font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
-     list-style: none;
-     display: inline-block;
-     margin: 0rem;
-     padding: 0rem;
-     padding-top:0rem;
-     white-space: nowrap;
-     float: left;
-}
- #wrapUp ul li a{
-     list-style: none;
-     text-decoration:none;
-}
- #wrapUp li{
-     display: block;
-     font-size: 4.2rem;
-     padding: 0rem 0rem 0rem 0.1rem;
-     line-height: 5.2rem;
+#wrapUp{
+    width: 25rem;
+    position: fixed;
+    left: 1rem;
+    right: 0;
+    top: 0.5rem;
+    z-index: 1001;
 
 }
- #wrapUp li a{
-     opacity: 1;
-     transition: color .2s ease;
-     cursor: pointer;
-     color: rgba(0,0,0,0);
-     -webkit-text-stroke:0.07rem #000;
-}
- #wrapUp p{
-     font-size: 0.7rem;
-     font-family: 'Neue-Plak-Extended-Regular';
-     transition: color .5s ease;
-     line-height: 1.2rem;
-     padding-top: 1rem;
-     padding-left: 0.1rem;
-     color: #555;
-}
- #wrapUp ul li .dot{
-    height: 2rem;
-    width: 2rem;
+
+#wrapUp .label{
     display: inline-block;
-    margin: 0;
-    position: relative;
-    padding-left: 1.1rem;
-    padding-top: 0.2rem;
- }
- #wrapUp p:hover{
-    color: #000;
- }
- #wrapUp li a:hover{
-     opacity: 1 !important;
-     color:#00aeff;
-     -webkit-text-stroke:0.07rem #00aeff;
+    margin:0;
+    position: absolute;
+    left: 42%;
+    font-family: 'Neue-Plak-Wide-SemiBold', "PingFang SC","Helvetica Neue","Arial";
+    font-weight: 600;
+    color: #888;
 }
- #wrapUp .active a{
-     color: black;
-     font-family: 'Neue-Plak-Wide-SemiBold';
-     opacity: 1;
-     transition:color .2s ease;
+#wrapUp ul{
+    font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
+    list-style: none;
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    padding-top:0.7rem;
+    white-space: nowrap;
+    float: left;
+}
+#wrapUp ul li a{
+    list-style: none;
+    text-decoration:none;
+    color: #fff;
+}
+#wrapUp ul li{
+    display: inline-block;
+    font-size: 2.4rem;
+    padding: 0.1rem 0.9rem 0.6rem 1rem;
+    margin-right: 0.1rem;
+    line-height: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5rem;
+    border-style: solid;
+    border-width:0.09rem;
+    border-color: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(10px);
+
+}
+#wrapUp li a{
+    opacity: 1 !important;
+    transition: color .2s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+#wrapUp p{
+    font-size: 0.7rem;
+    font-family: 'Neue-Plak-Extended-Regular';
+    transition: color .5s ease;
+    line-height: 1.1rem;
+    padding-top: 1rem;
+    padding-left: 0.1rem;
+    color: #555;
 }
 
+#wrapUp p:hover{
+   color: #000;
+}
+#wrapUp li a:hover{
+    opacity: 1 !important;
+    color:#00aeff;
+}
+#wrapUp .active{
+   background-color: #fff;
+   color: #000;
+}
+#wrapUp .active a{
+    color: black;
+    font-family: 'Neue-Plak-Wide-Regular';
+    opacity: 1;
+    transition:color .2s ease;
+}
  
 
 /*-----------------------------------------------share------------------------------------------*/
-#share{
-    font-family: 'Neue-Plak-Extended-Regular';
-     position: fixed;
-     left: 1.8rem;
-     bottom: 1rem;
-     z-index: 10;
-     width: 1.4rem;
-}
-#share .crossbar{
-    position: fixed;
-    width: 0.3rem;
-    height: 1.1rem;
-    background-color: #ccc;
-    margin: auto 0;
-    left: 2.4rem;
-    top: 0;
-    bottom:0;
-}
-#share img{
-    display: inline-block;
-    width: 1.3rem;
-    filter: invert(100%);
-}
-#share ul{
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-#share ul li{
-    -webkit-writing-mode: vertical-rl;  
-    margin: 1rem 0;
-}
-#share ul li a{
-    text-decoration: none;
-    color: #ccc;
-    font-size: 1.1rem;
-}
+
+
+
+
+
+
 /*---------------------------------------------wrapTitle------------------------------------------*/
  #wrapTitle{
      display: inline-block;
