@@ -245,7 +245,7 @@
  
 .title{
     width: 100%;
-    height: 50%;
+    height: 58%;
 }
 .title .briefAWrap{
     width: 91.5rem;
@@ -374,7 +374,7 @@
      display: inline-block;
      height: 9rem;
      width: 28rem;
-     margin:3.4rem 1.8rem 3.4rem 0rem;
+     margin:3.4rem 0.9rem 3.4rem 0.9rem;
      position: relative;
      z-index: 1;
      transition: box-shadow .2s ease,border .2s ease,opacity .2s ease;
@@ -629,42 +629,21 @@
      opacity: 1;
      top: 9.75rem;
 }
+
+
+
+
+/*ipad*/
+
  @media screen and (max-width: 98rem){
-    #wrapTitle{
-        padding-right: 5.1rem;
-    }
-    #wrapTitle .wrapP1 {
-        padding-right: 25.6rem;
-    }
-    .title .brief{
-        font-size: 1.8rem;
-        line-height:2.3rem;
-        margin-left: 15.25rem;
-    }
-    #wrapUp li{
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-    }
-    #wrap li{
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-    }
-    .title{
-        right: 17.3rem;
-    }
-    .title .downtext{
-        margin-left: 15.25rem;
-    }
-    .title img{
-        margin-left: 14.55rem;
-    }
-    .part2,.part3,.part4{
-        padding-right: 0;
-        padding-left: 10rem;
-        width: 60rem;
-        overflow: hidden;
-    }
+
 }
+
+
+
+
+
+
  /*进入手机模式*/
 
  @media screen and (max-width: 58rem){
