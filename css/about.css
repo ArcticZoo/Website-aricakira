@@ -245,7 +245,7 @@
  
 .title{
     width: 100%;
-    height: 90%;
+    height: 50%;
 }
 .title .briefAWrap{
     width: 91.5rem;
@@ -337,7 +337,7 @@
     outline:none;
  }
  .part2{
-     width: 75.75rem;
+     width: 100%;
      padding-top: 0rem;
      float: left;
      border-radius: 5rem 0rem 0 0;
@@ -345,7 +345,7 @@
 }
 
  .part2inside{
-     width: 75rem;
+     width: 61rem;
      margin: 0 auto;
      padding:8.125rem 0 0rem 0;
      text-align: center;
@@ -432,7 +432,7 @@
 }
  .part3{
      float: left;
-     width: 75.75rem;
+     width: 100%;
      height: 25rem;
      margin-top: 4rem;
      margin-bottom:0;
@@ -440,7 +440,7 @@
      padding-right: 7rem;
 }
  .part3 .part3inside{
-     width: 75rem;
+     width: 61rem;
      text-align:left;
      margin:0 auto;
      padding: 5.625rem 0;
@@ -496,7 +496,7 @@
 }
  .part4{
      float: left;
-     width: 75.75rem;
+     width: 100%;
      height: 40.625rem;
      margin-top: 4rem;
      margin-bottom:0;
@@ -504,7 +504,7 @@
      padding-right: 7rem;
 }
  .part4 .part4inside{
-     width: 75rem;
+     width: 61rem;
      text-align:left;
      margin:0 auto;
      padding: 3.125rem 0;
