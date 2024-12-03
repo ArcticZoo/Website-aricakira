@@ -252,11 +252,11 @@
     margin: 0 auto;
 }
 .title .briefA{
-    margin-top: 23rem;
+    margin-top: 19rem;
     font-size: 2.0rem;
     line-height: 3.2rem;
     color: #fff;
-    text-align: left;
+    text-align: center;
     font-family: 'Neue-Plak-Wide-Regular';
 }
 .title .briefA .tag{
@@ -283,8 +283,7 @@
     font-size: 0.8rem;
     line-height: 1.9rem;
     color: #ccc;
-    text-align: left;
-}
+    text-align: center}
 
 .title .skillList{
     display: flex;
@@ -339,8 +338,8 @@
  }
  .part2{
      width: 75.75rem;
-     padding-top: 38rem;
-     float: right;
+     padding-top: 0rem;
+     float: left;
      border-radius: 5rem 0rem 0 0;
      padding-right: 7rem;
 }
@@ -432,7 +431,7 @@
      display: none;
 }
  .part3{
-     float: right;
+     float: left;
      width: 75.75rem;
      height: 25rem;
      margin-top: 4rem;
@@ -496,7 +495,7 @@
      margin-top: -0.0625rem;
 }
  .part4{
-     float: right;
+     float: left;
      width: 75.75rem;
      height: 40.625rem;
      margin-top: 4rem;
