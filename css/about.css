@@ -245,14 +245,14 @@
  
 .title{
     width: 100%;
-    height: 58%;
+    height: 60%;
 }
 .title .briefAWrap{
     width: 91.5rem;
     margin: 0 auto;
 }
 .title .briefA{
-    margin-top: 19rem;
+    margin-top: 22rem;
     font-size: 2.0rem;
     line-height: 3.2rem;
     color: #fff;
@@ -321,9 +321,10 @@
 
  #spline{
     position: absolute;
-    top: 0rem;
-    right: 1rem;
-    z-index: 0;
+    top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    z-index: -1;
     outline:none;
 }
  #spline #splineIndex{
