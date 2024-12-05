@@ -124,6 +124,18 @@ if(!IsPC()){
 			//增加wrap的背景
 		}
 
+		// 获取窗口滚动高度
+		let scrollTop = $(this).scrollTop();
+		// 获取文档总高度
+		let docHeight = $(document).height();
+		// 获取窗口高度
+		let winHeight = $(this).height();
+		// 计算滚动百分比
+		let scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+		// 将百分比显示在页面上 (你可以根据需要修改选择器)
+		$('#percent').text('(PERCENT '+scrollPercent.toFixed(1) + '%)');
+
+
 		/*
 		if($(document).scrollTop() >= $(document).height() - $(window).height()-50){
 			$('.footer').css({'opacity':'1'});
