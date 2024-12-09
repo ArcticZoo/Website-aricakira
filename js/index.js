@@ -3,7 +3,7 @@ function siteloader(){
     var imgs = document.getElementsByTagName("img");
 	var video = document.getElementsByTagName("video");
     var len = 0;
-    var percent = document.getElementById("percent");
+    var percent = document.getElementById("percentLoad");
     for(let i=0; i<imgs.length; i++){
 		imgs[i].onload = function(){
 			len++;
@@ -239,7 +239,8 @@ if(!IsPC()){
 		// 获取窗口高度
 		let winHeight = $(this).height();
 		// 计算滚动百分比
-		let scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+		var scrollPercent = 0;
+		scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
 		// 将百分比显示在页面上 (你可以根据需要修改选择器)
 		$('#percent').text('(PERCENT '+scrollPercent.toFixed(1) + '%)');
 
