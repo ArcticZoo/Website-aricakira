@@ -321,8 +321,8 @@
 
  #spline{
     position: absolute;
-    top: 20%;
-  left: 50%;
+    top: 19%;
+  left: 49%;
   transform: translate(-50%, -50%);
     z-index: -1;
     outline:none;
