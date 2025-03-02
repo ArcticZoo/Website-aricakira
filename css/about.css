@@ -242,50 +242,89 @@
  body,html{
      background-color: #111;
 }
- .title{
-     width: 56.8rem;
-     height: 22rem;
-     text-align: left;
-     margin-top: 0rem;
-     right: 25.3rem;
-     position: absolute;
-     overflow:hidden;
-     color: #eee;
-     z-index: 99;
-     pointer-events:none;
+ 
+.title{
+    width: 100%;
+    height: 60%;
 }
- .title span{
-     color: #b87e32;
+.title .briefAWrap{
+    width: 91.5rem;
+    margin: 0 auto;
 }
- .title .brief{
-     margin-left: 0.625rem;
-     margin-top: 2rem;
-     font-size: 1.8rem;
-     text-transform:uppercase;
-     line-height: 2.3rem;
-     font-family: 'Neue-Plak-Wide-Regular', "PingFang SC","Helvetica Neue","Arial";
-     pointer-events:none;
+.title .briefA{
+    margin-top: 22rem;
+    font-size: 2.0rem;
+    line-height: 3.2rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Neue-Plak-Wide-Regular';
 }
- .title .downtext{
-     width: 40rem;
-     color: #ccc;
-     margin-left: 0.75rem;
-     padding-top: 0.7rem;
-     line-height: 1.6rem;
-     font-size: 0.86rem;
-     pointer-events:none;
+.title .briefA .tag{
+    color: #000;
+    background-color: #f1f1f1;
+    display: inline-block;
+    border-radius: 10rem;
+    line-height: 2.0rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.6rem;
+    padding-left: 1.1rem;
 }
- .title img{
-     height: 12.0625rem;
-     padding-top: 1rem;
-     padding-left:0.625rem;
-     display: none;
+.title .briefA .tag .circle{
+    background-color: #171922;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    border-radius: 3rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
 }
+.title .briefB{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.9rem;
+    color: #ccc;
+    text-align: center}
+
+.title .skillList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.title .skillList .skillCard{
+    width: 20rem;
+    height: 10rem;
+    background-color: #1F2129;
+    border-radius: 1rem;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+    background: linear-gradient(#1F2129, #1F2129) padding-box,
+                linear-gradient(to bottom, #494E54, #282932) border-box;
+    border: 0.04rem solid transparent;
+}
+
+.title .skillList .skillCard .skillTitle{
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Neue-Plak-Wide-Regular';
+    margin-top: 0;
+    line-height: 1.8rem;
+}
+
+.title .skillList .skillCard .skillDetail{
+    color: #aaa;
+    font-size: 0.8rem;
+    line-height: 1.45rem;
+    margin-top: 4.0rem;
+}
+
  #spline{
     position: absolute;
-    top: 0rem;
-    right: 1rem;
-    z-index: 0;
+    top: 19%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+    z-index: -1;
     outline:none;
 }
  #spline #splineIndex{
@@ -299,15 +338,15 @@
     outline:none;
  }
  .part2{
-     width: 75.75rem;
-     padding-top: 38rem;
-     float: right;
+     width: 100%;
+     padding-top: 0rem;
+     float: left;
      border-radius: 5rem 0rem 0 0;
-     padding-right: 7rem;
+     padding-right: 0rem;
 }
 
  .part2inside{
-     width: 75rem;
+     width: 61rem;
      margin: 0 auto;
      padding:8.125rem 0 0rem 0;
      text-align: center;
@@ -336,7 +375,7 @@
      display: inline-block;
      height: 9rem;
      width: 28rem;
-     margin:3.4rem 1.8rem 3.4rem 0rem;
+     margin:3.4rem 0.9rem 3.4rem 0.9rem;
      position: relative;
      z-index: 1;
      transition: box-shadow .2s ease,border .2s ease,opacity .2s ease;
@@ -393,16 +432,16 @@
      display: none;
 }
  .part3{
-     float: right;
-     width: 75.75rem;
+     float: left;
+     width: 100%;
      height: 25rem;
      margin-top: 4rem;
      margin-bottom:0;
      padding-bottom:0;
-     padding-right: 7rem;
+     padding-right: 0rem;
 }
  .part3 .part3inside{
-     width: 75rem;
+     width: 61rem;
      text-align:left;
      margin:0 auto;
      padding: 5.625rem 0;
@@ -457,16 +496,16 @@
      margin-top: -0.0625rem;
 }
  .part4{
-     float: right;
-     width: 75.75rem;
+     float: left;
+     width: 100%;
      height: 40.625rem;
      margin-top: 4rem;
      margin-bottom:0;
      padding-bottom:0;
-     padding-right: 7rem;
+     padding-right: 0rem;
 }
  .part4 .part4inside{
-     width: 75rem;
+     width: 61rem;
      text-align:left;
      margin:0 auto;
      padding: 3.125rem 0;
@@ -591,42 +630,21 @@
      opacity: 1;
      top: 9.75rem;
 }
+
+
+
+
+/*ipad*/
+
  @media screen and (max-width: 98rem){
-    #wrapTitle{
-        padding-right: 5.1rem;
-    }
-    #wrapTitle .wrapP1 {
-        padding-right: 25.6rem;
-    }
-    .title .brief{
-        font-size: 1.8rem;
-        line-height:2.3rem;
-        margin-left: 15.25rem;
-    }
-    #wrapUp li{
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-    }
-    #wrap li{
-        font-size: 2.8rem;
-        line-height: 3.4rem;
-    }
-    .title{
-        right: 17.3rem;
-    }
-    .title .downtext{
-        margin-left: 15.25rem;
-    }
-    .title img{
-        margin-left: 14.55rem;
-    }
-    .part2,.part3,.part4{
-        padding-right: 0;
-        padding-left: 10rem;
-        width: 60rem;
-        overflow: hidden;
-    }
+
 }
+
+
+
+
+
+
  /*进入手机模式*/
 
  @media screen and (max-width: 58rem){

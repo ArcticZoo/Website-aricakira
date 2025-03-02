@@ -3,7 +3,7 @@ function siteloader(){
     var imgs = document.getElementsByTagName("img");
 	var video = document.getElementsByTagName("video");
     var len = 0;
-    var percent = document.getElementById("percent");
+    var percent = document.getElementById("percentLoad");
     for(let i=0; i<imgs.length; i++){
 		imgs[i].onload = function(){
 			len++;
@@ -230,6 +230,20 @@ if(!IsPC()){
 		}else{
 			$('.footer').css({'opacity':'0'});
 		}*/
+		
+		//改变右上角进度百分比
+		// 获取窗口滚动高度
+		let scrollTop = $(this).scrollTop();
+		// 获取文档总高度
+		let docHeight = $(document).height();
+		// 获取窗口高度
+		let winHeight = $(this).height();
+		// 计算滚动百分比
+		var scrollPercent = 0;
+		scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+		// 将百分比显示在页面上 (你可以根据需要修改选择器)
+		$('#percent').text('(PERCENT '+scrollPercent.toFixed(1) + '%)');
+
     });
 
 

@@ -1,63 +1,62 @@
-
- @font-face {
-     font-family: 'Neue-Plak-Extended-Regular';
-     src: url('../font/Neue-Plak-Extended-Regular.ttf');
+@font-face {
+    font-family: 'Neue-Plak-Extended-Regular';
+    src: url('../font/Neue-Plak-Extended-Regular.ttf');
 }
- @font-face {
-     font-family: 'Neue-Plak-Wide-Regular';
-     src: url('../font/Neue-Plak-Wide-Regular.ttf');
+@font-face {
+    font-family: 'Neue-Plak-Wide-Regular';
+    src: url('../font/Neue-Plak-Wide-Regular.ttf');
 }
- @font-face {
-     font-family: 'Neue-Plak-Wide-SemiBold';
-     src: url('../font/Neue-Plak-Wide-SemiBold.otf');
+@font-face {
+    font-family: 'Neue-Plak-Wide-SemiBold';
+    src: url('../font/Neue-Plak-Wide-SemiBold.otf');
 }
 @font-face {
     font-family: 'NeuePower-Regular';
     src: url('../font/NeuePower-Regular.ttf');
 }
 
- body,html,div{
-     font-family: "PingFang SC","Helvetica Neue","Arial";
-     border: 0;
-     margin:0;
-     padding: 0;
+body,html,div{
+    font-family: "PingFang SC","Helvetica Neue","Arial";
+    border: 0;
+    margin:0;
+    padding: 0;
 }
- body,html{
-     width: 100% !important;
-     height: 100%;
-     background-color: #f3f3f3;
+body,html{
+    width: 100% !important;
+    height: 100%;
+    background-color: #f3f3f3;
 }
- html::-webkit-scrollbar{
-     width: 0rem;
+html::-webkit-scrollbar{
+    width: 0rem;
 }
- html::-webkit-scrollbar-thumb{
-     border-radius: 0.625rem;
-     background: #aaa;
+html::-webkit-scrollbar-thumb{
+    border-radius: 0.625rem;
+    background: #aaa;
 }
 
 /*-------------------------------------------loadding-----------------------------------------*/
- #loadding{
-     width: 100%;
-     height: 100%;
-     background: #fff;
-     position: fixed;
-     top: 0;
-     z-index: 99999;
-     text-align: center;
-     opacity: 1;
-     transition:opacity .2s ease;
+#loadding{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    text-align: center;
+    opacity: 1;
+    transition:opacity .2s ease;
 }
- #loadding img{
-     width: 8.75rem;
-     margin: auto;
-     position: absolute;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
+#loadding img{
+    width: 8.75rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 /*-----------------------------------------------Nav------------------------------------------*/
- 
+
 #wrapUp{
     width: 25rem;
     position: fixed;
@@ -150,54 +149,54 @@
 
 
 /*--------------------------------------------NAV-MOBILE-----------------------------------------*/
- #wrapMobile{
-     width: calc(100% - 1.875rem);
-     font-size:1.125rem;
-     margin:0 auto;
-     display: none;
+#wrapMobile{
+    width: calc(100% - 1.875rem);
+    font-size:1.125rem;
+    margin:0 auto;
+    display: none;
 }
- #wrapMobile img{
-     width: 6.875rem;
+#wrapMobile img{
+    width: 6.875rem;
 }
- #wrapMobile .menuType{
-     display: inline-block;
-     font-weight: 320;
-     margin-left: calc(100% - 13.625rem);
-     margin-right: 0.125rem;
-     font-family: 'IBMPlexSans-ExtraLight';
+#wrapMobile .menuType{
+    display: inline-block;
+    font-weight: 320;
+    margin-left: calc(100% - 13.625rem);
+    margin-right: 0.125rem;
+    font-family: 'IBMPlexSans-ExtraLight';
 }
- #wrapMobile .menu{
-     display: inline-block;
-     font-weight: 600;
-     margin-right: 0.25rem;
-     font-family: 'IBMPlexSans-ExtraLight';
+#wrapMobile .menu{
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 0.25rem;
+    font-family: 'IBMPlexSans-ExtraLight';
 }
- #wrapMobile div{
-     display: inline-block;
+#wrapMobile div{
+    display: inline-block;
 }
- #wrapMobilebg{
-     background-color: #000;
-     opacity: .8;
-     width: 100vw;
-     height: 100vh;
-     z-index: 999;
-     position: fixed;
-     top: 0;
-     overflow: hidden;
-     text-align: right;
-     display: none;
+#wrapMobilebg{
+    background-color: #000;
+    opacity: .8;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    text-align: right;
+    display: none;
 }
- #wrapMobilebg a{
-     font-family: 'IBMPlexSans-ExtraLight';
-     text-decoration: none;
-     display: block;
-     margin-top: 1.5rem;
-     margin-right:1.25rem;
-     opacity: 1;
-     font-size:1.625rem;
-     color: #eee;
-     line-height: 0.875rem;
-     font-weight: 300;
+#wrapMobilebg a{
+    font-family: 'IBMPlexSans-ExtraLight';
+    text-decoration: none;
+    display: block;
+    margin-top: 1.5rem;
+    margin-right:1.25rem;
+    opacity: 1;
+    font-size:1.625rem;
+    color: #eee;
+    line-height: 0.875rem;
+    font-weight: 300;
 }
 /*-----------------------------------------------share------------------------------------------*/
 
@@ -206,30 +205,30 @@
 
 
 /*-----------------------------------------------index------------------------------------------*/
- #mobileTip{
-     background-color: #000;
-     width: calc(100% - 1.375rem);
-     opacity: .88;
-     height: 3.75rem;
-     right: 0;
-     left: 0;
-     margin: 0 auto;
-     margin-top: 0.625rem;
-     z-index: 98;
-     text-align: center;
-     position: fixed;
-     bottom:0;
-     border-radius: 0.75rem;
-     display: none;
-     transition:top .7s ease;
+#mobileTip{
+    background-color: #000;
+    width: calc(100% - 1.375rem);
+    opacity: .88;
+    height: 3.75rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    z-index: 98;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    border-radius: 0.75rem;
+    display: none;
+    transition:top .7s ease;
 }
- #mobileTip p{
-     z-index: 99;
-     font-size: 0.75rem;
-     color: #9a9a9a;
-     line-height: 0.625rem;
-     font-weight: 400;
-     margin-top: 1rem;
+#mobileTip p{
+    z-index: 99;
+    font-size: 0.75rem;
+    color: #9a9a9a;
+    line-height: 0.625rem;
+    font-weight: 400;
+    margin-top: 1rem;
 }
 .part0{
     width: 100%;
@@ -306,11 +305,14 @@
 }
 /*hover显示名称*/
 #container li img{
-    transition:opacity .2s ease;
+    transition: all 0.2s ease;
+    transform: scale(1);
     object-fit: cover;
 }
 #container li img:hover{
-    opacity: .3;
+    transition: all 0.2s ease;
+    transform: scale(0.95);
+    
 }
 #container li video{
     transition:opacity .2s ease;
@@ -318,9 +320,7 @@
 #container li video:hover{
     opacity: .3;
 }
-#container li:hover >p{
-    opacity: 1;
-}
+
 #container li{
     text-align: center;
     width: 31.3%;
@@ -331,9 +331,7 @@
    width: 0.9rem;
 }
 
-#container li p:hover + a > img{
-    opacity: .3;
-}
+
 #container li p:hover + a > video{
     opacity: .3;
 }
