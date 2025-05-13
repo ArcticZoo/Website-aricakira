@@ -537,40 +537,6 @@
  }
 
 
-.part2{
-    width: 100%;
-    margin-top: 20rem;
-    margin-bottom: 7rem;
-}
-.part2 .detailWrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.part2 .detail{
-    width: 26rem;
-    height: 11rem;
-    margin: 0 0.7rem;
-    background-color: #000;
-    border-radius: 1.1rem;
-    display: inline-block;
-}
-.part2 .detail .title2{
-    font-size: 2.8rem;
-    color: #eee;
-    font-family: 'NeuePower-Regular';
-    line-height: 2rem;
-    margin: 0;
-    margin-left: 1.3rem;
-    margin-top: 1.2rem;
-}
-.part2 .detail .subTitle{
-    color: #aaa;
-    font-size: 0.9rem;
-    margin-left: 1.3rem;
-}
-
-
 .footer{
     width: 100%;
     height:16rem;
