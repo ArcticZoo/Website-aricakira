@@ -324,8 +324,9 @@
     top: 19%;
   left: 48%;
   transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 0;
     outline:none;
+    mix-blend-mode: lighten;
 }
  #spline #splineIndex{
     position: relative;
